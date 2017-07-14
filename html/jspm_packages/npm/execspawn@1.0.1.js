@@ -1,0 +1,1 @@
+module.exports = require("npm:execspawn@1.0.1/execspawn.js");

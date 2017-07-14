@@ -1,0 +1,1 @@
+module.exports = require("npm:pouchdb@6.3.2/dist/pouchdb.js");

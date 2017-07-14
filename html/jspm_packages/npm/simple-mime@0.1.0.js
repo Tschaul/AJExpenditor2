@@ -1,0 +1,1 @@
+module.exports = require("npm:simple-mime@0.1.0/simple-mime.js");

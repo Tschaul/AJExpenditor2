@@ -1,0 +1,1 @@
+module.exports = require("npm:double-ended-queue@2.1.0-0/js/deque.js");

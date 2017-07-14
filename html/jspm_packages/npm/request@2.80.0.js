@@ -1,0 +1,1 @@
+module.exports = require("npm:request@2.80.0/index.js");

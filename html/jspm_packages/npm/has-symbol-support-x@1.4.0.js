@@ -1,0 +1,1 @@
+module.exports = require("npm:has-symbol-support-x@1.4.0/index.js");

@@ -1,0 +1,1 @@
+module.exports = require("npm:abstract-leveldown@2.6.1/index.js");

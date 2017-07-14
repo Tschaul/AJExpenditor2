@@ -1,0 +1,1 @@
+module.exports = require("npm:aproba@1.1.2/index.js");

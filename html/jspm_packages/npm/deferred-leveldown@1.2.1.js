@@ -1,0 +1,1 @@
+module.exports = require("npm:deferred-leveldown@1.2.1/deferred-leveldown.js");

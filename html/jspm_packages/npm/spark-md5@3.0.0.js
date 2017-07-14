@@ -1,0 +1,1 @@
+module.exports = require("npm:spark-md5@3.0.0/spark-md5.js");

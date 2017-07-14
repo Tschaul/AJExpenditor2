@@ -1,0 +1,1 @@
+module.exports = require("npm:jsonist@1.3.0/jsonist.js");

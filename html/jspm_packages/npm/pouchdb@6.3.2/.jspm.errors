@@ -1,0 +1,132 @@
+MultipleErrors: /home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:1:21: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:1:28: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:1:32: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:1:37: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:2:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:2:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:2:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:2:26: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:3:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:3:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:3:30: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:4:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:4:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:4:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:4:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:5:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:5:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:5:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:5:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:6:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:6:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:6:11: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:6:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:7:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:7:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:7:14: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:7:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:8:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:8:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:8:12: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:8:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:9:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:9:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:9:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:9:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:12183:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:12183:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:12183:8: Unexpected reserved word default
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index-browser.es.js:12183:16: Semi-colon expected
+
+MultipleErrors: /home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:1:29: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:1:36: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:1:40: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:1:45: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:2:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:2:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:2:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:2:26: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:3:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:3:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:3:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:3:25: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:4:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:4:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:4:33: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:4:38: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:5:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:5:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:5:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:5:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:6:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:6:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:6:11: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:6:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:7:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:7:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:7:14: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:7:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:8:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:8:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:8:11: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:8:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:9:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:9:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:9:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:9:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10:13: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:11:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:11:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:11:14: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:11:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:12:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:12:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:12:27: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:12:32: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:13:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:13:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:13:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:14:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:14:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:14:14: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:14:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:15:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:15:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:15:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:15:24: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:16:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:16:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:16:15: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:16:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:17:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:17:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:17:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:17:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:18:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:18:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:18:11: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:18:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:19:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:19:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:19:13: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:19:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:20:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:20:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:20:25: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:20:30: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10204:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10204:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10204:8: Unexpected reserved word default
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/lib/index.es.js:10204:16: Semi-colon expected
+
+MultipleErrors: /home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:13:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:19:7: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:26:19: Unexpected token db
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:26:34: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:26:34: Unexpected token )
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:29:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:38:7: Semi-colon expected
+/home/julian/.jspm/packages/npm/pouchdb@6.3.2/tonic-example.js:50:7: Semi-colon expected

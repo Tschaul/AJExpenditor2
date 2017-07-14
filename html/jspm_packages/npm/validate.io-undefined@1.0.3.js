@@ -1,0 +1,1 @@
+module.exports = require("npm:validate.io-undefined@1.0.3/lib");

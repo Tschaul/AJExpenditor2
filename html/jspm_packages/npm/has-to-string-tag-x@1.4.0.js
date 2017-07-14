@@ -1,0 +1,1 @@
+module.exports = require("npm:has-to-string-tag-x@1.4.0/index.js");

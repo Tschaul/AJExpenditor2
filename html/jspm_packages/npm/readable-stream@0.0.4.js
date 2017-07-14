@@ -1,0 +1,1 @@
+module.exports = require("npm:readable-stream@0.0.4/readable.js");

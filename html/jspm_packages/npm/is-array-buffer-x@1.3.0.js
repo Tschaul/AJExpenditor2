@@ -1,0 +1,1 @@
+module.exports = require("npm:is-array-buffer-x@1.3.0/index.js");

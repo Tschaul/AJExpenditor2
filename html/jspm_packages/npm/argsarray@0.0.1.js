@@ -1,0 +1,1 @@
+module.exports = require("npm:argsarray@0.0.1/index.js");

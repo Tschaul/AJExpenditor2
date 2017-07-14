@@ -1,0 +1,1 @@
+module.exports = require("npm:fast-future@1.0.2/fast-future.js");

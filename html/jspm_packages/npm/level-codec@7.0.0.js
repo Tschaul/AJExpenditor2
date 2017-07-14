@@ -1,0 +1,1 @@
+module.exports = require("npm:level-codec@7.0.0/index");

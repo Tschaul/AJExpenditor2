@@ -1,0 +1,1 @@
+module.exports = require("npm:prebuild@4.5.0/index");

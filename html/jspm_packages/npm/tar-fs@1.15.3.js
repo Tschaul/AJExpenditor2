@@ -1,0 +1,1 @@
+module.exports = require("npm:tar-fs@1.15.3/index.js");

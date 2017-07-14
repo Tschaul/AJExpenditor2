@@ -1,0 +1,1 @@
+module.exports = require("npm:node-gyp@3.6.2/lib/node-gyp.js");
