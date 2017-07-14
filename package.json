@@ -5,7 +5,10 @@
   "main": "migrate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "local_deploy": "jspm bundle-sfx lib/main.js ajexpenditor/_attachments/index.js && cd ajexpenditor && couchapp push ajexpenditor && cd .."
+    "build": "node node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx html/lib --out-dir html/build",
+    "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins transform-react-jsx html/lib --out-dir html/build",
+    "push": "jspm bundle-sfx build/main.js ajexpenditor/_attachments/index.js && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
+    "serve": "node node_modules/serve/bin/serve.js html"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,10 @@
       "transpileES6": true,
       "minify": true
     }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "serve": "^6.0.2"
   }
 }

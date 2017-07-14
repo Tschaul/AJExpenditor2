@@ -12,17 +12,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "build.js": [
-      "lib/main.js",
-      "npm:pouchdb@6.3.2.js",
-      "npm:pouchdb@6.3.2/dist/pouchdb.js",
-      "github:jspm/nodelibs-process@0.1.2.js",
-      "github:jspm/nodelibs-process@0.1.2/index.js",
-      "npm:process@0.11.10.js",
-      "npm:process@0.11.10/browser.js"
-    ]
-  },
 
   map: {
     "babel": "npm:babel-core@5.8.38",
