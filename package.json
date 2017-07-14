@@ -30,6 +30,7 @@
     "dependencies": {
       "pouchdb": "npm:pouchdb@^6.3.2",
       "react": "npm:react@^15.6.1",
+      "react-bootstrap": "npm:react-bootstrap@^0.31.1",
       "react-dom": "npm:react-dom@^15.6.1"
     },
     "devDependencies": {

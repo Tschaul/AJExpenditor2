@@ -1,0 +1,1 @@
+module.exports = require("npm:dom-helpers@3.2.1/index.js");

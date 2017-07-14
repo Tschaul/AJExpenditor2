@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.7",
     "pouchdb": "npm:pouchdb@6.3.2",
     "react": "npm:react@15.6.1",
+    "react-bootstrap": "npm:react-bootstrap@0.31.1",
     "react-dom": "npm:react-dom@15.6.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -204,6 +205,10 @@ System.config({
     "npm:babel-runtime@5.8.38": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:babel-runtime@6.23.0": {
+      "core-js": "npm:core-js@2.4.1",
+      "regenerator-runtime": "npm:regenerator-runtime@0.10.5"
+    },
     "npm:bcrypt-pbkdf@1.0.1": {
       "tweetnacl": "npm:tweetnacl@0.14.5"
     },
@@ -325,6 +330,12 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:core-js@1.2.7": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:core-js@2.4.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
@@ -699,6 +710,10 @@ System.config({
     "npm:ini@1.3.4": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:invariant@2.2.2": {
+      "loose-envify": "npm:loose-envify@1.3.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:is-array-buffer-x@1.3.0": {
       "has-to-string-tag-x": "npm:has-to-string-tag-x@1.4.0",
       "is-object-like-x": "npm:is-object-like-x@1.3.0",
@@ -1060,6 +1075,10 @@ System.config({
       "asap": "npm:asap@2.0.6",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
+    "npm:prop-types-extra@1.0.1": {
+      "react": "npm:react@15.6.1",
+      "warning": "npm:warning@3.0.0"
+    },
     "npm:prop-types@15.5.10": {
       "fbjs": "npm:fbjs@0.8.12",
       "loose-envify": "npm:loose-envify@1.3.1",
@@ -1102,6 +1121,22 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "strip-json-comments": "npm:strip-json-comments@2.0.1"
     },
+    "npm:react-bootstrap@0.31.1": {
+      "babel-runtime": "npm:babel-runtime@6.23.0",
+      "classnames": "npm:classnames@2.2.5",
+      "dom-helpers": "npm:dom-helpers@3.2.1",
+      "invariant": "npm:invariant@2.2.2",
+      "keycode": "npm:keycode@2.1.9",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "prop-types": "npm:prop-types@15.5.10",
+      "prop-types-extra": "npm:prop-types-extra@1.0.1",
+      "react": "npm:react@15.6.1",
+      "react-dom": "npm:react-dom@15.6.1",
+      "react-overlays": "npm:react-overlays@0.7.0",
+      "react-prop-types": "npm:react-prop-types@0.4.0",
+      "uncontrollable": "npm:uncontrollable@4.1.0",
+      "warning": "npm:warning@3.0.0"
+    },
     "npm:react-dom@15.6.1": {
       "fbjs": "npm:fbjs@0.8.12",
       "loose-envify": "npm:loose-envify@1.3.1",
@@ -1109,6 +1144,19 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "prop-types": "npm:prop-types@15.5.10",
       "react": "npm:react@15.6.1"
+    },
+    "npm:react-overlays@0.7.0": {
+      "classnames": "npm:classnames@2.2.5",
+      "dom-helpers": "npm:dom-helpers@3.2.1",
+      "prop-types": "npm:prop-types@15.5.10",
+      "react": "npm:react@15.6.1",
+      "react-dom": "npm:react-dom@15.6.1",
+      "react-prop-types": "npm:react-prop-types@0.4.0",
+      "warning": "npm:warning@3.0.0"
+    },
+    "npm:react-prop-types@0.4.0": {
+      "react": "npm:react@15.6.1",
+      "warning": "npm:warning@3.0.0"
     },
     "npm:react@15.6.1": {
       "create-react-class": "npm:create-react-class@15.6.0",
@@ -1170,6 +1218,9 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "string_decoder": "npm:string_decoder@1.0.3",
       "util-deprecate": "npm:util-deprecate@1.0.2"
+    },
+    "npm:regenerator-runtime@0.10.5": {
+      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "npm:request@2.80.0": {
       "aws-sign2": "npm:aws-sign2@0.6.0",
@@ -1371,6 +1422,11 @@ System.config({
     "npm:ua-parser-js@0.7.13": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:uncontrollable@4.1.0": {
+      "invariant": "npm:invariant@2.2.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.6.1"
+    },
     "npm:url-template@2.0.8": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
@@ -1402,6 +1458,10 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:warning@3.0.0": {
+      "loose-envify": "npm:loose-envify@1.3.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:which@1.2.14": {
       "isexe": "npm:isexe@2.0.0",

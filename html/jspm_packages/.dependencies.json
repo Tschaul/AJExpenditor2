@@ -1454,5 +1454,67 @@
     "prop-types": "npm:prop-types@^15.5.10",
     "react": "npm:react@^15.6.1",
     "process": "github:jspm/nodelibs-process@^0.1.0"
+  },
+  "npm:babel-runtime@6.23.0": {
+    "core-js": "npm:core-js@^2.4.0",
+    "regenerator-runtime": "npm:regenerator-runtime@^0.10.0"
+  },
+  "npm:core-js@2.4.1": {
+    "process": "github:jspm/nodelibs-process@^0.1.0",
+    "systemjs-json": "github:systemjs/plugin-json@^0.1.0",
+    "fs": "github:jspm/nodelibs-fs@^0.1.0",
+    "path": "github:jspm/nodelibs-path@^0.1.0"
+  },
+  "npm:regenerator-runtime@0.10.5": {
+    "path": "github:jspm/nodelibs-path@^0.1.0"
+  },
+  "npm:classnames@2.2.5": {},
+  "npm:warning@3.0.0": {
+    "loose-envify": "npm:loose-envify@^1.0.0",
+    "process": "github:jspm/nodelibs-process@^0.1.0"
+  },
+  "npm:uncontrollable@4.1.0": {
+    "invariant": "npm:invariant@^2.1.0",
+    "react": "npm:react",
+    "process": "github:jspm/nodelibs-process@^0.1.0"
+  },
+  "npm:invariant@2.2.2": {
+    "loose-envify": "npm:loose-envify@^1.0.0",
+    "process": "github:jspm/nodelibs-process@^0.1.0"
+  },
+  "npm:prop-types-extra@1.0.1": {
+    "warning": "npm:warning@^3.0.0",
+    "react": "npm:react"
+  },
+  "npm:react-prop-types@0.4.0": {
+    "warning": "npm:warning@^3.0.0",
+    "react": "npm:react"
+  },
+  "npm:keycode@2.1.9": {},
+  "npm:react-overlays@0.7.0": {
+    "classnames": "npm:classnames@^2.2.5",
+    "dom-helpers": "npm:dom-helpers@^3.2.0",
+    "prop-types": "npm:prop-types@^15.5.8",
+    "react-prop-types": "npm:react-prop-types@^0.4.0",
+    "warning": "npm:warning@^3.0.0",
+    "react": "npm:react",
+    "react-dom": "npm:react-dom"
+  },
+  "npm:dom-helpers@3.2.1": {},
+  "npm:react-bootstrap@0.31.1": {
+    "babel-runtime": "npm:babel-runtime@^6.11.6",
+    "classnames": "npm:classnames@^2.2.5",
+    "dom-helpers": "npm:dom-helpers@^3.2.0",
+    "invariant": "npm:invariant@^2.2.1",
+    "keycode": "npm:keycode@^2.1.2",
+    "prop-types": "npm:prop-types@^15.5.10",
+    "prop-types-extra": "npm:prop-types-extra@^1.0.1",
+    "react-overlays": "npm:react-overlays@^0.7.0",
+    "react-prop-types": "npm:react-prop-types@^0.4.0",
+    "uncontrollable": "npm:uncontrollable@^4.1.0",
+    "warning": "npm:warning@^3.0.0",
+    "react": "npm:react",
+    "react-dom": "npm:react-dom",
+    "process": "github:jspm/nodelibs-process@^0.1.0"
   }
 }
