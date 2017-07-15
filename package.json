@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx html/lib --out-dir html/build",
-    "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins transform-react-jsx html/lib --out-dir html/build",
+    "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
     "push": "jspm bundle-sfx build/main.js ajexpenditor/_attachments/index.js && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
     "serve": "node node_modules/serve/bin/serve.js html"
   },
@@ -28,6 +28,8 @@
       "baseURL": "html"
     },
     "dependencies": {
+      "mobx": "npm:mobx@^3.2.1",
+      "mobx-react": "npm:mobx-react@4.1.0",
       "pouchdb": "npm:pouchdb@^6.3.2",
       "react": "npm:react@^15.6.1",
       "react-bootstrap": "npm:react-bootstrap@^0.31.1",
@@ -45,6 +47,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "serve": "^6.0.2"
   }

@@ -3,9 +3,11 @@ import * as ReactDOM from "react-dom";
 
 import { Navbar } from "react-bootstrap";
 
+import { TableViewModel } from "./viewmodels/TableViewModel";
+
 import { TableView } from "./views/table/TableView";
 
-class App extends React.Component {
+let App = class App extends React.Component {
   render() {
     return React.createElement(
       "div",
@@ -30,6 +32,9 @@ class App extends React.Component {
       React.createElement(TableView, null)
     );
   }
-}
+};
+
+
+window.vm = new TableViewModel();
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('root'));

@@ -17,6 +17,8 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
+    "mobx": "npm:mobx@3.2.1",
+    "mobx-react": "npm:mobx-react@4.1.0",
     "pouchdb": "npm:pouchdb@6.3.2",
     "react": "npm:react@15.6.1",
     "react-bootstrap": "npm:react-bootstrap@0.31.1",
@@ -847,6 +849,14 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "minimist": "npm:minimist@0.0.8",
       "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:mobx-react@4.1.0": {
+      "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
+      "mobx": "npm:mobx@3.2.1",
+      "react": "npm:react@15.6.1"
+    },
+    "npm:mobx@3.2.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:nan@2.4.0": {

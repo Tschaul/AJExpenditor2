@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 
 import { getPeople, getEvents, getCategories } from "../../db/database";
 
-export class TableView extends React.Component {
+export let TableView = class TableView extends React.Component {
 
     constructor() {
         super();
@@ -245,4 +245,4 @@ export class TableView extends React.Component {
             )
         );
     }
-}
+};

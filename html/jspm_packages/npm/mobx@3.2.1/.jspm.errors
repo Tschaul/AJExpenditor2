@@ -1,0 +1,8 @@
+MultipleErrors: /home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:221: Semi-colon expected
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:224: Semi-colon expected
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:568: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:575: Semi-colon expected
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:575: Unexpected reserved word default
+/home/julian/.jspm/packages/npm/mobx@3.2.1/lib/mobx.module.js:3521:583: Semi-colon expected

@@ -3,6 +3,8 @@ import * as ReactDOM from "react-dom";
 
 import { Navbar } from "react-bootstrap"
 
+import {TableViewModel} from "./viewmodels/TableViewModel"
+
 import {TableView} from "./views/table/TableView"
 
 class App extends React.Component {
@@ -21,6 +23,7 @@ class App extends React.Component {
   }
 }
 
+window.vm = new TableViewModel();
 
 ReactDOM.render(
   (<App/>),
