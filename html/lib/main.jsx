@@ -18,14 +18,16 @@ class App extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
-      <TableView/>
+      <TableView vm={vm}/>
     </div>)
   }
 }
 
-window.vm = new TableViewModel();
+var vm = new TableViewModel();
+
+window.vm = vm;
 
 ReactDOM.render(
-  (<App/>),
+  (<App vm={vm}/>),
   document.getElementById('root')
 );

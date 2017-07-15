@@ -1,86 +1,20 @@
+var _class;
+
 import * as React from "react";
-
 import { Table } from "react-bootstrap";
+import { observer } from "mobx-react";
 
-import { getPeople, getEvents, getCategories } from "../../db/database";
+import { TableRow } from "./TableRowComponent";
 
-export let TableView = class TableView extends React.Component {
-
-    constructor() {
-        super();
-        this.state = {
-            people: [],
-            events: [],
-            categories: [],
-            queryingMoreEvents: false
-        };
-    }
+export let TableView = observer(_class = class TableView extends React.Component {
 
     componentWillMount() {
-        this.queryEvents();
-        this.queryPeople();
-        this.queryCategories();
         this.handleScroll = this.handleScroll.bind(this);
         window.addEventListener("scroll", this.handleScroll);
     }
 
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
-    }
-
-    queryEvents() {
-        getEvents(0).then(events => {
-            this.setState({ events }, () => {
-                this.queryMoreEvents();
-            });
-        });
-    }
-
-    queryMoreEvents() {
-        if (!this.state.queryingMoreEvents) {
-            this.setState({ queryingMoreEvents: true }, () => {
-                //console.log('querying more events');
-                getEvents(this.state.events.length).then(events => {
-                    this.setState({
-                        events: this.state.events.concat(events),
-                        queryingMoreEvents: false
-                    });
-                });
-            });
-        }
-    }
-
-    queryPeople() {
-        getPeople().then(people => {
-            this.setState({ people });
-        });
-    }
-
-    queryCategories() {
-        getCategories().then(categories => {
-            this.setState({ categories });
-        });
-    }
-
-    getIouPairs() {
-        var pairs = [];
-        this.state.people.forEach(borrower => {
-            this.state.people.forEach(creditor => {
-                if (borrower.name < creditor.name) {
-                    pairs.push([borrower, creditor]);
-                }
-            });
-        });
-        return pairs;
-    }
-
-    getCategoryFullName(name) {
-        const cat = this.state.categories.find(x => x.name == name);
-        return cat ? cat.fullName : name;
-    }
-
-    getAmountDisplay(amount) {
-        return amount.toFixed(2) + " €";
     }
 
     handleScroll() {
@@ -91,11 +25,12 @@ export let TableView = class TableView extends React.Component {
         const windowBottom = windowHeight + window.pageYOffset;
         if (windowBottom >= docHeight - 100) {
             //console.log('bottom reached')
-            this.queryMoreEvents();
+            this.props.vm.queryMoreEvents();
         }
     }
 
     render() {
+
         return React.createElement(
             Table,
             { responsive: true },
@@ -125,12 +60,12 @@ export let TableView = class TableView extends React.Component {
                         null,
                         "Kategorie"
                     ),
-                    this.state.people.map(person => React.createElement(
+                    this.props.vm.people.map(person => React.createElement(
                         "th",
                         { key: person.name },
                         person.fullName
                     )),
-                    this.getIouPairs().map(pair => {
+                    this.props.vm.iouPairs.map(pair => {
                         //console.log(pair);
                         const [borrower, creditor] = pair;
                         return React.createElement(
@@ -169,14 +104,14 @@ export let TableView = class TableView extends React.Component {
                         null,
                         React.createElement("input", null)
                     ),
-                    this.state.people.map(person => {
+                    this.props.vm.people.map(person => {
                         return React.createElement(
                             "td",
                             { key: person.name },
                             React.createElement("input", null)
                         );
                     }),
-                    this.getIouPairs().map(pair => {
+                    this.props.vm.iouPairs.map(pair => {
                         const [borrower, creditor] = pair;
                         return React.createElement(
                             "td",
@@ -185,64 +120,8 @@ export let TableView = class TableView extends React.Component {
                         );
                     })
                 ),
-                this.state.events.map(event => React.createElement(
-                    "tr",
-                    { key: event._id },
-                    React.createElement(
-                        "td",
-                        { className: "text-right" },
-                        this.getAmountDisplay(event.amount)
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        event.description
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        event.date
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        this.getCategoryFullName(event.category)
-                    ),
-                    this.state.people.map(person => {
-                        const expenditure = event.expenditures.find(x => x.person === person.name);
-                        if (expenditure) {
-                            return React.createElement(
-                                "td",
-                                { key: person.name },
-                                expenditure.portion
-                            );
-                        } else {
-                            return React.createElement(
-                                "td",
-                                { key: person.name },
-                                "0"
-                            );
-                        }
-                    }),
-                    this.getIouPairs().map(pair => {
-                        const [borrower, creditor] = pair;
-                        const iou = event.ious.find(x => x.borrower === borrower.name && x.creditor === creditor.name);
-                        if (iou) {
-                            return React.createElement(
-                                "td",
-                                { key: creditor.name },
-                                iou.portion
-                            );
-                        } else {
-                            return React.createElement(
-                                "td",
-                                { key: creditor.name },
-                                "0"
-                            );
-                        }
-                    })
-                ))
+                this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people }))
             )
         );
     }
-};
+}) || _class;

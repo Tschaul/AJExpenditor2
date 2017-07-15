@@ -2,23 +2,13 @@ import * as React from "react";
 
 export class TableRow extends React.Component {
     
-
-    getCategoryFullName(name) {
-        const cat =this.props.categories.find(x=>x.name==name);
-        return cat ? cat.fullName : name;
-    }
-
-    getAmountDisplay(amount) {
-        return amount.toFixed(2)+" €";
-    }
-
     render() {
         return (
-            <tr key={this.props.event._id}>
-                <td className="text-right">{this.getAmountDisplay(this.props.event.amount)}</td>
+            <tr>
+                <td className="text-right">{this.props.event.amountDisplay}</td>
                 <td>{this.props.event.description}</td>
                 <td>{this.props.event.date}</td>
-                <td>{this.getCategoryFullName(this.props.event.category)}</td>
+                <td>{this.props.event.categoryFullName}</td>
                 {this.props.people.map(person=>{
                     const expenditure = this.props.event.expenditures.find(x=>x.person===person.name);
                     if(expenditure){

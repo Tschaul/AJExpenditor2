@@ -63,7 +63,7 @@ export class TableViewModel {
     }
 
     getCategory(name) {
-        return cat =this.categories.find(x=>x.name==name);
+        return this.categories.find(x=>x.name==name);
     }
 
     getAmountDisplay(amount) {
@@ -76,8 +76,9 @@ export class Event {
     constructor(data,parent){
         this.parent = parent;
         extendObservable(this,Object.assign(data,{
-            category: computed(() => {
-                return this.parent.getCategory(this.category);
+            categoryFullName: computed(() => {
+                const cat = this.parent.getCategory(this.category)
+                return cat ? cat.fullName : this.category;
             }),
             amountDisplay: computed(()=> {
                 return this.parent.getAmountDisplay(this.amount)

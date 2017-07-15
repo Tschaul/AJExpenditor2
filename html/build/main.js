@@ -29,12 +29,14 @@ let App = class App extends React.Component {
           )
         )
       ),
-      React.createElement(TableView, null)
+      React.createElement(TableView, { vm: vm })
     );
   }
 };
 
 
-window.vm = new TableViewModel();
+var vm = new TableViewModel();
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
+window.vm = vm;
+
+ReactDOM.render(React.createElement(App, { vm: vm }), document.getElementById('root'));
