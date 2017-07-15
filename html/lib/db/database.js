@@ -8,10 +8,17 @@ export function getPeople() {
     }).then(data=>data.rows.map(row=>row.doc))
 }
 
-export function getEvents() {
+export function getCategories() {
+    return db.query('ajexpenditor/categories',{
+        include_docs : true
+    }).then(data=>data.rows.map(row=>row.doc))
+}
+
+export function getEvents(skip) {
     return db.query('ajexpenditor/events',{
         include_docs : true,
         descending: true,
         limit: 20,
+        skip: skip
     }).then(data=> data.rows.map(row=>row.doc))
 }

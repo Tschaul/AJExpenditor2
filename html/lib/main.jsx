@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 
 import { Navbar } from "react-bootstrap"
 
-import {TableView} from "./views/TableView"
+import {TableView} from "./views/table/TableView"
 
 class App extends React.Component {
   render(){
