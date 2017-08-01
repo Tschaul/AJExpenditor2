@@ -25,7 +25,7 @@ export let InputDialogModel = class InputDialogModel {
             }),
             description: "",
             date: moment(),
-            categrory: null,
+            category: null,
             expenditures: [],
             ious: [],
             drafts: []

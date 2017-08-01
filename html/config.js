@@ -17,12 +17,14 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
+    "create-react-class": "npm:create-react-class@15.6.0",
     "mobx": "npm:mobx@3.2.1",
     "mobx-react": "npm:mobx-react@4.1.0",
     "moment": "npm:moment@2.18.1",
     "pouchdb": "npm:pouchdb@6.3.2",
     "react": "npm:react@15.6.1",
     "react-bootstrap": "npm:react-bootstrap@0.31.1",
+    "react-datetime": "npm:react-datetime@2.9.0",
     "react-dom": "npm:react-dom@15.6.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -372,7 +374,7 @@ System.config({
       "sha.js": "npm:sha.js@2.4.8"
     },
     "npm:create-react-class@15.6.0": {
-      "fbjs": "npm:fbjs@0.8.12",
+      "fbjs": "npm:fbjs@0.8.14",
       "loose-envify": "npm:loose-envify@1.3.1",
       "object-assign": "npm:object-assign@4.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -503,7 +505,7 @@ System.config({
     "npm:fast-future@1.0.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:fbjs@0.8.12": {
+    "npm:fbjs@0.8.14": {
       "core-js": "npm:core-js@1.2.7",
       "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
       "loose-envify": "npm:loose-envify@1.3.1",
@@ -511,7 +513,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "promise": "npm:promise@7.3.1",
       "setimmediate": "npm:setimmediate@1.0.5",
-      "ua-parser-js": "npm:ua-parser-js@0.7.13"
+      "ua-parser-js": "npm:ua-parser-js@0.7.14"
     },
     "npm:forever-agent@0.6.1": {
       "http": "github:jspm/nodelibs-http@1.7.1",
@@ -1091,7 +1093,7 @@ System.config({
       "warning": "npm:warning@3.0.0"
     },
     "npm:prop-types@15.5.10": {
-      "fbjs": "npm:fbjs@0.8.12",
+      "fbjs": "npm:fbjs@0.8.14",
       "loose-envify": "npm:loose-envify@1.3.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -1148,13 +1150,27 @@ System.config({
       "uncontrollable": "npm:uncontrollable@4.1.0",
       "warning": "npm:warning@3.0.0"
     },
+    "npm:react-datetime@2.9.0": {
+      "@types/react": "npm:@types/react@15.6.0",
+      "moment": "npm:moment@2.18.1",
+      "object-assign": "npm:object-assign@3.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "prop-types": "npm:prop-types@15.5.10",
+      "react": "npm:react@15.6.1",
+      "react-dom": "npm:react-dom@15.6.1",
+      "react-onclickoutside": "npm:react-onclickoutside@5.11.1"
+    },
     "npm:react-dom@15.6.1": {
-      "fbjs": "npm:fbjs@0.8.12",
+      "fbjs": "npm:fbjs@0.8.14",
       "loose-envify": "npm:loose-envify@1.3.1",
       "object-assign": "npm:object-assign@4.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "prop-types": "npm:prop-types@15.5.10",
       "react": "npm:react@15.6.1"
+    },
+    "npm:react-onclickoutside@5.11.1": {
+      "create-react-class": "npm:create-react-class@15.6.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react-overlays@0.7.0": {
       "classnames": "npm:classnames@2.2.5",
@@ -1171,7 +1187,7 @@ System.config({
     },
     "npm:react@15.6.1": {
       "create-react-class": "npm:create-react-class@15.6.0",
-      "fbjs": "npm:fbjs@0.8.12",
+      "fbjs": "npm:fbjs@0.8.14",
       "loose-envify": "npm:loose-envify@1.3.1",
       "object-assign": "npm:object-assign@4.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2",
@@ -1430,7 +1446,7 @@ System.config({
       "tls": "github:jspm/nodelibs-tls@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:ua-parser-js@0.7.13": {
+    "npm:ua-parser-js@0.7.14": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:uncontrollable@4.1.0": {

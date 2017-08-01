@@ -2,6 +2,7 @@ import * as React from "react";
 import {observer} from "mobx-react";
 
 import {Modal,Button, Form, FormGroup, Col, Checkbox, ControlLabel, FormControl, Radio,Collapse} from "react-bootstrap";
+import Datetime from "react-datetime";
 
 @observer
 export class InputDialog extends React.Component {
@@ -12,6 +13,8 @@ export class InputDialog extends React.Component {
         this.handleToggleDrafts=this.handleToggleDrafts.bind(this);
         this.handleAmountChange=this.handleAmountChange.bind(this);
         this.handleDescriptionChange=this.handleDescriptionChange.bind(this);
+        this.handleDateChange=this.handleDateChange.bind(this);
+        this.handleCategoryChange=this.handleCategoryChange.bind(this);
     }
 
     handleHide() {
@@ -30,9 +33,17 @@ export class InputDialog extends React.Component {
         this.props.model.description = event.target.value;
     }
 
-    render() {
+    handleDateChange(newval) {
+        this.props.model.date = newval;
+    }
 
-        //console.log(this.props)
+    handleCategoryChange(event) {
+        const category = this.props.model.parent.categories.find(x=>x.name===event.target.value);
+        //console.log(category);
+        this.props.model.category=category;
+    }
+
+    render() {
 
         return (
             <Modal show={this.props.model.isShown} onHide={this.handleHide}>
@@ -66,7 +77,7 @@ export class InputDialog extends React.Component {
                                 Datum
                             </Col>
                             <Col sm={9}>
-                                <FormControl type="text" />
+                                <Datetime timeFormat={false} closeOnSelect dateFormat="YYYY-MM-DD" value={this.props.model.date} onChange={this.handleDateChange}/>
                             </Col>
                         </FormGroup>
                         <FormGroup>
@@ -74,7 +85,12 @@ export class InputDialog extends React.Component {
                                 Kategorie
                             </Col>
                             <Col sm={9}>
-                                <FormControl type="text" />
+                                <FormControl componentClass="select" value={this.props.model.category?this.props.model.category.name:"__none__"} onChange={this.handleCategoryChange}>
+                                    <option key="__none__" value="__none__">...</option>
+                                    {this.props.model.parent.categories.map(category=>(
+                                        <option key={category.name} value={category.name}>{category.fullName}</option>
+                                    ))}
+                                </FormControl>
                             </Col>
                         </FormGroup>
                         <FormGroup>

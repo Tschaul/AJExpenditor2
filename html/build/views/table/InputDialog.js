@@ -4,6 +4,7 @@ import * as React from "react";
 import { observer } from "mobx-react";
 
 import { Modal, Button, Form, FormGroup, Col, Checkbox, ControlLabel, FormControl, Radio, Collapse } from "react-bootstrap";
+import Datetime from "react-datetime";
 
 export let InputDialog = observer(_class = class InputDialog extends React.Component {
 
@@ -13,6 +14,8 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.handleToggleDrafts = this.handleToggleDrafts.bind(this);
         this.handleAmountChange = this.handleAmountChange.bind(this);
         this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
+        this.handleDateChange = this.handleDateChange.bind(this);
+        this.handleCategoryChange = this.handleCategoryChange.bind(this);
     }
 
     handleHide() {
@@ -31,9 +34,17 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.props.model.description = event.target.value;
     }
 
-    render() {
+    handleDateChange(newval) {
+        this.props.model.date = newval;
+    }
 
-        //console.log(this.props)
+    handleCategoryChange(event) {
+        const category = this.props.model.parent.categories.find(x => x.name === event.target.value);
+        //console.log(category);
+        this.props.model.category = category;
+    }
+
+    render() {
 
         return React.createElement(
             Modal,
@@ -102,7 +113,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                         React.createElement(
                             Col,
                             { sm: 9 },
-                            React.createElement(FormControl, { type: "text" })
+                            React.createElement(Datetime, { timeFormat: false, closeOnSelect: true, dateFormat: "YYYY-MM-DD", value: this.props.model.date, onChange: this.handleDateChange })
                         )
                     ),
                     React.createElement(
@@ -116,7 +127,20 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                         React.createElement(
                             Col,
                             { sm: 9 },
-                            React.createElement(FormControl, { type: "text" })
+                            React.createElement(
+                                FormControl,
+                                { componentClass: "select", value: this.props.model.category ? this.props.model.category.name : "__none__", onChange: this.handleCategoryChange },
+                                React.createElement(
+                                    "option",
+                                    { key: "__none__", value: "__none__" },
+                                    "..."
+                                ),
+                                this.props.model.parent.categories.map(category => React.createElement(
+                                    "option",
+                                    { key: category.name, value: category.name },
+                                    category.fullName
+                                ))
+                            )
                         )
                     ),
                     React.createElement(
