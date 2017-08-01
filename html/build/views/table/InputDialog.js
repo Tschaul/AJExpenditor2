@@ -3,19 +3,24 @@ var _class;
 import * as React from "react";
 import { observer } from "mobx-react";
 
-import { Modal, Button, Form, FormGroup, Col, Checkbox, ControlLabel, FormControl } from "react-bootstrap";
+import { Modal, Button, Form, FormGroup, Col, Checkbox, ControlLabel, FormControl, Radio, Collapse } from "react-bootstrap";
 
 export let InputDialog = observer(_class = class InputDialog extends React.Component {
 
     constructor() {
         super();
         this.handleHide = this.handleHide.bind(this);
+        this.handleToggleDrafts = this.handleToggleDrafts.bind(this);
         this.handleAmountChange = this.handleAmountChange.bind(this);
         this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
     }
 
     handleHide() {
         this.props.model.isShown = false;
+    }
+
+    handleToggleDrafts() {
+        this.props.model.draftsAreShown = !this.props.model.draftsAreShown;
     }
 
     handleAmountChange(event) {
@@ -49,16 +54,21 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                     Form,
                     { horizontal: true },
                     React.createElement(
+                        "h5",
+                        null,
+                        "\u25A0 Allgemein"
+                    ),
+                    React.createElement(
                         FormGroup,
                         null,
                         React.createElement(
                             Col,
-                            { componentClass: ControlLabel, sm: 4 },
+                            { componentClass: ControlLabel, sm: 3 },
                             "Betrag"
                         ),
                         React.createElement(
                             Col,
-                            { sm: 4 },
+                            { sm: 5 },
                             React.createElement(FormControl, { type: "text", value: this.props.model.amountRaw, onChange: this.handleAmountChange })
                         ),
                         React.createElement(
@@ -72,12 +82,12 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                         null,
                         React.createElement(
                             Col,
-                            { componentClass: ControlLabel, sm: 4 },
+                            { componentClass: ControlLabel, sm: 3 },
                             "Beschreibung"
                         ),
                         React.createElement(
                             Col,
-                            { sm: 8 },
+                            { sm: 9 },
                             React.createElement(FormControl, { type: "text", value: this.props.model.description, onChange: this.handleDescriptionChange })
                         )
                     ),
@@ -86,12 +96,12 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                         null,
                         React.createElement(
                             Col,
-                            { componentClass: ControlLabel, sm: 4 },
+                            { componentClass: ControlLabel, sm: 3 },
                             "Datum"
                         ),
                         React.createElement(
                             Col,
-                            { sm: 8 },
+                            { sm: 9 },
                             React.createElement(FormControl, { type: "text" })
                         )
                     ),
@@ -100,51 +110,84 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                         null,
                         React.createElement(
                             Col,
-                            { componentClass: ControlLabel, sm: 4 },
+                            { componentClass: ControlLabel, sm: 3 },
                             "Kategorie"
                         ),
                         React.createElement(
                             Col,
-                            { sm: 8 },
+                            { sm: 9 },
                             React.createElement(FormControl, { type: "text" })
                         )
                     ),
-                    this.props.model.parent.people.map(person => {
-                        return React.createElement(
-                            FormGroup,
-                            { key: person.name },
-                            React.createElement(
-                                Col,
-                                { componentClass: ControlLabel, sm: 4 },
-                                person.fullName + "s Ausgaben"
-                            ),
-                            React.createElement(
-                                Col,
-                                { sm: 8 },
-                                React.createElement(FormControl, { type: "text" })
-                            )
-                        );
-                        //return (<td><input /></td>)
-                    }),
-                    this.props.model.parent.iouPairs.map(pair => {
-                        const [borrower, creditor] = pair;
-
-                        return React.createElement(
-                            FormGroup,
-                            { key: creditor.name + "_" + borrower.name },
-                            React.createElement(
-                                Col,
-                                { componentClass: ControlLabel, sm: 4 },
-                                creditor.fullName + " schuldet " + borrower.fullName
-                            ),
-                            React.createElement(
-                                Col,
-                                { sm: 8 },
-                                React.createElement(FormControl, { type: "text" })
-                            )
-                        );
-                        //return (<td key={creditor.name}><input /></td>)
-                    })
+                    React.createElement(
+                        FormGroup,
+                        null,
+                        React.createElement(
+                            Col,
+                            { componentClass: ControlLabel, sm: 3 },
+                            "Draft"
+                        ),
+                        React.createElement(
+                            Col,
+                            { sm: 9 },
+                            this.props.model.drafts.map(draft => React.createElement(
+                                Radio,
+                                { name: "radioGroup", inline: true, key: draft._id },
+                                draft.draftDescription
+                            ))
+                        )
+                    ),
+                    React.createElement(
+                        "h5",
+                        { onClick: this.handleToggleDrafts },
+                        "\u25A0 Gewichtung"
+                    ),
+                    React.createElement(
+                        Collapse,
+                        { "in": this.props.model.draftsAreShown },
+                        React.createElement(
+                            "div",
+                            null,
+                            this.props.model.parent.people.map(person => {
+                                return React.createElement(
+                                    FormGroup,
+                                    { key: person.name },
+                                    React.createElement(
+                                        Col,
+                                        { componentClass: ControlLabel, sm: 4 },
+                                        person.fullName + "s Ausgaben"
+                                    ),
+                                    React.createElement(
+                                        Col,
+                                        { sm: 8 },
+                                        React.createElement(FormControl, { type: "text" })
+                                    )
+                                );
+                            }),
+                            this.props.model.parent.iouPairs.map(pair => {
+                                const [borrower, creditor] = pair;
+                                return React.createElement(
+                                    FormGroup,
+                                    { key: creditor.name + "_" + borrower.name },
+                                    React.createElement(
+                                        Col,
+                                        { componentClass: ControlLabel, sm: 4 },
+                                        borrower.fullName + " schuldet " + creditor.fullName
+                                    ),
+                                    React.createElement(
+                                        Col,
+                                        { sm: 8 },
+                                        React.createElement(FormControl, { type: "text" })
+                                    )
+                                );
+                            })
+                        )
+                    )
+                ),
+                React.createElement(
+                    "h5",
+                    null,
+                    "\u25A0 Log"
                 )
             ),
             React.createElement(

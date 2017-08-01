@@ -14,6 +14,12 @@ export function getCategories() {
     }).then(data=>data.rows.map(row=>row.doc))
 }
 
+export function getDrafts() {
+    return db.query('ajexpenditor/drafts',{
+        include_docs : true
+    }).then(data=>data.rows.map(row=>row.doc))
+}
+
 export function getEvents(skip) {
     return db.query('ajexpenditor/events',{
         include_docs : true,

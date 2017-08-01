@@ -2,6 +2,7 @@ import { obervable, computed, extendObservable } from "mobx";
 
 import moment from "moment";
 
+import { getDrafts } from "../../db/database";
 import { getAmountDisplay } from "../util";
 
 export let InputDialogModel = class InputDialogModel {
@@ -9,6 +10,7 @@ export let InputDialogModel = class InputDialogModel {
         extendObservable(this, {
             parent,
             isShown: true,
+            draftsAreShown: false,
             amountRaw: "",
             amount: computed(() => {
                 try {
@@ -25,7 +27,16 @@ export let InputDialogModel = class InputDialogModel {
             date: moment(),
             categrory: null,
             expenditures: [],
-            ious: []
+            ious: [],
+            drafts: []
+        });
+
+        this.queryDrafts();
+    }
+
+    queryDrafts() {
+        getDrafts().then(drafts => {
+            this.drafts = drafts;
         });
     }
 };
