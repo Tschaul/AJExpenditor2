@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 
 import { Navbar } from "react-bootstrap"
 
-import {TableViewModel} from "./viewmodels/TableViewModel"
+import {TableViewModel} from "./viewmodels/table/TableViewModel"
 
 import {TableView} from "./views/table/TableView"
 

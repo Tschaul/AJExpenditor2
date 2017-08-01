@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.7",
     "mobx": "npm:mobx@3.2.1",
     "mobx-react": "npm:mobx-react@4.1.0",
+    "moment": "npm:moment@2.18.1",
     "pouchdb": "npm:pouchdb@6.3.2",
     "react": "npm:react@15.6.1",
     "react-bootstrap": "npm:react-bootstrap@0.31.1",

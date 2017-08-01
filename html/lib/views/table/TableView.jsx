@@ -3,6 +3,7 @@ import {Table} from "react-bootstrap"
 import {observer} from "mobx-react"
 
 import {TableRow} from "./TableRowComponent"
+import {InputDialog} from "./InputDialog"
 
 @observer
 export class TableView extends React.Component{
@@ -31,41 +32,31 @@ export class TableView extends React.Component{
     render(){
 
         return(
-            <Table responsive>
-                <thead>
-                <tr>
-                    <th>Betrag</th>
-                    <th>Beschreibung</th>
-                    <th>Datum</th>
-                    <th>Kategorie</th>
-                    {this.props.vm.people.map(person=>(<th key={person.name}>{person.fullName}</th>))}
-                    {this.props.vm.iouPairs.map(pair=>{
-                        //console.log(pair);
-                        const [borrower,creditor] = pair;
-                        return(<th key={creditor.name}>{borrower.fullName} schuldet {creditor.fullName}</th>)
-                    })}
-                </tr>
-                </thead>
-                <tbody>
-                    <tr key={event._id}>
-                        <td className="text-right"><input /></td>
-                        <td><input /></td>
-                        <td><input /></td>
-                        <td><input /></td>
-                        {this.props.vm.people.map(person=>{
-                            return (<td key={person.name}><input /></td>)
-                        })}
+            <div>
+                <InputDialog model={this.props.vm.inputDialog}/>
+                <Table responsive>
+                    <thead>
+                    <tr>
+                        <th>Betrag</th>
+                        <th>Beschreibung</th>
+                        <th>Datum</th>
+                        <th>Kategorie</th>
+                        {this.props.vm.people.map(person=>(<th key={person.name}>{person.fullName}</th>))}
                         {this.props.vm.iouPairs.map(pair=>{
+                            //console.log(pair);
                             const [borrower,creditor] = pair;
-                            return (<td key={creditor.name}><input /></td>)
+                            return(<th key={creditor.name}>{borrower.fullName} schuldet {creditor.fullName}</th>)
                         })}
-                    </tr> 
-                    {this.props.vm.events.map(event=>(
-                        <TableRow key={event._id} event={event} iouPairs={this.props.vm.iouPairs} people={this.props.vm.people}/>
-                    ))}
-                
-                </tbody>
-            </Table>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {this.props.vm.events.map(event=>(
+                            <TableRow key={event._id} event={event} iouPairs={this.props.vm.iouPairs} people={this.props.vm.people}/>
+                        ))}
+                    
+                    </tbody>
+                </Table>
+            </div>
         )
     }
 }

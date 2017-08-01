@@ -64,7 +64,7 @@ export let TableViewModel = class TableViewModel {
     }
 
     getAmountDisplay(amount) {
-        return amount.toFixed(2) + " €";
+        return (amount / 10000).toFixed(2) + " €";
     }
 
 };

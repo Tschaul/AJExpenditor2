@@ -6,7 +6,7 @@ function(doc) {
 
             var iou = doc.ious[x];
 
-            var amount = iou.portion*doc.amount;
+            var amount = Math.round(doc.amount*(iou.portion/100));
             var key = [iou.borrower,iou.creditor].concat(dateSplit);
             emit(key,amount);
 

@@ -1,11 +1,15 @@
 import {obervable,computed,extendObservable} from "mobx";
 
-import {getPeople,getEvents,getCategories} from "../db/database"
- 
+import {getPeople,getEvents,getCategories} from "../../db/database"
+import {getAmountDisplay} from "../util"
+
+import {InputDialogModel} from "./InputDialogModel"
 
 export class TableViewModel {
 
     constructor(){
+
+
         extendObservable(this,{
             people: [],
             events: [],
@@ -23,6 +27,7 @@ export class TableViewModel {
                 return pairs;
             })
         })
+        this.inputDialog = new InputDialogModel(this);
         this.queryEvents();
         this.queryPeople();
         this.queryCategories();
@@ -66,10 +71,6 @@ export class TableViewModel {
         return this.categories.find(x=>x.name==name);
     }
 
-    getAmountDisplay(amount) {
-        return amount.toFixed(2)+" €";
-    }
-
 }
 
 export class Event {
@@ -81,7 +82,7 @@ export class Event {
                 return cat ? cat.fullName : this.category;
             }),
             amountDisplay: computed(()=> {
-                return this.parent.getAmountDisplay(this.amount)
+                return getAmountDisplay(this.amount)
             })
         }));
     }

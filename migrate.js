@@ -1,6 +1,6 @@
 var nano = require('nano')('http://localhost:5984');
 
-
+var saveData = true;
 
 var events = require("/home/julian/Desktop/events.json");
 
@@ -8,22 +8,21 @@ events.forEach(event=>{
 
     event.type ="event";
 
-    event.amount = eval(event.amount);
+    event.amountScribble = event.amount;
+
+    event.amount = Math.round(eval(event.amount)*10000);
 
     event.expenditures.forEach( exp => {
-        exp.portion = exp.delta/event.amount;
+
+        exp.portion = Math.round(((exp.delta*10000)/event.amount)*100);
         delete exp.delta;
         delete exp.saldo;
         delete exp.amount;
 
-        // if(!exp.person){
-        //     console.log(event);
-        // }
-
     })
 
     event.ious.forEach(iou => {
-        iou.portion = iou.delta/event.amount;
+        iou.portion =  Math.round(((iou.delta*10000)/event.amount)*100);
         delete iou.delta;
         delete iou.saldo;
         delete iou.amount;
@@ -40,7 +39,7 @@ drafts.forEach(draft=>{
     draft.type ="draft";
 
     draft.expenditures.forEach( exp => {
-        exp.portion = eval('1'+exp.amount);
+        exp.portion = Math.round(eval('1'+exp.amount)*100);
         delete exp.delta;
         delete exp.saldo;
         delete exp.amount;
@@ -48,7 +47,7 @@ drafts.forEach(draft=>{
     })
 
     draft.ious.forEach(iou => {
-        iou.portion = eval('1'+iou.amount);
+        iou.portion = Math.round(eval('1'+iou.amount)*100);
         delete iou.delta;
         delete iou.saldo;
         delete iou.amount;
@@ -85,6 +84,7 @@ categories.forEach(category=>{
 
 })
 
+if(saveData){
 nano.db.destroy('ajexpenditor',function(){
 
     nano.db.create('ajexpenditor',function(){
@@ -128,4 +128,7 @@ nano.db.destroy('ajexpenditor',function(){
         })
     })
 })
+}
+
+
 

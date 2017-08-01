@@ -5,14 +5,18 @@
  * @param {object} doc - Document Object.
  */
 function(doc) {
+
     if(doc.type==="event"){
-        for (var x = 0; x < doc.expenditures.length; x++) {
 
-            var dateSplit = doc.date.split("-").map(function(s){return parseInt(s, 10)});
+        var dateSplit = doc.date.split("-").map(function(s){return parseInt(s, 10)});
 
-            var key = [doc.expenditures[x].person,doc.category].concat(dateSplit);
+        doc.expenditures.forEach(function(exp) {
 
-            emit(key, doc.expenditures[x].portion*doc.amount);
-        }
+            var key = [exp.person,doc.category].concat(dateSplit);
+
+            emit(key, Math.round(doc.amount*(exp.portion/100)));
+            
+        });
+
     }
 }

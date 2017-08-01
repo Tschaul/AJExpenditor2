@@ -5,6 +5,7 @@ import { Table } from "react-bootstrap";
 import { observer } from "mobx-react";
 
 import { TableRow } from "./TableRowComponent";
+import { InputDialog } from "./InputDialog";
 
 export let TableView = observer(_class = class TableView extends React.Component {
 
@@ -32,95 +33,61 @@ export let TableView = observer(_class = class TableView extends React.Component
     render() {
 
         return React.createElement(
-            Table,
-            { responsive: true },
+            "div",
+            null,
+            React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
             React.createElement(
-                "thead",
-                null,
+                Table,
+                { responsive: true },
                 React.createElement(
-                    "tr",
+                    "thead",
                     null,
                     React.createElement(
-                        "th",
+                        "tr",
                         null,
-                        "Betrag"
-                    ),
-                    React.createElement(
-                        "th",
-                        null,
-                        "Beschreibung"
-                    ),
-                    React.createElement(
-                        "th",
-                        null,
-                        "Datum"
-                    ),
-                    React.createElement(
-                        "th",
-                        null,
-                        "Kategorie"
-                    ),
-                    this.props.vm.people.map(person => React.createElement(
-                        "th",
-                        { key: person.name },
-                        person.fullName
-                    )),
-                    this.props.vm.iouPairs.map(pair => {
-                        //console.log(pair);
-                        const [borrower, creditor] = pair;
-                        return React.createElement(
+                        React.createElement(
                             "th",
-                            { key: creditor.name },
-                            borrower.fullName,
-                            " schuldet ",
-                            creditor.fullName
-                        );
-                    })
-                )
-            ),
-            React.createElement(
-                "tbody",
-                null,
-                React.createElement(
-                    "tr",
-                    { key: event._id },
-                    React.createElement(
-                        "td",
-                        { className: "text-right" },
-                        React.createElement("input", null)
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        React.createElement("input", null)
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        React.createElement("input", null)
-                    ),
-                    React.createElement(
-                        "td",
-                        null,
-                        React.createElement("input", null)
-                    ),
-                    this.props.vm.people.map(person => {
-                        return React.createElement(
-                            "td",
+                            null,
+                            "Betrag"
+                        ),
+                        React.createElement(
+                            "th",
+                            null,
+                            "Beschreibung"
+                        ),
+                        React.createElement(
+                            "th",
+                            null,
+                            "Datum"
+                        ),
+                        React.createElement(
+                            "th",
+                            null,
+                            "Kategorie"
+                        ),
+                        this.props.vm.people.map(person => React.createElement(
+                            "th",
                             { key: person.name },
-                            React.createElement("input", null)
-                        );
-                    }),
-                    this.props.vm.iouPairs.map(pair => {
-                        const [borrower, creditor] = pair;
-                        return React.createElement(
-                            "td",
-                            { key: creditor.name },
-                            React.createElement("input", null)
-                        );
-                    })
+                            person.fullName
+                        )),
+                        this.props.vm.iouPairs.map(pair => {
+                            //console.log(pair);
+                            const [borrower, creditor] = pair;
+                            return React.createElement(
+                                "th",
+                                { key: creditor.name },
+                                borrower.fullName,
+                                " schuldet ",
+                                creditor.fullName
+                            );
+                        })
+                    )
                 ),
-                this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people }))
+                React.createElement(
+                    "tbody",
+                    null,
+                    this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people }))
+                )
             )
         );
     }
