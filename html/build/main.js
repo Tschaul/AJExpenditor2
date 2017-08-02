@@ -4,10 +4,31 @@ import * as ReactDOM from "react-dom";
 import { Navbar } from "react-bootstrap";
 
 import { TableViewModel } from "./viewmodels/table/TableViewModel";
+import { LoginViewModel } from "./viewmodels/login/LoginViewModel";
 
 import { TableView } from "./views/table/TableView";
+import { LoginView } from "./views/login/LoginView";
 
 let App = class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      tableViewModel: null,
+      loginViewModel: new LoginViewModel(),
+      loggedIn: false
+    };
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleLogin() {
+    var vm = new TableViewModel();
+    this.setState({
+      tableViewModel: vm,
+      loggedIn: true
+    });
+  }
+
   render() {
     return React.createElement(
       "div",
@@ -29,14 +50,11 @@ let App = class App extends React.Component {
           )
         )
       ),
-      React.createElement(TableView, { vm: vm })
+      !this.state.loggedIn && React.createElement(LoginView, { vm: this.state.loginViewModel, handleLogin: this.handleLogin }),
+      this.state.loggedIn && React.createElement(TableView, { vm: this.state.tableViewModel })
     );
   }
 };
 
 
-var vm = new TableViewModel();
-
-window.vm = vm;
-
-ReactDOM.render(React.createElement(App, { vm: vm }), document.getElementById('root'));
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));

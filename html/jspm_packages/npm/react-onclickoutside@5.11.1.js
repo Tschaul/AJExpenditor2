@@ -1,0 +1,1 @@
+module.exports = require("npm:react-onclickoutside@5.11.1/index.js");

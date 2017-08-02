@@ -1,6 +1,26 @@
 import PouchDB from "pouchdb";
 
-var db = new PouchDB('http://localhost:5984/ajexpenditor');
+var db = null;
+
+export function logIn(username, password) {
+
+    return new Promise((resolve, reject) => {
+
+        const userPwdStr = username && password ? username + ":" + password + "@" : "";
+
+        const windowPort = window.location.port === "5000" ? "5984" : window.location.port;
+
+        const portStr = windowPort ? ":" + windowPort : "";
+
+        const url = window.location.protocol + "//" + userPwdStr + window.location.hostname + portStr + "/ajexpenditor";
+
+        console.log(userPwdStr, windowPort, portStr, url);
+
+        db = new PouchDB(url);
+
+        getDrafts().then(() => resolve(true)).catch(() => resolve(false));
+    });
+}
 
 export function getPeople() {
     return db.query('ajexpenditor/people', {
