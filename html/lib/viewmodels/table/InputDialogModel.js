@@ -1,4 +1,4 @@
-import {obervable,computed,extendObservable} from "mobx";
+import {obervable,computed,extendObservable,observe} from "mobx";
 
 import moment from "moment"
 
@@ -30,11 +30,23 @@ export class InputDialogModel {
             category: null,
             expenditures: [],
             ious: [],
-            drafts: []
+            drafts: [],
+            selectedDraft: null,
         })
 
-        this.queryDrafts()
+        this.queryDrafts();
+
+        observe(this,"selectedDraft", (change) => {
+            console.log("draft selected",change.newValue);
+            if(change.newValue){
+                const draft = change.newValue;
+                this.ious.replace(draft.ious);
+                this.expenditures.replace(draft.expenditures);
+            }
+        });
     }
+
+
 
     queryDrafts() {
         getDrafts().then(drafts=>{

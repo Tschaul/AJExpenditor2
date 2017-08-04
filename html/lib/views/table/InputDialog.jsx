@@ -15,6 +15,7 @@ export class InputDialog extends React.Component {
         this.handleDescriptionChange=this.handleDescriptionChange.bind(this);
         this.handleDateChange=this.handleDateChange.bind(this);
         this.handleCategoryChange=this.handleCategoryChange.bind(this);
+        this.handleDraftSelect=this.handleDraftSelect.bind(this);
     }
 
     handleHide() {
@@ -41,6 +42,12 @@ export class InputDialog extends React.Component {
         const category = this.props.model.parent.categories.find(x=>x.name===event.target.value);
         //console.log(category);
         this.props.model.category=category;
+    }
+
+    handleDraftSelect(event) {
+        console.log("handleSelectDraft",event.target.value)
+        const draft = this.props.model.drafts.find(x=>x._id===event.target.value);
+        this.props.model.selectedDraft=draft;
     }
 
     render() {
@@ -99,7 +106,7 @@ export class InputDialog extends React.Component {
                             </Col>
                             <Col sm={9}>
                                 {this.props.model.drafts.map(draft => (
-                                    <Radio name="radioGroup" inline key={draft._id}>
+                                    <Radio name="radioGroup" inline key={draft._id} value={draft._id}  onChange={this.handleDraftSelect}>
                                         {draft.draftDescription}
                                     </Radio>
                                 ))}
@@ -109,29 +116,37 @@ export class InputDialog extends React.Component {
                         <Collapse in={this.props.model.draftsAreShown}>
                             <div>
                                 {this.props.model.parent.people.map(person=>{
-                                    return(
-                                        <FormGroup key={person.name}>
-                                            <Col componentClass={ControlLabel} sm={4}>
-                                                {person.fullName+"s Ausgaben"}
-                                            </Col>
-                                            <Col sm={8}>
-                                                <FormControl type="text" />
-                                            </Col>
-                                        </FormGroup>
-                                    )
+                                    console.log("exp",person.name)
+                                    const expenditure = this.props.model.expenditures.find(x=>x.person===person.name);
+                                    if(expenditure){
+                                        return(
+                                            <FormGroup key={person.name}>
+                                                <Col componentClass={ControlLabel} sm={4}>
+                                                    {person.fullName+"s Ausgaben"}
+                                                </Col>
+                                                <Col sm={8}>
+                                                    <FormControl type="text" value={expenditure.portion}/>
+                                                </Col>
+                                            </FormGroup>
+                                        )
+                                    }
                                 })}
                                 {this.props.model.parent.iouPairs.map(pair=>{
                                     const [borrower,creditor] = pair;
-                                    return(
-                                        <FormGroup  key={creditor.name+"_"+borrower.name}>
-                                            <Col componentClass={ControlLabel} sm={4}>
-                                                {borrower.fullName+" schuldet "+creditor.fullName}
-                                            </Col>
-                                            <Col sm={8}>
-                                                <FormControl type="text" />
-                                            </Col>
-                                        </FormGroup>
-                                    )
+                                    console.log("iou",borrower.name)
+                                    const iou = this.props.model.ious.find(x=>x.borrower===borrower.name && x.creditor===creditor.name);
+                                    if(iou){
+                                        return(
+                                            <FormGroup  key={creditor.name+"_"+borrower.name}>
+                                                <Col componentClass={ControlLabel} sm={4}>
+                                                    {borrower.fullName+" schuldet "+creditor.fullName}
+                                                </Col>
+                                                <Col sm={8}>
+                                                    <FormControl type="text" value={iou.portion}/>
+                                                </Col>
+                                            </FormGroup>
+                                        )
+                                    }
                                 })}
                             </div>
                         </Collapse>

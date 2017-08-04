@@ -16,6 +16,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
         this.handleDateChange = this.handleDateChange.bind(this);
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
+        this.handleDraftSelect = this.handleDraftSelect.bind(this);
     }
 
     handleHide() {
@@ -42,6 +43,12 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         const category = this.props.model.parent.categories.find(x => x.name === event.target.value);
         //console.log(category);
         this.props.model.category = category;
+    }
+
+    handleDraftSelect(event) {
+        console.log("handleSelectDraft", event.target.value);
+        const draft = this.props.model.drafts.find(x => x._id === event.target.value);
+        this.props.model.selectedDraft = draft;
     }
 
     render() {
@@ -156,7 +163,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             { sm: 9 },
                             this.props.model.drafts.map(draft => React.createElement(
                                 Radio,
-                                { name: "radioGroup", inline: true, key: draft._id },
+                                { name: "radioGroup", inline: true, key: draft._id, value: draft._id, onChange: this.handleDraftSelect },
                                 draft.draftDescription
                             ))
                         )
@@ -173,37 +180,45 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             "div",
                             null,
                             this.props.model.parent.people.map(person => {
-                                return React.createElement(
-                                    FormGroup,
-                                    { key: person.name },
-                                    React.createElement(
-                                        Col,
-                                        { componentClass: ControlLabel, sm: 4 },
-                                        person.fullName + "s Ausgaben"
-                                    ),
-                                    React.createElement(
-                                        Col,
-                                        { sm: 8 },
-                                        React.createElement(FormControl, { type: "text" })
-                                    )
-                                );
+                                console.log("exp", person.name);
+                                const expenditure = this.props.model.expenditures.find(x => x.person === person.name);
+                                if (expenditure) {
+                                    return React.createElement(
+                                        FormGroup,
+                                        { key: person.name },
+                                        React.createElement(
+                                            Col,
+                                            { componentClass: ControlLabel, sm: 4 },
+                                            person.fullName + "s Ausgaben"
+                                        ),
+                                        React.createElement(
+                                            Col,
+                                            { sm: 8 },
+                                            React.createElement(FormControl, { type: "text", value: expenditure.portion })
+                                        )
+                                    );
+                                }
                             }),
                             this.props.model.parent.iouPairs.map(pair => {
                                 const [borrower, creditor] = pair;
-                                return React.createElement(
-                                    FormGroup,
-                                    { key: creditor.name + "_" + borrower.name },
-                                    React.createElement(
-                                        Col,
-                                        { componentClass: ControlLabel, sm: 4 },
-                                        borrower.fullName + " schuldet " + creditor.fullName
-                                    ),
-                                    React.createElement(
-                                        Col,
-                                        { sm: 8 },
-                                        React.createElement(FormControl, { type: "text" })
-                                    )
-                                );
+                                console.log("iou", borrower.name);
+                                const iou = this.props.model.ious.find(x => x.borrower === borrower.name && x.creditor === creditor.name);
+                                if (iou) {
+                                    return React.createElement(
+                                        FormGroup,
+                                        { key: creditor.name + "_" + borrower.name },
+                                        React.createElement(
+                                            Col,
+                                            { componentClass: ControlLabel, sm: 4 },
+                                            borrower.fullName + " schuldet " + creditor.fullName
+                                        ),
+                                        React.createElement(
+                                            Col,
+                                            { sm: 8 },
+                                            React.createElement(FormControl, { type: "text", value: iou.portion })
+                                        )
+                                    );
+                                }
                             })
                         )
                     )
