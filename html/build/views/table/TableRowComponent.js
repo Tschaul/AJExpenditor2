@@ -3,12 +3,32 @@ var _class;
 import * as React from "react";
 import { observer } from "mobx-react";
 
+import { Button, Glyphicon } from "react-bootstrap";
+
 export let TableRow = observer(_class = class TableRow extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleShowEditModal = this.handleShowEditModal.bind(this);
+    }
+
+    handleShowEditModal() {
+        this.props.showEditModal(this.props.event);
+    }
 
     render() {
         return React.createElement(
             "tr",
             null,
+            React.createElement(
+                "td",
+                null,
+                React.createElement(
+                    Button,
+                    { onClick: this.handleShowEditModal },
+                    "\u270E"
+                )
+            ),
             React.createElement(
                 "td",
                 { className: "text-right" },

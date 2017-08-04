@@ -1,6 +1,6 @@
 import {obervable,computed,extendObservable} from "mobx";
 
-import {getPeople,getEvents,getCategories} from "../../db/database"
+import {getPeople,getEvents,getCategories,onEventsChange,getExpendituresTotal,getIousTotal} from "../../db/database"
 import {getAmountDisplay} from "../util"
 
 import {InputDialogModel} from "./InputDialogModel"
@@ -25,17 +25,27 @@ export class TableViewModel {
                     })
                 });
                 return pairs;
-            })
+            }),
+            expendituresTotals: [],
+            iousTotals: []
         })
         this.inputDialog = new InputDialogModel(this);
         this.queryEvents();
         this.queryPeople();
         this.queryCategories();
+        this.queryExpendituresTotal();
+        this.queryIousTotal();
+
+        onEventsChange(()=>{
+            this.requeryEvents();
+            this.queryExpendituresTotal();
+            this.queryIousTotal();
+        });
     }
 
     queryEvents() {
-        getEvents(0).then(events=>{
-            this.events = events.map(e=>new Event(e,this));
+        getEvents(0,20).then(events=>{
+            this.events.replace(events.map(e=>new Event(e,this)));
             this.queryMoreEvents();
         })
     }
@@ -45,7 +55,7 @@ export class TableViewModel {
 
             this.queryingMoreEvents=true
             //console.log('querying more events');
-            getEvents(this.events.length).then(events=>{
+            getEvents(this.events.length,20).then(events=>{
                 
                 this.events = this.events.concat(events.map(e=>new Event(e,this)));
                 this.queryingMoreEvents = false;
@@ -53,6 +63,12 @@ export class TableViewModel {
             })
 
         }
+    }
+
+    requeryEvents() {
+        getEvents(0,this.events.length).then(events=>{
+            this.events.replace(events.map(e=>new Event(e,this)));
+        })
     }
 
     queryPeople()  {
@@ -67,8 +83,34 @@ export class TableViewModel {
         });
     }
 
+    queryExpendituresTotal() {
+        getExpendituresTotal().then(totals=>{
+            this.expendituresTotals.replace(totals);
+        });
+    }
+
+    queryIousTotal() {
+        getIousTotal().then(totals=>{
+            this.iousTotals.replace(totals);
+        });
+    }
+
     getCategory(name) {
         return this.categories.find(x=>x.name==name);
+    }
+
+    getExpendituresTotal(name) {
+        const total = this.expendituresTotals.find(x=>x.person===name);
+        return total
+            ? getAmountDisplay(total.value)
+            : undefined
+    }
+
+    getIousTotal(borrower,creditor) {
+        const total = this.iousTotals.find(x=>x.borrower===borrower && x.creditor===creditor);
+        return total
+            ? getAmountDisplay(total.value)
+            : undefined
     }
 
 }

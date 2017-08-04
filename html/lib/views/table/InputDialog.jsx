@@ -17,6 +17,7 @@ export class InputDialog extends React.Component {
         this.handleCategoryChange=this.handleCategoryChange.bind(this);
         this.handleDraftSelect=this.handleDraftSelect.bind(this);
         this.handleSend=this.handleSend.bind(this);
+        this.handleRemove=this.handleRemove.bind(this);
     }
 
     handleHide() {
@@ -53,12 +54,16 @@ export class InputDialog extends React.Component {
         this.props.model.send();
     }
 
+    handleRemove() {
+        this.props.model.remove();
+    }
+
     render() {
 
         return (
             <Modal show={this.props.model.isShown} onHide={this.handleHide}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Ausgabe hinzufügen</Modal.Title>
+                    <Modal.Title>{this.props.model.mode==="add"?"Ausgabe hinzufügen":"Ausgabe bearbeiten"}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form horizontal>
@@ -158,8 +163,8 @@ export class InputDialog extends React.Component {
                         display: "block",
                         overflowY: "scroll",
                     }} className="bg-success text-success">
-                        {this.props.model.log.map(msg=>(
-                            <span>
+                        {this.props.model.log.map((msg,i)=>(
+                            <span key={i}>
                                 {msg}
                                 <br/>
                             </span>
@@ -168,6 +173,7 @@ export class InputDialog extends React.Component {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.handleSend} disabled={!this.props.model.isValid}>Absenden</Button>
+                    {this.props.model.mode==="edit" && (<Button className="pull-left" onClick={this.handleRemove}>&#x1F5D1;</Button>)}
                 </Modal.Footer>
             </Modal>
         )

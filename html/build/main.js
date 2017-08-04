@@ -38,4 +38,6 @@ let App = class App extends React.Component {
 
 var vm = new TableViewModel();
 
+window.vm = vm;
+
 ReactDOM.render(React.createElement(App, { vm: vm }), document.getElementById('root'));

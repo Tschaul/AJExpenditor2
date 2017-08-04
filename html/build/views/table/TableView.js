@@ -12,6 +12,7 @@ export let TableView = observer(_class = class TableView extends React.Component
     constructor(props) {
         super(props);
         this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
+        this.handleShowEditModal = this.handleShowEditModal.bind(this);
     }
 
     componentWillMount() {
@@ -36,7 +37,11 @@ export let TableView = observer(_class = class TableView extends React.Component
     }
 
     handleAddExpensesClick() {
-        this.props.vm.inputDialog.isShown = true;
+        this.props.vm.inputDialog.showAddModal();
+    }
+
+    handleShowEditModal(event) {
+        this.props.vm.inputDialog.showEditModal(event);
     }
 
     render() {
@@ -46,8 +51,8 @@ export let TableView = observer(_class = class TableView extends React.Component
             null,
             React.createElement(
                 Button,
-                { onClick: this.handleAddExpensesClick },
-                "Ausgabe hinzuf\xFCgen"
+                { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } },
+                "\u270D"
             ),
             React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
             React.createElement(
@@ -59,6 +64,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                     React.createElement(
                         "tr",
                         null,
+                        React.createElement("th", null),
                         React.createElement(
                             "th",
                             null,
@@ -79,20 +85,38 @@ export let TableView = observer(_class = class TableView extends React.Component
                             null,
                             "Kategorie"
                         ),
-                        this.props.vm.people.map(person => React.createElement(
-                            "th",
-                            { key: person.name },
-                            person.fullName
-                        )),
+                        this.props.vm.people.map(person => {
+                            const total = this.props.vm.getExpendituresTotal(person.name);
+                            return React.createElement(
+                                "th",
+                                { key: person.name },
+                                person.fullName,
+                                total && React.createElement(
+                                    "div",
+                                    null,
+                                    "\u2211",
+                                    " ",
+                                    total
+                                )
+                            );
+                        }),
                         this.props.vm.iouPairs.map(pair => {
                             //console.log(pair);
                             const [borrower, creditor] = pair;
+                            const total = this.props.vm.getIousTotal(borrower.name, creditor.name);
                             return React.createElement(
                                 "th",
                                 { key: creditor.name },
                                 borrower.fullName,
                                 " schuldet ",
-                                creditor.fullName
+                                creditor.fullName,
+                                total && React.createElement(
+                                    "div",
+                                    null,
+                                    "\u2211",
+                                    " ",
+                                    total
+                                )
                             );
                         })
                     )
@@ -100,7 +124,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                 React.createElement(
                     "tbody",
                     null,
-                    this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people }))
+                    this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people, showEditModal: this.handleShowEditModal }))
                 )
             )
         );

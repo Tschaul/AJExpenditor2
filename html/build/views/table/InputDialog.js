@@ -18,6 +18,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleDraftSelect = this.handleDraftSelect.bind(this);
         this.handleSend = this.handleSend.bind(this);
+        this.handleRemove = this.handleRemove.bind(this);
     }
 
     handleHide() {
@@ -54,6 +55,10 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.props.model.send();
     }
 
+    handleRemove() {
+        this.props.model.remove();
+    }
+
     render() {
 
         return React.createElement(
@@ -65,7 +70,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                 React.createElement(
                     Modal.Title,
                     null,
-                    "Ausgabe hinzuf\xFCgen"
+                    this.props.model.mode === "add" ? "Ausgabe hinzufügen" : "Ausgabe bearbeiten"
                 )
             ),
             React.createElement(
@@ -236,9 +241,9 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             display: "block",
                             overflowY: "scroll"
                         }, className: "bg-success text-success" },
-                    this.props.model.log.map(msg => React.createElement(
+                    this.props.model.log.map((msg, i) => React.createElement(
                         "span",
-                        null,
+                        { key: i },
                         msg,
                         React.createElement("br", null)
                     ))
@@ -251,6 +256,11 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                     Button,
                     { onClick: this.handleSend, disabled: !this.props.model.isValid },
                     "Absenden"
+                ),
+                this.props.model.mode === "edit" && React.createElement(
+                    Button,
+                    { className: "pull-left", onClick: this.handleRemove },
+                    "\uD83D\uDDD1"
                 )
             )
         );

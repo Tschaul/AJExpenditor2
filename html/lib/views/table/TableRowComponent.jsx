@@ -1,12 +1,24 @@
 import * as React from "react";
 import {observer} from "mobx-react"
 
+import {Button,Glyphicon} from "react-bootstrap"
+
 @observer
 export class TableRow extends React.Component {
     
+    constructor(props){
+        super(props);
+        this.handleShowEditModal=this.handleShowEditModal.bind(this);
+    }
+
+    handleShowEditModal(){
+        this.props.showEditModal(this.props.event);
+    }
+
     render() {
         return (
             <tr>
+                <td><Button onClick={this.handleShowEditModal}>&#x270e;</Button></td>
                 <td className="text-right">{this.props.event.amountDisplay}</td>
                 <td>{this.props.event.description}</td>
                 <td>{this.props.event.date}</td>
