@@ -4,30 +4,10 @@ import * as ReactDOM from "react-dom";
 import { Navbar } from "react-bootstrap";
 
 import { TableViewModel } from "./viewmodels/table/TableViewModel";
-import { LoginViewModel } from "./viewmodels/login/LoginViewModel";
 
 import { TableView } from "./views/table/TableView";
-import { LoginView } from "./views/login/LoginView";
 
 let App = class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      tableViewModel: null,
-      loginViewModel: new LoginViewModel(),
-      loggedIn: false
-    };
-    this.handleLogin = this.handleLogin.bind(this);
-  }
-
-  handleLogin() {
-    var vm = new TableViewModel();
-    this.setState({
-      tableViewModel: vm,
-      loggedIn: true
-    });
-  }
 
   render() {
     return React.createElement(
@@ -45,16 +25,17 @@ let App = class App extends React.Component {
             React.createElement(
               "a",
               { href: "#" },
-              "\uD83D\uDC1E AJExpenditor 2"
+              "AJExpenditor 2"
             )
           )
         )
       ),
-      !this.state.loggedIn && React.createElement(LoginView, { vm: this.state.loginViewModel, handleLogin: this.handleLogin }),
-      this.state.loggedIn && React.createElement(TableView, { vm: this.state.tableViewModel })
+      React.createElement(TableView, { vm: this.props.vm })
     );
   }
 };
 
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
+var vm = new TableViewModel();
+
+ReactDOM.render(React.createElement(App, { vm: vm }), document.getElementById('root'));

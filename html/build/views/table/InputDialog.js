@@ -67,7 +67,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                     React.createElement(
                         "h5",
                         null,
-                        "\u25A0 Allgemein"
+                        "Allgemein"
                     ),
                     React.createElement(
                         FormGroup,
@@ -164,7 +164,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                     React.createElement(
                         "h5",
                         { onClick: this.handleToggleDrafts },
-                        "\u25A0 Gewichtung"
+                        "Gewichtung"
                     ),
                     React.createElement(
                         Collapse,
@@ -211,7 +211,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                 React.createElement(
                     "h5",
                     null,
-                    "\u25A0 Log"
+                    "Log"
                 )
             ),
             React.createElement(

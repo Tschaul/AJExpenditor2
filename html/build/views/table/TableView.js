@@ -1,13 +1,18 @@
 var _class;
 
 import * as React from "react";
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 import { observer } from "mobx-react";
 
 import { TableRow } from "./TableRowComponent";
 import { InputDialog } from "./InputDialog";
 
 export let TableView = observer(_class = class TableView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
+    }
 
     componentWillMount() {
         this.handleScroll = this.handleScroll.bind(this);
@@ -30,11 +35,20 @@ export let TableView = observer(_class = class TableView extends React.Component
         }
     }
 
+    handleAddExpensesClick() {
+        this.props.vm.inputDialog.isShown = true;
+    }
+
     render() {
 
         return React.createElement(
             "div",
             null,
+            React.createElement(
+                Button,
+                { onClick: this.handleAddExpensesClick },
+                "Ausgabe hinzuf\xFCgen"
+            ),
             React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
             React.createElement(
                 Table,

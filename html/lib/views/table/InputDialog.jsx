@@ -52,7 +52,7 @@ export class InputDialog extends React.Component {
                 </Modal.Header>
                 <Modal.Body>
                     <Form horizontal>
-                        <h5>■ Allgemein</h5>
+                        <h5>Allgemein</h5>
                         <FormGroup>
                             <Col componentClass={ControlLabel} sm={3}>
                                 Betrag
@@ -105,7 +105,7 @@ export class InputDialog extends React.Component {
                                 ))}
                             </Col>
                         </FormGroup>
-                        <h5 onClick={this.handleToggleDrafts}>■ Gewichtung</h5>
+                        <h5 onClick={this.handleToggleDrafts}>Gewichtung</h5>
                         <Collapse in={this.props.model.draftsAreShown}>
                             <div>
                                 {this.props.model.parent.people.map(person=>{
@@ -136,7 +136,7 @@ export class InputDialog extends React.Component {
                             </div>
                         </Collapse>
                     </Form>
-                    <h5>■ Log</h5>
+                    <h5>Log</h5>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button>Absenden</Button>

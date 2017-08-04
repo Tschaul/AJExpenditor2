@@ -9,7 +9,7 @@ export let InputDialogModel = class InputDialogModel {
     constructor(parent) {
         extendObservable(this, {
             parent,
-            isShown: true,
+            isShown: false,
             draftsAreShown: false,
             amountRaw: "",
             amount: computed(() => {

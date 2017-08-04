@@ -1,6 +1,9 @@
-import * as React from "react";
+var _class;
 
-export let TableRow = class TableRow extends React.Component {
+import * as React from "react";
+import { observer } from "mobx-react";
+
+export let TableRow = observer(_class = class TableRow extends React.Component {
 
     render() {
         return React.createElement(
@@ -62,4 +65,4 @@ export let TableRow = class TableRow extends React.Component {
         );
     }
 
-};
+}) || _class;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Table} from "react-bootstrap"
+import {Table, Button} from "react-bootstrap"
 import {observer} from "mobx-react"
 
 import {TableRow} from "./TableRowComponent"
@@ -7,6 +7,11 @@ import {InputDialog} from "./InputDialog"
 
 @observer
 export class TableView extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
+    }
 
     componentWillMount(){
         this.handleScroll=this.handleScroll.bind(this);
@@ -29,10 +34,15 @@ export class TableView extends React.Component{
         } 
     }
 
+    handleAddExpensesClick() {
+        this.props.vm.inputDialog.isShown=true;
+    }
+
     render(){
 
         return(
             <div>
+                <Button onClick={this.handleAddExpensesClick}>Ausgabe hinzufügen</Button>
                 <InputDialog model={this.props.vm.inputDialog}/>
                 <Table responsive>
                     <thead>

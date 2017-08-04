@@ -5,9 +5,11 @@
   "main": "migrate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node node_modules/babel-cli/bin/babel.js --plugins transform-react-jsx html/lib --out-dir html/build",
+    "build": "node node_modules/babel-cli/bin/babel.js --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
     "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
-    "push": "jspm bundle-sfx build/main.js ajexpenditor/_attachments/index-utf8.js && rm ajexpenditor/_attachments/index.js && charset-convert ajexpenditor/_attachments/index-utf8.js ajexpenditor/_attachments/index.js -i utf8 -o win1251 && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
+    "bundle": "jspm bundle-sfx build/main.js ajexpenditor/_attachments/index-utf8.js && rm ajexpenditor/_attachments/index.js && charset-convert ajexpenditor/_attachments/index-utf8.js ajexpenditor/_attachments/index.js -i utf8 -o win1251",
+    "pushl": "npm run bundle && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
+    "pushs": "npm run bundle && couchapp push ajexpenditor https://andiundjulian:$COUCHDB_PASSWORD@couchdb.tschaul.com/ajexpenditor",
     "serve": "node node_modules/serve/bin/serve.js html"
   },
   "repository": {
