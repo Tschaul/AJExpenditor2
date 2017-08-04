@@ -11246,7 +11246,11 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                         expenditures: [],
                         ious: [],
                         drafts: [],
-                        selectedDraft: null
+                        selectedDraft: null,
+                        isValid: computed(function () {
+                            return _this.ious.length && _this.expenditures.length && _this.amount && _this.category && _this.description;
+                        }),
+                        log: []
                     });
 
                     this.queryDrafts();
@@ -11272,6 +11276,8 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                 }, {
                     key: "send",
                     value: function send() {
+                        var _this3 = this;
+
                         var doc = {
                             "type": "event",
                             "amount": this.amount,
@@ -11283,9 +11289,9 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                             "expenditures": toJS(this.expenditures)
                         };
 
-                        console.log(doc);
-
-                        return post(doc);
+                        return post(doc).then(function () {
+                            _this3.log.unshift(_this3.amountDisplay + " " + _this3.description + " " + _this3.date.format("YYYY-MM-DD") + " hinzugef?gt");
+                        });
                     }
                 }]);
 
@@ -49296,7 +49302,13 @@ $__System.register("225", ["15", "16", "19", "224", "1b", "1c", "1d", "1a", "15a
                             if (iou) {
                                 return React.createElement(FormGroup, { key: creditor.name + "_" + borrower.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, borrower.fullName + " schuldet " + creditor.fullName), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: iou.portion })));
                             }
-                        })))), React.createElement("h5", null, "Log")), React.createElement(Modal.Footer, null, React.createElement(Button, { onClick: this.handleSend }, "Absenden")));
+                        })))), React.createElement("h5", null, "Log"), React.createElement("code", { style: {
+                                height: "58px",
+                                display: "block",
+                                overflowY: "scroll"
+                            }, className: "bg-success text-success" }, this.props.model.log.map(function (msg) {
+                            return React.createElement("span", null, msg, React.createElement("br", null));
+                        }))), React.createElement(Modal.Footer, null, React.createElement(Button, { onClick: this.handleSend, disabled: !this.props.model.isValid }, "Absenden")));
                     }
                 }]);
 

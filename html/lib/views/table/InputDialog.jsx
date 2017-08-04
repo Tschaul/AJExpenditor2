@@ -138,7 +138,7 @@ export class InputDialog extends React.Component {
                                     const iou = this.props.model.ious.find(x=>x.borrower===borrower.name && x.creditor===creditor.name);
                                     if(iou){
                                         return(
-                                            <FormGroup  key={creditor.name+"_"+borrower.name}>
+                                            <FormGroup key={creditor.name+"_"+borrower.name}>
                                                 <Col componentClass={ControlLabel} sm={4}>
                                                     {borrower.fullName+" schuldet "+creditor.fullName}
                                                 </Col>
@@ -153,9 +153,21 @@ export class InputDialog extends React.Component {
                         </Collapse>
                     </Form>
                     <h5>Log</h5>
+                    <code style={{
+                        height: "58px",
+                        display: "block",
+                        overflowY: "scroll",
+                    }} className="bg-success text-success">
+                        {this.props.model.log.map(msg=>(
+                            <span>
+                                {msg}
+                                <br/>
+                            </span>
+                        ))}
+                    </code>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={this.handleSend}>Absenden</Button>
+                    <Button onClick={this.handleSend} disabled={!this.props.model.isValid}>Absenden</Button>
                 </Modal.Footer>
             </Modal>
         )

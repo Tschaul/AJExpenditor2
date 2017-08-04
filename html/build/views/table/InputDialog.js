@@ -228,6 +228,20 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                     "h5",
                     null,
                     "Log"
+                ),
+                React.createElement(
+                    "code",
+                    { style: {
+                            height: "58px",
+                            display: "block",
+                            overflowY: "scroll"
+                        }, className: "bg-success text-success" },
+                    this.props.model.log.map(msg => React.createElement(
+                        "span",
+                        null,
+                        msg,
+                        React.createElement("br", null)
+                    ))
                 )
             ),
             React.createElement(
@@ -235,7 +249,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                 null,
                 React.createElement(
                     Button,
-                    { onClick: this.handleSend },
+                    { onClick: this.handleSend, disabled: !this.props.model.isValid },
                     "Absenden"
                 )
             )

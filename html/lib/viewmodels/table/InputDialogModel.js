@@ -32,6 +32,14 @@ export class InputDialogModel {
             ious: [],
             drafts: [],
             selectedDraft: null,
+            isValid: computed(()=>{
+                return this.ious.length
+                    && this.expenditures.length
+                    && this.amount
+                    && this.category
+                    && this.description
+            }),
+            log: []
         })
 
         this.queryDrafts();
@@ -63,9 +71,10 @@ export class InputDialogModel {
             "expenditures": toJS(this.expenditures),
         }
 
-        console.log(doc);
 
-        return post(doc);
+        return post(doc).then(()=>{
+            this.log.unshift(`${this.amountDisplay} ${this.description} ${this.date.format("YYYY-MM-DD")} hinzugefügt`)
+        });
 
     }
 
