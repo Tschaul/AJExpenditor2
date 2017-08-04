@@ -37,11 +37,10 @@ export class InputDialogModel {
         this.queryDrafts();
 
         observe(this,"selectedDraft", (change) => {
-            console.log("draft selected",change.newValue);
             if(change.newValue){
                 const draft = change.newValue;
-                this.ious.replace(draft.ious);
-                this.expenditures.replace(draft.expenditures);
+                this.ious.replace(draft.ious.slice(0));
+                this.expenditures.replace(draft.expenditures.slice(0));
             }
         });
     }

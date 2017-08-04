@@ -40,12 +40,10 @@ export class InputDialog extends React.Component {
 
     handleCategoryChange(event) {
         const category = this.props.model.parent.categories.find(x=>x.name===event.target.value);
-        //console.log(category);
         this.props.model.category=category;
     }
 
     handleDraftSelect(event) {
-        console.log("handleSelectDraft",event.target.value)
         const draft = this.props.model.drafts.find(x=>x._id===event.target.value);
         this.props.model.selectedDraft=draft;
     }
@@ -106,7 +104,7 @@ export class InputDialog extends React.Component {
                             </Col>
                             <Col sm={9}>
                                 {this.props.model.drafts.map(draft => (
-                                    <Radio name="radioGroup" inline key={draft._id} value={draft._id}  onChange={this.handleDraftSelect}>
+                                    <Radio name="radioGroup" inline key={draft._id} value={draft._id} onClick={this.handleDraftSelect}>
                                         {draft.draftDescription}
                                     </Radio>
                                 ))}
@@ -116,7 +114,6 @@ export class InputDialog extends React.Component {
                         <Collapse in={this.props.model.draftsAreShown}>
                             <div>
                                 {this.props.model.parent.people.map(person=>{
-                                    console.log("exp",person.name)
                                     const expenditure = this.props.model.expenditures.find(x=>x.person===person.name);
                                     if(expenditure){
                                         return(
@@ -133,7 +130,6 @@ export class InputDialog extends React.Component {
                                 })}
                                 {this.props.model.parent.iouPairs.map(pair=>{
                                     const [borrower,creditor] = pair;
-                                    console.log("iou",borrower.name)
                                     const iou = this.props.model.ious.find(x=>x.borrower===borrower.name && x.creditor===creditor.name);
                                     if(iou){
                                         return(

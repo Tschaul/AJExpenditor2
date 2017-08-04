@@ -41,12 +41,10 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
 
     handleCategoryChange(event) {
         const category = this.props.model.parent.categories.find(x => x.name === event.target.value);
-        //console.log(category);
         this.props.model.category = category;
     }
 
     handleDraftSelect(event) {
-        console.log("handleSelectDraft", event.target.value);
         const draft = this.props.model.drafts.find(x => x._id === event.target.value);
         this.props.model.selectedDraft = draft;
     }
@@ -163,7 +161,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             { sm: 9 },
                             this.props.model.drafts.map(draft => React.createElement(
                                 Radio,
-                                { name: "radioGroup", inline: true, key: draft._id, value: draft._id, onChange: this.handleDraftSelect },
+                                { name: "radioGroup", inline: true, key: draft._id, value: draft._id, onClick: this.handleDraftSelect },
                                 draft.draftDescription
                             ))
                         )
@@ -180,7 +178,6 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             "div",
                             null,
                             this.props.model.parent.people.map(person => {
-                                console.log("exp", person.name);
                                 const expenditure = this.props.model.expenditures.find(x => x.person === person.name);
                                 if (expenditure) {
                                     return React.createElement(
@@ -201,7 +198,6 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             }),
                             this.props.model.parent.iouPairs.map(pair => {
                                 const [borrower, creditor] = pair;
-                                console.log("iou", borrower.name);
                                 const iou = this.props.model.ious.find(x => x.borrower === borrower.name && x.creditor === creditor.name);
                                 if (iou) {
                                     return React.createElement(
