@@ -52,7 +52,7 @@ export let TableView = observer(_class = class TableView extends React.Component
             React.createElement(
                 Button,
                 { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } },
-                "\u270D"
+                React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x270d;" } })
             ),
             React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
             React.createElement(
@@ -94,7 +94,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                                 total && React.createElement(
                                     "div",
                                     null,
-                                    "\u2211",
+                                    React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x2211;" } }),
                                     " ",
                                     total
                                 )
@@ -113,7 +113,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                                 total && React.createElement(
                                     "div",
                                     null,
-                                    "\u2211",
+                                    React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x2211;" } }),
                                     " ",
                                     total
                                 )

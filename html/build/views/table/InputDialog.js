@@ -260,7 +260,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                 this.props.model.mode === "edit" && React.createElement(
                     Button,
                     { className: "pull-left", onClick: this.handleRemove },
-                    "\uD83D\uDDD1"
+                    React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x1F5D1;" } })
                 )
             )
         );

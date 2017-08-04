@@ -64,7 +64,6 @@ export let InputDialogModel = class InputDialogModel {
         this.category = null;
         this.expenditures = [];
         this.ious = [];
-        this.drafts = [];
         this.selectedDraft = null;
         this.isShown = true;
         this._id = "";
