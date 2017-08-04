@@ -34,3 +34,7 @@ export function getEvents(skip) {
         skip: skip
     }).then(data => data.rows.map(row => row.doc));
 }
+
+export function post(doc) {
+    return db.post(doc);
+}

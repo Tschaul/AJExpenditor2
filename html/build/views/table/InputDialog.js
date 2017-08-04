@@ -17,6 +17,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.handleDateChange = this.handleDateChange.bind(this);
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleDraftSelect = this.handleDraftSelect.bind(this);
+        this.handleSend = this.handleSend.bind(this);
     }
 
     handleHide() {
@@ -47,6 +48,10 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
     handleDraftSelect(event) {
         const draft = this.props.model.drafts.find(x => x._id === event.target.value);
         this.props.model.selectedDraft = draft;
+    }
+
+    handleSend() {
+        this.props.model.send();
     }
 
     render() {
@@ -230,7 +235,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                 null,
                 React.createElement(
                     Button,
-                    null,
+                    { onClick: this.handleSend },
                     "Absenden"
                 )
             )

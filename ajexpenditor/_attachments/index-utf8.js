@@ -11118,6 +11118,8 @@ $__System.register("10", ["f"], function (_export) {
 
     _export("getEvents", getEvents);
 
+    _export("post", post);
+
     function getPeople() {
         return db.query('ajexpenditor/people', {
             include_docs: true
@@ -11161,6 +11163,10 @@ $__System.register("10", ["f"], function (_export) {
         });
     }
 
+    function post(doc) {
+        return db.post(doc);
+    }
+
     return {
         setters: [function (_f) {
             PouchDB = _f["default"];
@@ -11188,11 +11194,12 @@ $__System.register("11", [], function (_export) {
     };
 });
 $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export) {
-    var getDrafts, getAmountDisplay, moment, obervable, computed, extendObservable, _createClass, _classCallCheck, InputDialogModel;
+    var getDrafts, post, getAmountDisplay, moment, obervable, computed, extendObservable, observe, toJS, _createClass, _classCallCheck, InputDialogModel;
 
     return {
         setters: [function (_5) {
             getDrafts = _5.getDrafts;
+            post = _5.post;
         }, function (_6) {
             getAmountDisplay = _6.getAmountDisplay;
         }, function (_4) {
@@ -11201,6 +11208,8 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
             obervable = _3.obervable;
             computed = _3.computed;
             extendObservable = _3.extendObservable;
+            observe = _3.observe;
+            toJS = _3.toJS;
         }, function (_) {
             _createClass = _["default"];
         }, function (_2) {
@@ -11217,7 +11226,7 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
 
                     extendObservable(this, {
                         parent: parent,
-                        isShown: true,
+                        isShown: false,
                         draftsAreShown: false,
                         amountRaw: "",
                         amount: computed(function () {
@@ -11236,10 +11245,19 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                         category: null,
                         expenditures: [],
                         ious: [],
-                        drafts: []
+                        drafts: [],
+                        selectedDraft: null
                     });
 
                     this.queryDrafts();
+
+                    observe(this, "selectedDraft", function (change) {
+                        if (change.newValue) {
+                            var draft = change.newValue;
+                            _this.ious.replace(draft.ious);
+                            _this.expenditures.replace(draft.expenditures);
+                        }
+                    });
                 }
 
                 _createClass(InputDialogModel, [{
@@ -11250,6 +11268,24 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                         getDrafts().then(function (drafts) {
                             _this2.drafts = drafts;
                         });
+                    }
+                }, {
+                    key: "send",
+                    value: function send() {
+                        var doc = {
+                            "type": "event",
+                            "amount": this.amount,
+                            "description": this.description,
+                            "date": this.date.format("YYYY-MM-DD"),
+                            "category": this.category.name,
+                            "amountScribble": this.amountRaw,
+                            "ious": toJS(this.ious),
+                            "expenditures": toJS(this.expenditures)
+                        };
+
+                        console.log(doc);
+
+                        return post(doc);
                     }
                 }]);
 
@@ -49182,6 +49218,8 @@ $__System.register("225", ["15", "16", "19", "224", "1b", "1c", "1d", "1a", "15a
                     this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
                     this.handleDateChange = this.handleDateChange.bind(this);
                     this.handleCategoryChange = this.handleCategoryChange.bind(this);
+                    this.handleDraftSelect = this.handleDraftSelect.bind(this);
+                    this.handleSend = this.handleSend.bind(this);
                 }
 
                 _createClass(InputDialog, [{
@@ -49215,27 +49253,50 @@ $__System.register("225", ["15", "16", "19", "224", "1b", "1c", "1d", "1a", "15a
                         var category = this.props.model.parent.categories.find(function (x) {
                             return x.name === event.target.value;
                         });
-                        //console.log(category);
                         this.props.model.category = category;
+                    }
+                }, {
+                    key: "handleDraftSelect",
+                    value: function handleDraftSelect(event) {
+                        var draft = this.props.model.drafts.find(function (x) {
+                            return x._id === event.target.value;
+                        });
+                        this.props.model.selectedDraft = draft;
+                    }
+                }, {
+                    key: "handleSend",
+                    value: function handleSend() {
+                        this.props.model.send();
                     }
                 }, {
                     key: "render",
                     value: function render() {
+                        var _this = this;
 
                         return React.createElement(Modal, { show: this.props.model.isShown, onHide: this.handleHide }, React.createElement(Modal.Header, { closeButton: true }, React.createElement(Modal.Title, null, "Ausgabe hinzuf\xFCgen")), React.createElement(Modal.Body, null, React.createElement(Form, { horizontal: true }, React.createElement("h5", null, "Allgemein"), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Betrag"), React.createElement(Col, { sm: 5 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountRaw, onChange: this.handleAmountChange })), React.createElement(Col, { sm: 4 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountDisplay, readOnly: true, tabIndex: -1 }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Beschreibung"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { type: "text", value: this.props.model.description, onChange: this.handleDescriptionChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Datum"), React.createElement(Col, { sm: 9 }, React.createElement(Datetime, { timeFormat: false, closeOnSelect: true, dateFormat: "YYYY-MM-DD", value: this.props.model.date, onChange: this.handleDateChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Kategorie"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { componentClass: "select", value: this.props.model.category ? this.props.model.category.name : "__none__", onChange: this.handleCategoryChange }, React.createElement("option", { key: "__none__", value: "__none__" }, "..."), this.props.model.parent.categories.map(function (category) {
                             return React.createElement("option", { key: category.name, value: category.name }, category.fullName);
                         })))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Draft"), React.createElement(Col, { sm: 9 }, this.props.model.drafts.map(function (draft) {
-                            return React.createElement(Radio, { name: "radioGroup", inline: true, key: draft._id }, draft.draftDescription);
+                            return React.createElement(Radio, { name: "radioGroup", inline: true, key: draft._id, value: draft._id, onClick: _this.handleDraftSelect }, draft.draftDescription);
                         }))), React.createElement("h5", { onClick: this.handleToggleDrafts }, "Gewichtung"), React.createElement(Collapse, { "in": this.props.model.draftsAreShown }, React.createElement("div", null, this.props.model.parent.people.map(function (person) {
-                            return React.createElement(FormGroup, { key: person.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, person.fullName + "s Ausgaben"), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text" })));
+                            var expenditure = _this.props.model.expenditures.find(function (x) {
+                                return x.person === person.name;
+                            });
+                            if (expenditure) {
+                                return React.createElement(FormGroup, { key: person.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, person.fullName + "s Ausgaben"), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: expenditure.portion })));
+                            }
                         }), this.props.model.parent.iouPairs.map(function (pair) {
                             var _pair = _slicedToArray(pair, 2);
 
                             var borrower = _pair[0];
                             var creditor = _pair[1];
 
-                            return React.createElement(FormGroup, { key: creditor.name + "_" + borrower.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, borrower.fullName + " schuldet " + creditor.fullName), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text" })));
-                        })))), React.createElement("h5", null, "Log")), React.createElement(Modal.Footer, null, React.createElement(Button, null, "Absenden")));
+                            var iou = _this.props.model.ious.find(function (x) {
+                                return x.borrower === borrower.name && x.creditor === creditor.name;
+                            });
+                            if (iou) {
+                                return React.createElement(FormGroup, { key: creditor.name + "_" + borrower.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, borrower.fullName + " schuldet " + creditor.fullName), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: iou.portion })));
+                            }
+                        })))), React.createElement("h5", null, "Log")), React.createElement(Modal.Footer, null, React.createElement(Button, { onClick: this.handleSend }, "Absenden")));
                     }
                 }]);
 
@@ -49247,7 +49308,7 @@ $__System.register("225", ["15", "16", "19", "224", "1b", "1c", "1d", "1a", "15a
     };
 });
 $__System.register("226", ["15", "16", "18", "19", "225", "1b", "1c", "1d", "15a", "1a"], function (_export) {
-    var _createClass, _classCallCheck, TableRow, React, InputDialog, _get, _inherits, _slicedToArray, Table, observer, _class, TableView;
+    var _createClass, _classCallCheck, TableRow, React, InputDialog, _get, _inherits, _slicedToArray, Table, Button, observer, _class, TableView;
 
     return {
         setters: [function (_) {
@@ -49268,6 +49329,7 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1b", "1c", "1d", "15a
             _slicedToArray = _d["default"];
         }, function (_a) {
             Table = _a.Table;
+            Button = _a.Button;
         }, function (_a2) {
             observer = _a2.observer;
         }],
@@ -49277,10 +49339,11 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1b", "1c", "1d", "15a
             TableView = observer(_class = (function (_React$Component) {
                 _inherits(TableView, _React$Component);
 
-                function TableView() {
+                function TableView(props) {
                     _classCallCheck(this, TableView);
 
-                    _get(Object.getPrototypeOf(TableView.prototype), "constructor", this).apply(this, arguments);
+                    _get(Object.getPrototypeOf(TableView.prototype), "constructor", this).call(this, props);
+                    this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
                 }
 
                 _createClass(TableView, [{
@@ -49308,11 +49371,16 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1b", "1c", "1d", "15a
                         }
                     }
                 }, {
+                    key: "handleAddExpensesClick",
+                    value: function handleAddExpensesClick() {
+                        this.props.vm.inputDialog.isShown = true;
+                    }
+                }, {
                     key: "render",
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("div", null, React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "Betrag"), React.createElement("th", null, "Beschreibung"), React.createElement("th", null, "Datum"), React.createElement("th", null, "Kategorie"), this.props.vm.people.map(function (person) {
+                        return React.createElement("div", null, React.createElement(Button, { onClick: this.handleAddExpensesClick }, "Ausgabe hinzuf\xFCgen"), React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null, "Betrag"), React.createElement("th", null, "Beschreibung"), React.createElement("th", null, "Datum"), React.createElement("th", null, "Kategorie"), this.props.vm.people.map(function (person) {
                             return React.createElement("th", { key: person.name }, person.fullName);
                         }), this.props.vm.iouPairs.map(function (pair) {
                             //console.log(pair);

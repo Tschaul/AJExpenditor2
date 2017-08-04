@@ -1,8 +1,8 @@
-import { obervable, computed, extendObservable, observe } from "mobx";
+import { obervable, computed, extendObservable, observe, toJS } from "mobx";
 
 import moment from "moment";
 
-import { getDrafts } from "../../db/database";
+import { getDrafts, post } from "../../db/database";
 import { getAmountDisplay } from "../util";
 
 export let InputDialogModel = class InputDialogModel {
@@ -37,8 +37,8 @@ export let InputDialogModel = class InputDialogModel {
         observe(this, "selectedDraft", change => {
             if (change.newValue) {
                 const draft = change.newValue;
-                this.ious.replace(draft.ious.slice(0));
-                this.expenditures.replace(draft.expenditures.slice(0));
+                this.ious.replace(draft.ious);
+                this.expenditures.replace(draft.expenditures);
             }
         });
     }
@@ -48,4 +48,22 @@ export let InputDialogModel = class InputDialogModel {
             this.drafts = drafts;
         });
     }
+
+    send() {
+        const doc = {
+            "type": "event",
+            "amount": this.amount,
+            "description": this.description,
+            "date": this.date.format("YYYY-MM-DD"),
+            "category": this.category.name,
+            "amountScribble": this.amountRaw,
+            "ious": toJS(this.ious),
+            "expenditures": toJS(this.expenditures)
+        };
+
+        console.log(doc);
+
+        return post(doc);
+    }
+
 };

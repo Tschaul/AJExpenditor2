@@ -16,6 +16,7 @@ export class InputDialog extends React.Component {
         this.handleDateChange=this.handleDateChange.bind(this);
         this.handleCategoryChange=this.handleCategoryChange.bind(this);
         this.handleDraftSelect=this.handleDraftSelect.bind(this);
+        this.handleSend=this.handleSend.bind(this);
     }
 
     handleHide() {
@@ -46,6 +47,10 @@ export class InputDialog extends React.Component {
     handleDraftSelect(event) {
         const draft = this.props.model.drafts.find(x=>x._id===event.target.value);
         this.props.model.selectedDraft=draft;
+    }
+
+    handleSend() {
+        this.props.model.send();
     }
 
     render() {
@@ -150,7 +155,7 @@ export class InputDialog extends React.Component {
                     <h5>Log</h5>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button>Absenden</Button>
+                    <Button onClick={this.handleSend}>Absenden</Button>
                 </Modal.Footer>
             </Modal>
         )
