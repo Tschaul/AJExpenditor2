@@ -22,7 +22,7 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
             null,
             React.createElement(
                 "td",
-                null,
+                { className: "text-center" },
                 React.createElement(
                     Button,
                     { onClick: this.handleShowEditModal },
@@ -41,7 +41,7 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
             ),
             React.createElement(
                 "td",
-                null,
+                { className: "text-right" },
                 this.props.event.date
             ),
             React.createElement(
@@ -54,14 +54,14 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
                 if (expenditure) {
                     return React.createElement(
                         "td",
-                        { key: person.name },
-                        expenditure.portion
+                        { key: person.name, className: "text-right" },
+                        expenditure.portion + " %"
                     );
                 } else {
                     return React.createElement(
                         "td",
-                        { key: person.name },
-                        "0"
+                        { key: person.name, className: "text-right" },
+                        "0 %"
                     );
                 }
             }),
@@ -71,14 +71,14 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
                 if (iou) {
                     return React.createElement(
                         "td",
-                        { key: creditor.name },
-                        iou.portion
+                        { key: creditor.name, className: "text-right" },
+                        iou.portion + " %"
                     );
                 } else {
                     return React.createElement(
                         "td",
-                        { key: creditor.name },
-                        "0"
+                        { key: creditor.name, className: "text-right" },
+                        "0 %"
                     );
                 }
             })

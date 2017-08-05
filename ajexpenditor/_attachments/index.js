@@ -11689,14 +11689,14 @@ $__System.register("18", ["15", "16", "19", "1c", "1d", "1e", "1a", "1b"], funct
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("tr", null, React.createElement("td", null, React.createElement(Button, { onClick: this.handleShowEditModal }, "✎")), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", null, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
+                        return React.createElement("tr", null, React.createElement("td", { className: "text-center" }, React.createElement(Button, { onClick: this.handleShowEditModal }, "✎")), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", null, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
                             var expenditure = _this.props.event.expenditures.find(function (x) {
                                 return x.person === person.name;
                             });
                             if (expenditure) {
-                                return React.createElement("td", { key: person.name }, expenditure.portion);
+                                return React.createElement("td", { key: person.name, className: "text-right" }, expenditure.portion + " %");
                             } else {
-                                return React.createElement("td", { key: person.name }, "0");
+                                return React.createElement("td", { key: person.name, className: "text-right" }, "0 %");
                             }
                         }), this.props.iouPairs.map(function (pair) {
                             var _pair = _slicedToArray(pair, 2);
@@ -11708,9 +11708,9 @@ $__System.register("18", ["15", "16", "19", "1c", "1d", "1e", "1a", "1b"], funct
                                 return x.borrower === borrower.name && x.creditor === creditor.name;
                             });
                             if (iou) {
-                                return React.createElement("td", { key: creditor.name }, iou.portion);
+                                return React.createElement("td", { key: creditor.name, className: "text-right" }, iou.portion + " %");
                             } else {
-                                return React.createElement("td", { key: creditor.name }, "0");
+                                return React.createElement("td", { key: creditor.name, className: "text-right" }, "0 %");
                             }
                         }));
                     }
@@ -49617,9 +49617,9 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1c", "1d", "1e", "1b"
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("div", null, React.createElement(Button, { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } }, "✍"), React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null), React.createElement("th", null, "Betrag"), React.createElement("th", null, "Beschreibung"), React.createElement("th", null, "Datum"), React.createElement("th", null, "Kategorie"), this.props.vm.people.map(function (person) {
+                        return React.createElement("div", null, React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true, striped: true, bordered: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", { className: "text-center" }, React.createElement(Button, { onClick: this.handleAddExpensesClick }, "✍")), React.createElement("th", { className: "text-center" }, "Betrag", React.createElement("br", null), "\xA0"), React.createElement("th", { className: "text-center" }, "Beschreibung", React.createElement("br", null), "\xA0"), React.createElement("th", { className: "text-center" }, "Datum", React.createElement("br", null), "\xA0"), React.createElement("th", { className: "text-center" }, "Kategorie", React.createElement("br", null), "\xA0"), this.props.vm.people.map(function (person) {
                             var total = _this.props.vm.getExpendituresTotal(person.name);
-                            return React.createElement("th", { key: person.name }, person.fullName, total && React.createElement("div", null, "∑", " ", total));
+                            return React.createElement("th", { key: person.name, className: "text-center" }, person.fullName, total && React.createElement("div", null, "∑", " ", total));
                         }), this.props.vm.iouPairs.map(function (pair) {
                             //console.log(pair);
 
@@ -49629,7 +49629,7 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1c", "1d", "1e", "1b"
                             var creditor = _pair[1];
 
                             var total = _this.props.vm.getIousTotal(borrower.name, creditor.name);
-                            return React.createElement("th", { key: creditor.name }, borrower.fullName, " schuldet ", creditor.fullName, total && React.createElement("div", null, "∑", " ", total));
+                            return React.createElement("th", { key: creditor.name, className: "text-center" }, borrower.fullName, " schuldet ", creditor.fullName, total && React.createElement("div", null, "∑", " ", total));
                         }))), React.createElement("tbody", null, this.props.vm.events.map(function (event) {
                             return React.createElement(TableRow, { key: event._id, event: event, iouPairs: _this.props.vm.iouPairs, people: _this.props.vm.people, showEditModal: _this.handleShowEditModal });
                         }))));
@@ -49681,7 +49681,7 @@ $__System.register("1", ["15", "16", "17", "19", "50", "226", "1c", "1d", "1b"],
         _createClass(App, [{
           key: "render",
           value: function render() {
-            return React.createElement("div", null, React.createElement(Navbar, { inverse: true }, React.createElement(Navbar.Header, null, React.createElement(Navbar.Brand, null, React.createElement("a", { href: "#" }, "AJExpenditor 2")))), React.createElement(TableView, { vm: this.props.vm }));
+            return React.createElement("div", null, React.createElement(Navbar, { inverse: true }, React.createElement(Navbar.Header, null, React.createElement(Navbar.Brand, null, React.createElement("a", { href: "#" }, "🐞 AJExpenditor 2")))), React.createElement(TableView, { vm: this.props.vm }));
           }
         }]);
 

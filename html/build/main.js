@@ -25,7 +25,7 @@ let App = class App extends React.Component {
             React.createElement(
               "a",
               { href: "#" },
-              "AJExpenditor 2"
+              "\uD83D\uDC1E AJExpenditor 2"
             )
           )
         )

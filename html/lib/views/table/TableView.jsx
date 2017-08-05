@@ -47,22 +47,23 @@ export class TableView extends React.Component{
 
         return(
             <div>
-                <Button onClick={this.handleAddExpensesClick} style={{marginLeft: "7px"}}>
-                    ✍
-                </Button>
                 <InputDialog model={this.props.vm.inputDialog}/>
-                <Table responsive>
+                <Table responsive striped bordered>
                     <thead>
                     <tr>
-                        <th></th>
-                        <th>Betrag</th>
-                        <th>Beschreibung</th>
-                        <th>Datum</th>
-                        <th>Kategorie</th>
+                        <th className="text-center">
+                            <Button onClick={this.handleAddExpensesClick}>
+                                ✍
+                            </Button>
+                        </th>
+                        <th className="text-center">Betrag<br/>&nbsp;</th>
+                        <th className="text-center">Beschreibung<br/>&nbsp;</th>
+                        <th className="text-center">Datum<br/>&nbsp;</th>
+                        <th className="text-center">Kategorie<br/>&nbsp;</th>
                         {this.props.vm.people.map(person=>{
                             const total = this.props.vm.getExpendituresTotal(person.name);
                             return(
-                                <th key={person.name}>
+                                <th key={person.name} className="text-center">
                                     {person.fullName}
                                     {total && (
                                         <div>
@@ -79,7 +80,7 @@ export class TableView extends React.Component{
                             const [borrower,creditor] = pair;
                             const total = this.props.vm.getIousTotal(borrower.name,creditor.name);
                             return(
-                                <th key={creditor.name}>
+                                <th key={creditor.name} className="text-center">
                                     {borrower.fullName} schuldet {creditor.fullName}
                                     {total && (
                                         <div>

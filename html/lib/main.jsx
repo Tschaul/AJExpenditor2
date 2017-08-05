@@ -15,7 +15,7 @@ class App extends React.Component {
         <Navbar inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">AJExpenditor 2</a>
+              <a href="#">🐞 AJExpenditor 2</a>
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>

@@ -49,47 +49,58 @@ export let TableView = observer(_class = class TableView extends React.Component
         return React.createElement(
             "div",
             null,
-            React.createElement(
-                Button,
-                { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } },
-                "\u270D"
-            ),
             React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
             React.createElement(
                 Table,
-                { responsive: true },
+                { responsive: true, striped: true, bordered: true },
                 React.createElement(
                     "thead",
                     null,
                     React.createElement(
                         "tr",
                         null,
-                        React.createElement("th", null),
                         React.createElement(
                             "th",
-                            null,
-                            "Betrag"
+                            { className: "text-center" },
+                            React.createElement(
+                                Button,
+                                { onClick: this.handleAddExpensesClick },
+                                "\u270D"
+                            )
                         ),
                         React.createElement(
                             "th",
-                            null,
-                            "Beschreibung"
+                            { className: "text-center" },
+                            "Betrag",
+                            React.createElement("br", null),
+                            "\xA0"
                         ),
                         React.createElement(
                             "th",
-                            null,
-                            "Datum"
+                            { className: "text-center" },
+                            "Beschreibung",
+                            React.createElement("br", null),
+                            "\xA0"
                         ),
                         React.createElement(
                             "th",
-                            null,
-                            "Kategorie"
+                            { className: "text-center" },
+                            "Datum",
+                            React.createElement("br", null),
+                            "\xA0"
+                        ),
+                        React.createElement(
+                            "th",
+                            { className: "text-center" },
+                            "Kategorie",
+                            React.createElement("br", null),
+                            "\xA0"
                         ),
                         this.props.vm.people.map(person => {
                             const total = this.props.vm.getExpendituresTotal(person.name);
                             return React.createElement(
                                 "th",
-                                { key: person.name },
+                                { key: person.name, className: "text-center" },
                                 person.fullName,
                                 total && React.createElement(
                                     "div",
@@ -106,7 +117,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                             const total = this.props.vm.getIousTotal(borrower.name, creditor.name);
                             return React.createElement(
                                 "th",
-                                { key: creditor.name },
+                                { key: creditor.name, className: "text-center" },
                                 borrower.fullName,
                                 " schuldet ",
                                 creditor.fullName,

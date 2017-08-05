@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node node_modules/babel-cli/bin/babel.js --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
-    "iconv": "iconv -f UTF-8 -t WINDOWS-1252//TRANSLIT ajexpenditor/_attachments/index-utf8.js > ajexpenditor/_attachments/index.js",
     "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
     "bundle": "jspm bundle-sfx build/main.js ajexpenditor/_attachments/index.js",
     "pushl": "npm run bundle && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
