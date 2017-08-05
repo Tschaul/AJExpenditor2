@@ -26,7 +26,7 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
                 React.createElement(
                     Button,
                     { onClick: this.handleShowEditModal },
-                    React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x270e;" } })
+                    "\u270E"
                 )
             ),
             React.createElement(

@@ -48,7 +48,7 @@ export class TableView extends React.Component{
         return(
             <div>
                 <Button onClick={this.handleAddExpensesClick} style={{marginLeft: "7px"}}>
-                    <span dangerouslySetInnerHTML={{__html:"&#x270d;"}}/>
+                    ✍
                 </Button>
                 <InputDialog model={this.props.vm.inputDialog}/>
                 <Table responsive>
@@ -66,7 +66,7 @@ export class TableView extends React.Component{
                                     {person.fullName}
                                     {total && (
                                         <div>
-                                            <span dangerouslySetInnerHTML={{__html:"&#x2211;"}}/>
+                                            ∑
                                             {" "}
                                             {total}
                                         </div>
@@ -83,7 +83,7 @@ export class TableView extends React.Component{
                                     {borrower.fullName} schuldet {creditor.fullName}
                                     {total && (
                                         <div>
-                                            <span dangerouslySetInnerHTML={{__html:"&#x2211;"}}/>
+                                            ∑
                                             {" "}
                                             {total}
                                         </div>

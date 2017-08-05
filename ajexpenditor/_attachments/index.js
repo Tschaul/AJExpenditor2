@@ -11252,7 +11252,7 @@ $__System.register("11", [], function (_export) {
     _export("getAmountDisplay", getAmountDisplay);
 
     function getAmountDisplay(amount) {
-        return (amount / 10000).toFixed(2) + " EUR";
+        return (amount / 10000).toFixed(2) + " €";
     }
 
     return {
@@ -11401,7 +11401,7 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                         };
 
                         return _post(doc).then(function () {
-                            _this3.log.unshift(_this3.amountDisplay + " " + _this3.description + " " + _this3.date.format("YYYY-MM-DD") + " hinzugef?gt");
+                            _this3.log.unshift(_this3.amountDisplay + " " + _this3.description + " " + _this3.date.format("YYYY-MM-DD") + " hinzugefügt");
                             _this3.amountRaw = "";
                             _this3.description = "";
                         });
@@ -11689,7 +11689,7 @@ $__System.register("18", ["15", "16", "19", "1c", "1d", "1e", "1a", "1b"], funct
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("tr", null, React.createElement("td", null, React.createElement(Button, { onClick: this.handleShowEditModal }, React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x270e;" } }))), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", null, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
+                        return React.createElement("tr", null, React.createElement("td", null, React.createElement(Button, { onClick: this.handleShowEditModal }, "✎")), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", null, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
                             var expenditure = _this.props.event.expenditures.find(function (x) {
                                 return x.person === person.name;
                             });
@@ -15350,7 +15350,7 @@ $__System.registerDynamic('4e', ['e'], true, function ($__require, exports, modu
       Object.defineProperty(everything, p, { get: function () {
           if (!warnedAboutDefaultExport) {
             warnedAboutDefaultExport = true;
-            console.warn('Using default export (`import mobx from \'mobx\'`) is deprecated ' + 'and won�t work in mobx@4.0.0\n' + 'Use `import * as mobx from \'mobx\'` instead');
+            console.warn('Using default export (`import mobx from \'mobx\'`) is deprecated ' + 'and won’t work in mobx@4.0.0\n' + 'Use `import * as mobx from \'mobx\'` instead');
           }
           return val;
         } });
@@ -26578,10 +26578,10 @@ $__System.registerDynamic('107', [], true, function ($__require, exports, module
 
   };var aliases = exports.aliases = {
     'windows': 91,
-    '?': 16,
-    '?': 18,
-    '?': 17,
-    '?': 91,
+    '⇧': 16,
+    '⌥': 18,
+    '⌃': 17,
+    '⌘': 91,
     'ctl': 17,
     'control': 17,
     'option': 18,
@@ -33948,7 +33948,7 @@ $__System.registerDynamic('162', ['19', '163', '13', '164'], true, function ($__
 			    locale = date.localeData(),
 			    tableChildren;
 
-			tableChildren = [React.createElement('thead', { key: 'th' }, [React.createElement('tr', { key: 'h' }, [React.createElement('th', { key: 'p', className: 'rdtPrev', onClick: this.props.subtractTime(1, 'months') }, React.createElement('span', {}, '�')), React.createElement('th', { key: 's', className: 'rdtSwitch', onClick: this.props.showView('months'), colSpan: 5, 'data-value': this.props.viewDate.month() }, locale.months(date) + ' ' + date.year()), React.createElement('th', { key: 'n', className: 'rdtNext', onClick: this.props.addTime(1, 'months') }, React.createElement('span', {}, '�'))]), React.createElement('tr', { key: 'd' }, this.getDaysOfWeek(locale).map(function (day, index) {
+			tableChildren = [React.createElement('thead', { key: 'th' }, [React.createElement('tr', { key: 'h' }, [React.createElement('th', { key: 'p', className: 'rdtPrev', onClick: this.props.subtractTime(1, 'months') }, React.createElement('span', {}, '‹')), React.createElement('th', { key: 's', className: 'rdtSwitch', onClick: this.props.showView('months'), colSpan: 5, 'data-value': this.props.viewDate.month() }, locale.months(date) + ' ' + date.year()), React.createElement('th', { key: 'n', className: 'rdtNext', onClick: this.props.addTime(1, 'months') }, React.createElement('span', {}, '›'))]), React.createElement('tr', { key: 'd' }, this.getDaysOfWeek(locale).map(function (day, index) {
 				return React.createElement('th', { key: day + index, className: 'dow' }, day);
 			}))]), React.createElement('tbody', { key: 'tb' }, this.renderDays())];
 
@@ -34067,7 +34067,7 @@ $__System.registerDynamic('165', ['19', '163', '164'], true, function ($__requir
 
 	var DateTimePickerMonths = onClickOutside(createClass({
 		render: function () {
-			return React.createElement('div', { className: 'rdtMonths' }, [React.createElement('table', { key: 'a' }, React.createElement('thead', {}, React.createElement('tr', {}, [React.createElement('th', { key: 'prev', className: 'rdtPrev', onClick: this.props.subtractTime(1, 'years') }, React.createElement('span', {}, '�')), React.createElement('th', { key: 'year', className: 'rdtSwitch', onClick: this.props.showView('years'), colSpan: 2, 'data-value': this.props.viewDate.year() }, this.props.viewDate.year()), React.createElement('th', { key: 'next', className: 'rdtNext', onClick: this.props.addTime(1, 'years') }, React.createElement('span', {}, '�'))]))), React.createElement('table', { key: 'months' }, React.createElement('tbody', { key: 'b' }, this.renderMonths()))]);
+			return React.createElement('div', { className: 'rdtMonths' }, [React.createElement('table', { key: 'a' }, React.createElement('thead', {}, React.createElement('tr', {}, [React.createElement('th', { key: 'prev', className: 'rdtPrev', onClick: this.props.subtractTime(1, 'years') }, React.createElement('span', {}, '‹')), React.createElement('th', { key: 'year', className: 'rdtSwitch', onClick: this.props.showView('years'), colSpan: 2, 'data-value': this.props.viewDate.year() }, this.props.viewDate.year()), React.createElement('th', { key: 'next', className: 'rdtNext', onClick: this.props.addTime(1, 'years') }, React.createElement('span', {}, '›'))]))), React.createElement('table', { key: 'months' }, React.createElement('tbody', { key: 'b' }, this.renderMonths()))]);
 		},
 
 		renderMonths: function () {
@@ -34174,7 +34174,7 @@ $__System.registerDynamic('166', ['19', '163', '164'], true, function ($__requir
 		render: function () {
 			var year = parseInt(this.props.viewDate.year() / 10, 10) * 10;
 
-			return React.createElement('div', { className: 'rdtYears' }, [React.createElement('table', { key: 'a' }, React.createElement('thead', {}, React.createElement('tr', {}, [React.createElement('th', { key: 'prev', className: 'rdtPrev', onClick: this.props.subtractTime(10, 'years') }, React.createElement('span', {}, '�')), React.createElement('th', { key: 'year', className: 'rdtSwitch', onClick: this.props.showView('years'), colSpan: 2 }, year + '-' + (year + 9)), React.createElement('th', { key: 'next', className: 'rdtNext', onClick: this.props.addTime(10, 'years') }, React.createElement('span', {}, '�'))]))), React.createElement('table', { key: 'years' }, React.createElement('tbody', {}, this.renderYears(year)))]);
+			return React.createElement('div', { className: 'rdtYears' }, [React.createElement('table', { key: 'a' }, React.createElement('thead', {}, React.createElement('tr', {}, [React.createElement('th', { key: 'prev', className: 'rdtPrev', onClick: this.props.subtractTime(10, 'years') }, React.createElement('span', {}, '‹')), React.createElement('th', { key: 'year', className: 'rdtSwitch', onClick: this.props.showView('years'), colSpan: 2 }, year + '-' + (year + 9)), React.createElement('th', { key: 'next', className: 'rdtNext', onClick: this.props.addTime(10, 'years') }, React.createElement('span', {}, '›'))]))), React.createElement('table', { key: 'years' }, React.createElement('tbody', {}, this.renderYears(year)))]);
 		},
 
 		renderYears: function (year) {
@@ -48866,13 +48866,13 @@ $__System.registerDynamic('221', ['19', '163', '168', '164'], true, function ($_
 						value = 12;
 					}
 				}
-				return React.createElement('div', { key: type, className: 'rdtCounter' }, [React.createElement('span', { key: 'up', className: 'rdtBtn', onMouseDown: this.onStartClicking('increase', type) }, '?'), React.createElement('div', { key: 'c', className: 'rdtCount' }, value), React.createElement('span', { key: 'do', className: 'rdtBtn', onMouseDown: this.onStartClicking('decrease', type) }, '?')]);
+				return React.createElement('div', { key: type, className: 'rdtCounter' }, [React.createElement('span', { key: 'up', className: 'rdtBtn', onMouseDown: this.onStartClicking('increase', type) }, '▲'), React.createElement('div', { key: 'c', className: 'rdtCount' }, value), React.createElement('span', { key: 'do', className: 'rdtBtn', onMouseDown: this.onStartClicking('decrease', type) }, '▼')]);
 			}
 			return '';
 		},
 
 		renderDayPart: function () {
-			return React.createElement('div', { key: 'dayPart', className: 'rdtCounter' }, [React.createElement('span', { key: 'up', className: 'rdtBtn', onMouseDown: this.onStartClicking('toggleDayPart', 'hours') }, '?'), React.createElement('div', { key: this.state.daypart, className: 'rdtCount' }, this.state.daypart), React.createElement('span', { key: 'do', className: 'rdtBtn', onMouseDown: this.onStartClicking('toggleDayPart', 'hours') }, '?')]);
+			return React.createElement('div', { key: 'dayPart', className: 'rdtCounter' }, [React.createElement('span', { key: 'up', className: 'rdtBtn', onMouseDown: this.onStartClicking('toggleDayPart', 'hours') }, '▲'), React.createElement('div', { key: this.state.daypart, className: 'rdtCount' }, this.state.daypart), React.createElement('span', { key: 'do', className: 'rdtBtn', onMouseDown: this.onStartClicking('toggleDayPart', 'hours') }, '▼')]);
 		},
 
 		render: function () {
@@ -49498,7 +49498,7 @@ $__System.register("225", ["15", "16", "19", "224", "1c", "1d", "1e", "1a", "1b"
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement(Modal, { show: this.props.model.isShown, onHide: this.handleHide }, React.createElement(Modal.Header, { closeButton: true }, React.createElement(Modal.Title, null, this.props.model.mode === "add" ? "Ausgabe hinzuf?gen" : "Ausgabe bearbeiten")), React.createElement(Modal.Body, null, React.createElement(Form, { horizontal: true }, React.createElement("h5", null, "Allgemein"), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Betrag"), React.createElement(Col, { sm: 5 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountRaw, onChange: this.handleAmountChange })), React.createElement(Col, { sm: 4 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountDisplay, readOnly: true, tabIndex: -1 }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Beschreibung"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { type: "text", value: this.props.model.description, onChange: this.handleDescriptionChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Datum"), React.createElement(Col, { sm: 9 }, React.createElement(Datetime, { timeFormat: false, closeOnSelect: true, dateFormat: "YYYY-MM-DD", value: this.props.model.date, onChange: this.handleDateChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Kategorie"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { componentClass: "select", value: this.props.model.category ? this.props.model.category.name : "__none__", onChange: this.handleCategoryChange }, React.createElement("option", { key: "__none__", value: "__none__" }, "..."), this.props.model.parent.categories.map(function (category) {
+                        return React.createElement(Modal, { show: this.props.model.isShown, onHide: this.handleHide }, React.createElement(Modal.Header, { closeButton: true }, React.createElement(Modal.Title, null, this.props.model.mode === "add" ? "Ausgabe hinzufügen" : "Ausgabe bearbeiten")), React.createElement(Modal.Body, null, React.createElement(Form, { horizontal: true }, React.createElement("h5", null, "Allgemein"), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Betrag"), React.createElement(Col, { sm: 5 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountRaw, onChange: this.handleAmountChange })), React.createElement(Col, { sm: 4 }, React.createElement(FormControl, { type: "text", value: this.props.model.amountDisplay, readOnly: true, tabIndex: -1 }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Beschreibung"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { type: "text", value: this.props.model.description, onChange: this.handleDescriptionChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Datum"), React.createElement(Col, { sm: 9 }, React.createElement(Datetime, { timeFormat: false, closeOnSelect: true, dateFormat: "YYYY-MM-DD", value: this.props.model.date, onChange: this.handleDateChange }))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Kategorie"), React.createElement(Col, { sm: 9 }, React.createElement(FormControl, { componentClass: "select", value: this.props.model.category ? this.props.model.category.name : "__none__", onChange: this.handleCategoryChange }, React.createElement("option", { key: "__none__", value: "__none__" }, "..."), this.props.model.parent.categories.map(function (category) {
                             return React.createElement("option", { key: category.name, value: category.name }, category.fullName);
                         })))), React.createElement(FormGroup, null, React.createElement(Col, { componentClass: ControlLabel, sm: 3 }, "Draft"), React.createElement(Col, { sm: 9 }, this.props.model.drafts.map(function (draft) {
                             return React.createElement(Radio, { name: "radioGroup", inline: true, key: draft._id, value: draft._id, onClick: _this.handleDraftSelect }, draft.draftDescription);
@@ -49527,7 +49527,7 @@ $__System.register("225", ["15", "16", "19", "224", "1c", "1d", "1e", "1a", "1b"
                                 overflowY: "scroll"
                             }, className: "bg-success text-success" }, this.props.model.log.map(function (msg, i) {
                             return React.createElement("span", { key: i }, msg, React.createElement("br", null));
-                        }))), React.createElement(Modal.Footer, null, React.createElement(Button, { onClick: this.handleSend, disabled: !this.props.model.isValid }, "Absenden"), this.props.model.mode === "edit" && React.createElement(Button, { className: "pull-left", onClick: this.handleRemove }, React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x1F5D1;" } }))));
+                        }))), React.createElement(Modal.Footer, null, React.createElement(Button, { onClick: this.handleSend, disabled: !this.props.model.isValid }, "Absenden"), this.props.model.mode === "edit" && React.createElement(Button, { className: "pull-left", onClick: this.handleRemove }, "🗑")));
                     }
                 }]);
 
@@ -49617,9 +49617,9 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1c", "1d", "1e", "1b"
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("div", null, React.createElement(Button, { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } }, React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x270d;" } })), React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null), React.createElement("th", null, "Betrag"), React.createElement("th", null, "Beschreibung"), React.createElement("th", null, "Datum"), React.createElement("th", null, "Kategorie"), this.props.vm.people.map(function (person) {
+                        return React.createElement("div", null, React.createElement(Button, { onClick: this.handleAddExpensesClick, style: { marginLeft: "7px" } }, "✍"), React.createElement(InputDialog, { model: this.props.vm.inputDialog }), React.createElement(Table, { responsive: true }, React.createElement("thead", null, React.createElement("tr", null, React.createElement("th", null), React.createElement("th", null, "Betrag"), React.createElement("th", null, "Beschreibung"), React.createElement("th", null, "Datum"), React.createElement("th", null, "Kategorie"), this.props.vm.people.map(function (person) {
                             var total = _this.props.vm.getExpendituresTotal(person.name);
-                            return React.createElement("th", { key: person.name }, person.fullName, total && React.createElement("div", null, React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x2211;" } }), " ", total));
+                            return React.createElement("th", { key: person.name }, person.fullName, total && React.createElement("div", null, "∑", " ", total));
                         }), this.props.vm.iouPairs.map(function (pair) {
                             //console.log(pair);
 
@@ -49629,7 +49629,7 @@ $__System.register("226", ["15", "16", "18", "19", "225", "1c", "1d", "1e", "1b"
                             var creditor = _pair[1];
 
                             var total = _this.props.vm.getIousTotal(borrower.name, creditor.name);
-                            return React.createElement("th", { key: creditor.name }, borrower.fullName, " schuldet ", creditor.fullName, total && React.createElement("div", null, React.createElement("span", { dangerouslySetInnerHTML: { __html: "&#x2211;" } }), " ", total));
+                            return React.createElement("th", { key: creditor.name }, borrower.fullName, " schuldet ", creditor.fullName, total && React.createElement("div", null, "∑", " ", total));
                         }))), React.createElement("tbody", null, this.props.vm.events.map(function (event) {
                             return React.createElement(TableRow, { key: event._id, event: event, iouPairs: _this.props.vm.iouPairs, people: _this.props.vm.people, showEditModal: _this.handleShowEditModal });
                         }))));
@@ -49700,4 +49700,4 @@ $__System.register("1", ["15", "16", "17", "19", "50", "226", "1c", "1d", "1b"],
 (function(factory) {
   factory();
 });
-//# sourceMappingURL=index-utf8.js.map
+//# sourceMappingURL=index.js.map

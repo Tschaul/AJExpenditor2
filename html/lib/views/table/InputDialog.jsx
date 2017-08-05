@@ -174,7 +174,7 @@ export class InputDialog extends React.Component {
                 <Modal.Footer>
                     <Button onClick={this.handleSend} disabled={!this.props.model.isValid}>Absenden</Button>
                     {this.props.model.mode==="edit" && (<Button className="pull-left" onClick={this.handleRemove}>
-                        <span dangerouslySetInnerHTML={{__html:"&#x1F5D1;"}}/>
+                        🗑
                     </Button>)}
                 </Modal.Footer>
             </Modal>

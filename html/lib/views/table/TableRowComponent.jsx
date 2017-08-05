@@ -20,7 +20,7 @@ export class TableRow extends React.Component {
             <tr>
                 <td>
                     <Button onClick={this.handleShowEditModal}>
-                        <span dangerouslySetInnerHTML={{__html:"&#x270e;"}}/>
+                        ✎
                     </Button>
                 </td>
                 <td className="text-right">{this.props.event.amountDisplay}</td>
