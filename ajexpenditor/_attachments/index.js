@@ -11689,7 +11689,7 @@ $__System.register("18", ["15", "16", "19", "1c", "1d", "1e", "1a", "1b"], funct
                     value: function render() {
                         var _this = this;
 
-                        return React.createElement("tr", null, React.createElement("td", { className: "text-center" }, React.createElement(Button, { onClick: this.handleShowEditModal }, "✎")), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", null, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
+                        return React.createElement("tr", null, React.createElement("td", { className: "text-center" }, React.createElement(Button, { onClick: this.handleShowEditModal }, "✎")), React.createElement("td", { className: "text-right" }, this.props.event.amountDisplay), React.createElement("td", null, this.props.event.description), React.createElement("td", { className: "text-right" }, this.props.event.date), React.createElement("td", null, this.props.event.categoryFullName), this.props.people.map(function (person) {
                             var expenditure = _this.props.event.expenditures.find(function (x) {
                                 return x.person === person.name;
                             });

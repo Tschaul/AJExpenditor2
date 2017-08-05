@@ -1,4 +1,7 @@
-var nano = require('nano')('http://localhost:5984');
+var pwd = process.env.COUCHDB_PASSWORD;
+
+//var nano = require('nano')('http://localhost:5984');
+var nano = require('nano')('https://andiundjulian:'+pwd+"@couchdb.tschaul.com");
 
 var saveData = true;
 
@@ -84,6 +87,28 @@ categories.forEach(category=>{
 
 })
 
+var peopleCount = 0, peopleTotal = people.length;
+var categoriesCount = 0, categoriesTotal = categories.length;
+var draftsCount = 0, draftsTotal = drafts.length;
+var eventsCount = 0, eventsTotal = events.length;
+
+function logState() {
+    console.log("events: "+eventsCount+"/"+eventsTotal+" drafts: "+draftsCount+"/"+draftsTotal+" categories: "+categoriesCount+"/"+categoriesTotal+" people: "+peopleCount+"/"+peopleTotal);
+}
+
+function insertEvents(db) {
+    if(eventsCount<eventsTotal){
+
+        db.insert(events[eventsCount], function(err, body){
+            if(!err){
+                eventsCount++;
+                logState()
+                insertEvents(db)
+            }
+        });
+    }
+}
+
 if(saveData){
 nano.db.destroy('ajexpenditor',function(){
 
@@ -91,20 +116,24 @@ nano.db.destroy('ajexpenditor',function(){
 
         var db = nano.db.use('ajexpenditor');
 
-        events.forEach(event=>{
+        // events.forEach(event=>{
 
-            db.insert(event, function(err, body){
-                if(!err){
-                    console.log("event saved successfully");
-                }
-            });
-        })
+        //     db.insert(event, function(err, body){
+        //         if(!err){
+        //             eventsCount++;
+        //             logState()
+        //         }
+        //     });
+        // })
+
+        insertEvents(db)
 
         drafts.forEach(draft=>{
 
             db.insert(draft, function(err, body){
                 if(!err){
-                    console.log("draft saved successfully");
+                    draftsCount++;
+                    logState()
                 }
             });
         })
@@ -113,7 +142,8 @@ nano.db.destroy('ajexpenditor',function(){
 
             db.insert(person, function(err, body){
                 if(!err){
-                    console.log("person saved successfully");
+                    peopleCount++;
+                    logState()
                 }
             });
         })
@@ -122,7 +152,8 @@ nano.db.destroy('ajexpenditor',function(){
 
             db.insert(category, function(err, body){
                 if(!err){
-                    console.log("category saved successfully");
+                    categoriesCount++;
+                    logState()
                 }
             });
         })
