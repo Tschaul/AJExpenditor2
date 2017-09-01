@@ -57,6 +57,11 @@ export class InputDialog extends React.Component {
     handleRemove() {
         this.props.model.remove();
     }
+    
+    handlePortionChange(obj,event) {
+        obj.portion = parseInt(event.target.value);
+    }
+
 
     render() {
 
@@ -132,7 +137,7 @@ export class InputDialog extends React.Component {
                                                     {person.fullName+"s Ausgaben"}
                                                 </Col>
                                                 <Col sm={8}>
-                                                    <FormControl type="text" value={expenditure.portion}/>
+                                                    <FormControl type="text" value={expenditure.portion} onChange={event=>this.handlePortionChange(expenditure,event)}/>
                                                 </Col>
                                             </FormGroup>
                                         )
@@ -148,7 +153,7 @@ export class InputDialog extends React.Component {
                                                     {borrower.fullName+" schuldet "+creditor.fullName}
                                                 </Col>
                                                 <Col sm={8}>
-                                                    <FormControl type="text" value={iou.portion}/>
+                                                    <FormControl type="text" value={iou.portion} onChange={event=>this.handlePortionChange(iou,event)}/>
                                                 </Col>
                                             </FormGroup>
                                         )

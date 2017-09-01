@@ -11260,8 +11260,8 @@ $__System.register("11", [], function (_export) {
         execute: function () {}
     };
 });
-$__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export) {
-    var getDrafts, _post, _put, _remove, getAmountDisplay, moment, obervable, computed, extendObservable, observe, toJS, _createClass, _classCallCheck, InputDialogModel;
+$__System.register("12", ["10", "11", "13", "14", "15", "16", "c"], function (_export) {
+    var getDrafts, _post, _put, _remove, getAmountDisplay, moment, obervable, computed, extendObservable, observe, toJS, _createClass, _classCallCheck, _Object$assign, InputDialogModel;
 
     return {
         setters: [function (_5) {
@@ -11283,6 +11283,8 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
             _createClass = _["default"];
         }, function (_2) {
             _classCallCheck = _2["default"];
+        }, function (_c) {
+            _Object$assign = _c["default"];
         }],
         execute: function () {
             "use strict";
@@ -11330,8 +11332,12 @@ $__System.register("12", ["10", "11", "13", "14", "15", "16"], function (_export
                     observe(this, "selectedDraft", function (change) {
                         if (change.newValue) {
                             var draft = change.newValue;
-                            _this.ious.replace(draft.ious);
-                            _this.expenditures.replace(draft.expenditures);
+                            _this.ious.replace(draft.ious.map(function (x) {
+                                return _Object$assign({}, x);
+                            }));
+                            _this.expenditures.replace(draft.expenditures.map(function (x) {
+                                return _Object$assign({}, x);
+                            }));
                         }
                     });
                 }
@@ -49494,6 +49500,11 @@ $__System.register("225", ["15", "16", "19", "224", "1c", "1d", "1e", "1a", "1b"
                         this.props.model.remove();
                     }
                 }, {
+                    key: "handlePortionChange",
+                    value: function handlePortionChange(obj, event) {
+                        obj.portion = parseInt(event.target.value);
+                    }
+                }, {
                     key: "render",
                     value: function render() {
                         var _this = this;
@@ -49507,7 +49518,9 @@ $__System.register("225", ["15", "16", "19", "224", "1c", "1d", "1e", "1a", "1b"
                                 return x.person === person.name;
                             });
                             if (expenditure) {
-                                return React.createElement(FormGroup, { key: person.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, person.fullName + "s Ausgaben"), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: expenditure.portion })));
+                                return React.createElement(FormGroup, { key: person.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, person.fullName + "s Ausgaben"), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: expenditure.portion, onChange: function onChange(event) {
+                                        return _this.handlePortionChange(expenditure, event);
+                                    } })));
                             }
                         }), this.props.model.parent.iouPairs.map(function (pair) {
                             var _pair = _slicedToArray(pair, 2);
@@ -49519,7 +49532,9 @@ $__System.register("225", ["15", "16", "19", "224", "1c", "1d", "1e", "1a", "1b"
                                 return x.borrower === borrower.name && x.creditor === creditor.name;
                             });
                             if (iou) {
-                                return React.createElement(FormGroup, { key: creditor.name + "_" + borrower.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, borrower.fullName + " schuldet " + creditor.fullName), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: iou.portion })));
+                                return React.createElement(FormGroup, { key: creditor.name + "_" + borrower.name }, React.createElement(Col, { componentClass: ControlLabel, sm: 4 }, borrower.fullName + " schuldet " + creditor.fullName), React.createElement(Col, { sm: 8 }, React.createElement(FormControl, { type: "text", value: iou.portion, onChange: function onChange(event) {
+                                        return _this.handlePortionChange(iou, event);
+                                    } })));
                             }
                         })))), React.createElement("h5", null, "Log"), React.createElement("code", { style: {
                                 height: "58px",

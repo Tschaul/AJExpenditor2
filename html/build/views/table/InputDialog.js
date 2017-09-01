@@ -59,6 +59,10 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.props.model.remove();
     }
 
+    handlePortionChange(obj, event) {
+        obj.portion = parseInt(event.target.value);
+    }
+
     render() {
 
         return React.createElement(
@@ -201,7 +205,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                                         React.createElement(
                                             Col,
                                             { sm: 8 },
-                                            React.createElement(FormControl, { type: "text", value: expenditure.portion })
+                                            React.createElement(FormControl, { type: "text", value: expenditure.portion, onChange: event => this.handlePortionChange(expenditure, event) })
                                         )
                                     );
                                 }
@@ -221,7 +225,7 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                                         React.createElement(
                                             Col,
                                             { sm: 8 },
-                                            React.createElement(FormControl, { type: "text", value: iou.portion })
+                                            React.createElement(FormControl, { type: "text", value: iou.portion, onChange: event => this.handlePortionChange(iou, event) })
                                         )
                                     );
                                 }

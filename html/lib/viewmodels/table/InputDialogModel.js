@@ -50,8 +50,8 @@ export class InputDialogModel {
         observe(this,"selectedDraft", (change) => {
             if(change.newValue){
                 const draft = change.newValue;
-                this.ious.replace(draft.ious);
-                this.expenditures.replace(draft.expenditures);
+                this.ious.replace(draft.ious.map(x => Object.assign({},x)));
+                this.expenditures.replace(draft.expenditures.map(x => Object.assign({},x)));
             }
         });
     
