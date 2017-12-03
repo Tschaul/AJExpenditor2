@@ -1,0 +1,1 @@
+module.exports = require("npm:flexbox-react@4.4.0/dist/index.js");

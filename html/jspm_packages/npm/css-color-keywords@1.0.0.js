@@ -1,0 +1,1 @@
+module.exports = require("npm:css-color-keywords@1.0.0/index");

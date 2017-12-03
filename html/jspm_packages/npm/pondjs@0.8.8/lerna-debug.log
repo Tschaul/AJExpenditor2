@@ -1,0 +1,36 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ],
+1 silly flags   canary: true,
+1 silly flags   c: true,
+1 silly flags   'cd-version': 'patch',
+1 silly flags   cdVersion: 'patch' }
+2 verbose rootPath /Users/pmurphy/code/pond
+3 info version 2.0.0
+4 info versioning independent
+5 silly isInitialized
+6 silly isInitialized true
+7 silly existsSync /Users/pmurphy/code/pond/VERSION
+8 silly initialize attempt
+9 info canary enabled
+10 silly getUpdates
+11 info Checking for updated packages...
+12 silly hasTags
+13 verbose hasTags true
+14 silly getCurrentSHA
+15 verbose getCurrentSHA 76c6abaea27ab34fa504b022372c8815a5f0d5ac
+16 info Comparing with 76c6abae^..76c6abae.
+17 silly diffSinceIn 76c6abae^..76c6abae /Users/pmurphy/code/pond/packages/pond
+18 silly diff packages/pond/package.json
+18 silly diff packages/pond/src/event.ts
+18 silly diff packages/pond/src/sorted.ts
+18 silly diff packages/pond/tests/timeseries.test.ts
+19 silly diffSinceIn 76c6abae^..76c6abae /Users/pmurphy/code/pond/packages/website
+20 silly diff
+21 verbose updated pondjs
+22 silly collectDependents
+23 silly isPackageDependentOf pondjs pondjs
+24 silly isPackageDependentOf docs pondjs
+25 silly collectUpdates
+26 verbose has filtered update pondjs
+27 verbose has filtered update docs
+28 verbose initialize exited early

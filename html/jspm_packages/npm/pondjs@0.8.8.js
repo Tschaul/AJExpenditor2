@@ -1,0 +1,1 @@
+module.exports = require("npm:pondjs@0.8.8/lib/entry");

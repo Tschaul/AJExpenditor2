@@ -26,7 +26,7 @@ class App extends React.Component {
       case 'table':
         return <TableView vm={this.props.vm.tableViewModel}/>
       case 'chart':
-        return <ChartView/>
+        return <ChartView vm={this.props.vm.chartViewModel}/>
       default:
         return <span>Tab key not found</span>
     }

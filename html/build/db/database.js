@@ -50,13 +50,18 @@ export function getEvents(skip, limit) {
     }).then(data => data.rows.map(row => row.doc));
 }
 
-export function getExpendituresTotal() {
+export function getExpendituresTotal(groupLevel) {
+    groupLevel = groupLevel || 1;
     return db.query('ajexpenditor/expenditures_total', {
         reduce: true,
-        group_level: 1
+        group_level: groupLevel
     }).then(data => data.rows.map(row => {
         return {
             person: row.key[0],
+            category: row.key[1],
+            year: row.key[2],
+            month: row.key[3],
+            day: row.key[4],
             value: row.value
         };
     }));

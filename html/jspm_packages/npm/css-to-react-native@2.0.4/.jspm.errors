@@ -1,0 +1,17 @@
+MultipleErrors: /home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.test.js:2:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.test.js:2:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.test.js:2:47: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.test.js:2:52: Semi-colon expected
+
+MultipleErrors: /home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:12:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:12:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:40:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:40:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:51:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:51:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:8: Unexpected reserved word default
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:49: Semi-colon expected
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:49: Unexpected token =>
+/home/julian/.jspm/packages/npm/css-to-react-native@2.0.4/src/index.js:53:52: Semi-colon expected

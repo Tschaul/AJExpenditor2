@@ -1,0 +1,1 @@
+module.exports = require("npm:css-to-react-native@2.0.4/dist/index.js");

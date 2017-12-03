@@ -27,7 +27,7 @@ let App = observer(_class = class App extends React.Component {
       case 'table':
         return React.createElement(TableView, { vm: this.props.vm.tableViewModel });
       case 'chart':
-        return React.createElement(ChartView, null);
+        return React.createElement(ChartView, { vm: this.props.vm.chartViewModel });
       default:
         return React.createElement(
           "span",

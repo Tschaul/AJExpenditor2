@@ -1,0 +1,898 @@
+MultipleErrors: /home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:28: Unexpected token .
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:29: Unexpected token target
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:36: Unexpected token ===
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:40: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:45: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:45: Unexpected token )
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:19511:47: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:18: Character code '56320' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82014:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:18: Character code '56321' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82015:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:18: Character code '56322' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82016:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:18: Character code '56323' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82017:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:18: Character code '56324' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82018:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:18: Character code '56325' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82019:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:18: Character code '56326' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82020:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:18: Character code '56327' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82021:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:18: Character code '56328' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82022:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:18: Character code '56329' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82023:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:18: Character code '56330' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82024:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:18: Character code '56331' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82025:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:18: Character code '56332' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82026:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:18: Character code '56333' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82027:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:18: Character code '56334' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82028:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:18: Character code '56335' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82029:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:18: Character code '56336' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82030:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:18: Character code '56337' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82031:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:18: Character code '56338' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82032:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:18: Character code '56339' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82033:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:18: Character code '56340' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82034:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:18: Character code '56341' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82035:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:18: Character code '56342' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82036:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:18: Character code '56343' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82037:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:18: Character code '56344' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82038:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:18: Character code '56345' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82039:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:18: Character code '56346' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82040:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:18: Character code '56347' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82041:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:18: Character code '56348' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82042:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:18: Character code '56349' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82043:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:18: Character code '56350' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82044:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:18: Character code '56351' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82045:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:18: Character code '56352' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82046:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:18: Character code '56353' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82047:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:18: Character code '56354' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82048:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:18: Character code '56355' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82049:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:18: Character code '56356' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82050:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:18: Character code '56357' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82051:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:18: Character code '56358' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82052:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:17: Character code '55297' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:18: Character code '56359' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82053:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:18: Character code '56480' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82054:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:18: Character code '56481' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82055:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:18: Character code '56482' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82056:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:18: Character code '56483' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82057:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:18: Character code '56484' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82058:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:18: Character code '56485' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82059:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:18: Character code '56486' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82060:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:18: Character code '56487' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82061:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:18: Character code '56488' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82062:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:18: Character code '56489' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82063:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:18: Character code '56490' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82064:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:18: Character code '56491' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82065:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:18: Character code '56492' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82066:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:18: Character code '56493' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82067:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:18: Character code '56494' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82068:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:18: Character code '56495' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82069:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:18: Character code '56496' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82070:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:18: Character code '56497' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82071:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:18: Character code '56498' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82072:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:18: Character code '56499' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82073:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:18: Character code '56500' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82074:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:18: Character code '56501' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82075:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:18: Character code '56502' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82076:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:18: Character code '56503' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82077:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:18: Character code '56504' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82078:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:18: Character code '56505' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82079:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:18: Character code '56506' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82080:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:18: Character code '56507' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82081:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:18: Character code '56508' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82082:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:18: Character code '56509' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82083:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:18: Character code '56510' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82084:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:17: Character code '55302' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:18: Character code '56511' is not a valid identifier start char
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:17: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:18: Unexpected token error
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:19: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:19: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82085:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82086:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82086:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82086:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82087:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82087:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82087:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82088:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82088:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82088:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82089:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82089:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82089:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82090:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82090:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82090:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82091:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82091:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82091:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82092:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82092:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82092:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82093:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82093:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82093:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82094:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82094:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82094:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82095:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82095:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82095:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82096:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82096:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82096:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82097:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82097:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82097:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82098:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82098:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82098:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82099:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82099:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82099:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82100:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82100:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82100:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82101:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82101:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82101:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82102:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82102:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82102:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82103:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82103:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82103:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82104:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82104:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82104:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82105:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82105:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82105:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82106:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82106:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82106:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82107:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82107:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82107:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82108:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82108:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82108:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82109:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82109:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82109:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82110:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82110:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82110:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82111:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82111:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82111:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82112:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82112:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82112:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82113:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82113:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82113:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82114:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82114:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82114:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82115:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82115:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82115:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82116:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82116:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82116:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82117:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82117:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82117:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82118:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82118:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82118:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82119:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82119:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82119:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82120:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82120:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82120:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82121:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82121:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82121:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82122:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82122:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82122:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82123:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82123:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82123:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82124:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82124:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82124:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82125:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82125:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82125:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82126:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82126:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82126:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82127:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82127:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82127:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82128:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82128:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82128:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82129:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82129:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82129:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82130:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82130:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82130:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82131:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82131:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82131:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82132:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82132:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82132:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82133:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82133:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82133:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82134:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82134:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82134:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82135:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82135:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82135:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82136:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82136:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82136:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82137:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82137:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82137:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82138:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82138:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82138:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82139:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82139:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82139:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82140:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82140:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82140:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82141:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82141:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82141:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82142:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82142:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82142:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82143:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82143:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82143:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82144:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82144:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82144:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82145:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82145:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82145:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82146:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82146:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82146:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82147:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82147:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82147:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82148:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82148:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82148:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82149:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82149:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82149:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82150:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82150:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82150:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82151:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82151:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82151:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82152:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82152:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82152:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82153:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82153:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82153:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82154:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82154:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82154:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82155:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82155:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82155:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82156:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82156:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82156:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82157:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82157:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82157:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82158:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82158:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82158:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82159:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82159:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82159:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82160:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82160:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82160:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82161:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82161:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82161:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82162:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82162:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82162:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82163:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82163:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82163:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82164:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82164:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82164:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82165:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82165:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82165:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82166:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82166:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82166:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82167:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82167:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82167:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82168:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82168:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82168:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82169:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82169:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82169:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82170:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82170:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82170:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82171:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82171:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82171:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82172:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82172:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82172:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82173:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82173:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82173:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82174:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82174:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82174:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82175:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82175:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82175:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82176:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82176:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82176:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82177:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82177:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82177:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82178:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82178:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82178:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82179:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82179:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82179:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82180:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82180:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82180:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82181:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82181:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82181:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82182:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82182:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82182:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82183:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82183:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82183:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82184:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82184:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82184:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82185:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82185:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82185:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82186:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82186:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82186:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82187:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82187:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82187:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82188:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82188:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82188:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82189:18: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82189:18: Unexpected token :
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82189:20: Semi-colon expected
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82190:14: Unexpected token ;
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82200:14: Unexpected token ;
+/home/julian/.jspm/packages/npm/react-timeseries-charts@0.12.8/docs_old/static/js/main.42e43cef.js:82203:9: Unexpected token }

@@ -1,0 +1,1 @@
+module.exports = require("npm:is-plain-object@2.0.4/index.js");

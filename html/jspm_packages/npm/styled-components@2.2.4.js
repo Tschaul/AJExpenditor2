@@ -1,0 +1,1 @@
+module.exports = require("npm:styled-components@2.2.4/lib/index.js");

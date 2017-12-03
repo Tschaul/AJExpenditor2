@@ -1,0 +1,29 @@
+MultipleErrors: /home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/array.js:1:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/array.js:1:8: Semi-colon expected
+
+MultipleErrors: /home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:1:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:1:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:1:21: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:2:1: Unexpected reserved word import
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:2:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:2:17: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:2:22: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:160:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:160:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:164:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:164:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:168:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:168:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:172:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/axis.js:172:8: Semi-colon expected
+
+MultipleErrors: /home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:8: Unexpected reserved word default
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:16: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:24: Unexpected token (
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/src/identity.js:1:25: Unexpected token x
+
+MultipleErrors: /home/julian/.jspm/packages/npm/d3-axis@1.0.8/index.js:1:1: Unexpected reserved word export
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/index.js:1:8: Semi-colon expected
+/home/julian/.jspm/packages/npm/d3-axis@1.0.8/index.js:6:8: Semi-colon expected

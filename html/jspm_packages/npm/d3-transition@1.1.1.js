@@ -1,0 +1,1 @@
+module.exports = require("npm:d3-transition@1.1.1/build/d3-transition.js");

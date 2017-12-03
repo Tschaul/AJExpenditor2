@@ -1,24 +1,21 @@
 import {obervable,computed,extendObservable} from "mobx";
 
-import {getPeople,getEvents,getCategories,onEventsChange,getExpendituresTotal,getIousTotal} from "../../db/database"
+import {getEvents,onEventsChange,getExpendituresTotal,getIousTotal} from "../../db/database"
 import {getAmountDisplay} from "../util"
 
 import {InputDialogModel} from "./InputDialogModel"
 
 export class TableViewModel {
 
-    constructor(){
-
+    constructor(parent){
 
         extendObservable(this,{
-            people: [],
             events: [],
-            categories: [],
             queryingMoreEvents: false,
             iouPairs: computed(() => {
                 var pairs = [];
-                this.people.forEach(borrower=>{
-                    this.people.forEach(creditor=>{
+                parent.people.forEach(borrower=>{
+                    parent.people.forEach(creditor=>{
                         if(borrower.name<creditor.name){
                             pairs.push([borrower,creditor]);
                         }
@@ -29,10 +26,9 @@ export class TableViewModel {
             expendituresTotals: [],
             iousTotals: []
         })
+        this.parent = parent;
         this.inputDialog = new InputDialogModel(this);
         this.queryEvents();
-        this.queryPeople();
-        this.queryCategories();
         this.queryExpendituresTotal();
         this.queryIousTotal();
 
@@ -41,6 +37,14 @@ export class TableViewModel {
             this.queryExpendituresTotal();
             this.queryIousTotal();
         });
+    }
+    
+    get people() {
+        return this.parent.people;
+    }
+        
+    get categories() {
+        return this.parent.categories;
     }
 
     queryEvents() {
@@ -69,18 +73,6 @@ export class TableViewModel {
         getEvents(0,this.events.length).then(events=>{
             this.events.replace(events.map(e=>new Event(e,this)));
         })
-    }
-
-    queryPeople()  {
-        getPeople().then(people=>{
-            this.people = people;
-        });
-    }
-
-    queryCategories() {
-        getCategories().then(categories=>{
-            this.categories = categories;
-        });
     }
 
     queryExpendituresTotal() {
