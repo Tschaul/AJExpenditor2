@@ -114,7 +114,114 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                 React.createElement(
                     Col,
                     { lg: 3, sm: 12 },
-                    React.createElement(Table, null)
+                    React.createElement(
+                        Table,
+                        { responsive: true },
+                        React.createElement(
+                            "thead",
+                            null,
+                            React.createElement(
+                                "tr",
+                                null,
+                                React.createElement(
+                                    "th",
+                                    null,
+                                    "#"
+                                ),
+                                React.createElement(
+                                    "th",
+                                    null,
+                                    "Table heading"
+                                ),
+                                React.createElement(
+                                    "th",
+                                    null,
+                                    "Table heading"
+                                ),
+                                React.createElement(
+                                    "th",
+                                    null,
+                                    "Table heading"
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "tbody",
+                            null,
+                            React.createElement(
+                                "tr",
+                                null,
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "1"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                )
+                            ),
+                            React.createElement(
+                                "tr",
+                                null,
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "2"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                )
+                            ),
+                            React.createElement(
+                                "tr",
+                                null,
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "3"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                ),
+                                React.createElement(
+                                    "td",
+                                    null,
+                                    "Table cell"
+                                )
+                            )
+                        )
+                    )
                 )
             )
         );
