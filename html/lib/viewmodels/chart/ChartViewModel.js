@@ -8,12 +8,14 @@ export class ChartViewModel {
 
         extendObservable(this, {
             data: null,
+            selectedRange: null,
             timeseries: computed(()=>this.computeTimeseries())
         })
         this.parent = parent;
         this.queryExpendituresTotal();
+
     }
-    
+
     get people() {
         return this.parent.people;
     }
@@ -30,7 +32,7 @@ export class ChartViewModel {
 
         let baseData = {
             name: 'expendituresTotal',
-            columns: ['time'].concat(this.categories.map(x=>x.name)),
+            columns: ['time'].concat(this.categories.map(x=>x.name)).concat(['_total']),
             points: []
         };
 
@@ -48,18 +50,24 @@ export class ChartViewModel {
 
             let row = [new Date(currentKey).getTime()];
 
+            let totalSum = 0;
+
             this.categories.forEach((category,index) => {
 
                 let sum = 0;
 
                 this.people.forEach(person =>{
                     // console.log(person,category,currentKey,this.data[person.name][category.name]);
-                    sum += this.data[person.name][category.name][currentKey]||0;
+                    const value = (this.data[person.name][category.name][currentKey]||0)/10000;
+                    sum += value;
+                    totalSum += value;
                 });
 
                 row.push(sum);
 
             });
+
+            row.push(totalSum);
 
             baseData.points.push(row);
 

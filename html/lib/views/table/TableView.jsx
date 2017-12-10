@@ -14,12 +14,12 @@ export class TableView extends React.Component{
         this.handleShowEditModal = this.handleShowEditModal.bind(this);
     }
 
-    componentWillMount(){
+    componentWillMount() {
         this.handleScroll=this.handleScroll.bind(this);
         window.addEventListener("scroll", this.handleScroll);
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
     }
 
