@@ -1,9 +1,9 @@
 import * as React from "react";
 import { observer } from "mobx-react"
 
-import { Grid, Row, Col, Table } from "react-bootstrap"
+import { Grid, Row, Col, Table, FormGroup, Checkbox, ControlLabel } from "react-bootstrap"
 import { TimeSeries, TimeRange } from "pondjs";
-import { Charts, ChartContainer, ChartRow, YAxis, AreaChart, styler, Resizable, Brush } from "react-timeseries-charts";
+import { Charts, ChartContainer, ChartRow, YAxis, AreaChart, styler, Resizable, Brush, TimeMarker } from "react-timeseries-charts";
 
 const customColorsList = [
     "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c",
@@ -50,7 +50,7 @@ export class ChartView extends React.Component {
                                         min={0}
                                         max={1000}
                                         width="60"
-                                        type="linear" />
+                                        type="linear"/>
                                     <Charts>
                                         <AreaChart
                                             axis="y"
@@ -58,7 +58,7 @@ export class ChartView extends React.Component {
                                             series={this.props.vm.timeseries}
                                             columns={{ up: ['1', '2', '3'] }}
                                             //fillOpacity={0.4}
-                                            interpolation="curveBasis" />
+                                            interpolation="curveStepBefore" />
                                     </Charts>
                                 </ChartRow>
                             </ChartContainer>
@@ -84,13 +84,25 @@ export class ChartView extends React.Component {
                                             series={this.props.vm.timeseries}
                                             columns={{ up: ['_total'] }}
                                             //fillOpacity={0.4}
-                                            interpolation="curveBasis" />
+                                            interpolation="curveStepBefore" />
                                     </Charts>
                                 </ChartRow>
                             </ChartContainer>
                         </Resizable>
                     </Col>
                     <Col lg={3} sm={12}>
+
+                        <FormGroup>
+                            <ControlLabel>Ausgaben anzeigen von </ControlLabel>
+                            {' '}
+                            <Checkbox inline>
+                                Andi
+                            </Checkbox>
+                            {' '}
+                            <Checkbox inline>
+                                Julian
+                            </Checkbox>
+                        </FormGroup>
                         <Table responsive>
                             <thead>
                                 <tr>
@@ -102,19 +114,19 @@ export class ChartView extends React.Component {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
+                                    <td><Checkbox inline /></td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
+                                    <td><Checkbox inline /></td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td><Checkbox inline /></td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
                                     <td>Table cell</td>
