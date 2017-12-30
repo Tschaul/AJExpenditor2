@@ -10,7 +10,7 @@ export class MainViewModel {
     constructor() {
 
         extendObservable(this,{
-            selectedTabKey: 'chart', // 'table',
+            selectedTabKey: 'table',
             categories: [],
             people: [],
         });

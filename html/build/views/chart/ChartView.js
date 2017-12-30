@@ -68,7 +68,7 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                 React.createElement(YAxis, {
                                     id: "y",
                                     min: 0,
-                                    max: 1000,
+                                    max: 5000,
                                     width: "60",
                                     type: "linear" }),
                                 React.createElement(
@@ -139,7 +139,7 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                 {
                                     key: person.name,
                                     inline: true,
-                                    checked: checked,
+                                    checked: !!checked,
                                     onChange: () => this.props.vm.togglePerson(person.name)
                                 },
                                 person.fullName
@@ -186,7 +186,7 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                         { style: { backgroundColor: color } },
                                         React.createElement(Checkbox, {
                                             inline: true,
-                                            checked: checked,
+                                            checked: !!checked,
                                             onChange: () => this.props.vm.toggleCategory(category.name)
                                         })
                                     ),

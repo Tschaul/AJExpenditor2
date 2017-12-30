@@ -57,7 +57,7 @@ export class ChartView extends React.Component {
                                     <YAxis
                                         id="y"
                                         min={0}
-                                        max={1000}
+                                        max={5000}
                                         width="60"
                                         type="linear"/>
                                     <Charts>
@@ -110,7 +110,7 @@ export class ChartView extends React.Component {
                                     <Checkbox 
                                         key={person.name}
                                         inline 
-                                        checked={checked}
+                                        checked={!!checked}
                                         onChange={() => this.props.vm.togglePerson(person.name)}
                                     >
                                         {person.fullName}
@@ -135,7 +135,7 @@ export class ChartView extends React.Component {
                                             <td style={{backgroundColor: color}}>
                                                 <Checkbox 
                                                     inline 
-                                                    checked={checked}
+                                                    checked={!!checked}
                                                     onChange={() => this.props.vm.toggleCategory(category.name)}
                                                 />
                                             </td>

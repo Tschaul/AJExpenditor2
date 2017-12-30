@@ -156,8 +156,6 @@ export let ChartViewModel = class ChartViewModel {
             newData.minKey = minKey;
             newData.maxKey = maxKey;
 
-            console.log(newData);
-
             this.data = newData;
         });
     }
