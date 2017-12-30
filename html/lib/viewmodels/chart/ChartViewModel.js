@@ -12,6 +12,7 @@ export class ChartViewModel {
             selectedRange: null,
             selectedDate: null,
             selectedCategories: [],
+            selectedPeople: [],
             timeseries: computed(()=>this.computeTimeseries()),
             selectedDateValues: computed(()=>this.extractSelectedDateValues()),
         })
@@ -30,9 +31,18 @@ export class ChartViewModel {
     toggleCategory(name) {
         
         if (this.selectedCategories.find(x => x === name)){
-            console.log("remove",name,this.selectedCategories.remove(name));
+            this.selectedCategories.remove(name);
         } else {
             this.selectedCategories.push(name);
+        }
+    }
+
+    togglePerson(name) {
+        
+        if (this.selectedPeople.find(x => x === name)){
+            this.selectedPeople.remove(name);
+        } else {
+            this.selectedPeople.push(name);
         }
     }
 
@@ -86,7 +96,9 @@ export class ChartViewModel {
 
                 let sum = 0;
 
-                this.people.forEach(person =>{
+                this.people
+                    .filter(person => this.selectedPeople.find(x=>x===person.name))
+                    .forEach(person =>{
                     // console.log(person,category,currentKey,this.data[person.name][category.name]);
                     const value = (this.data[person.name][category.name][currentKey]||0)/10000;
                     sum += value;

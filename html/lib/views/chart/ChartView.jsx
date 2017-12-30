@@ -39,8 +39,6 @@ export class ChartView extends React.Component {
             color: customColorsList[i]
         })));
 
-        console.log(stylerForArea)
-
         const stlyerForSelector = styler([{ key: "_total", color: "#777" }])
 
         const rangeToShow = this.props.vm.selectedRange || this.props.vm.timeseries.range();
@@ -106,13 +104,19 @@ export class ChartView extends React.Component {
                         <FormGroup>
                             <ControlLabel>Ausgaben anzeigen von </ControlLabel>
                             {' '}
-                            <Checkbox inline>
-                                Andi
-                            </Checkbox>
-                            {' '}
-                            <Checkbox inline>
-                                Julian
-                            </Checkbox>
+                            {this.props.vm.people.map(person => {
+                                const checked = this.props.vm.selectedPeople.find(x=>x===person.name);
+                                return (
+                                    <Checkbox 
+                                        key={person.name}
+                                        inline 
+                                        checked={checked}
+                                        onChange={() => this.props.vm.togglePerson(person.name)}
+                                    >
+                                        {person.fullName}
+                                    </Checkbox>
+                                );
+                            })}
                         </FormGroup>
                         <Table responsive>
                             <thead>
