@@ -2,6 +2,7 @@ import {obervable,computed,extendObservable} from "mobx";
 import { TimeSeries, TimeRange } from "pondjs";
 
 import {getExpendituresTotal} from "../../db/database"
+import { getAmountDisplay } from "../../../build/viewmodels/util";
 
 export class ChartViewModel {
     constructor(parent) {
@@ -10,8 +11,9 @@ export class ChartViewModel {
             data: null,
             selectedRange: null,
             selectedDate: null,
+            selectedCategories: [],
             timeseries: computed(()=>this.computeTimeseries()),
-            selectedDateValues: computed(()=>this.extractSelectedDateValues())
+            selectedDateValues: computed(()=>this.extractSelectedDateValues()),
         })
         this.parent = parent;
         this.queryExpendituresTotal();
@@ -25,6 +27,15 @@ export class ChartViewModel {
         return this.parent.categories;
     }
 
+    toggleCategory(name) {
+        
+        if (this.selectedCategories.find(x => x === name)){
+            console.log("remove",name,this.selectedCategories.remove(name));
+        } else {
+            this.selectedCategories.push(name);
+        }
+    }
+
     extractSelectedDateValues() {
 
         let retVal = {};
@@ -36,7 +47,8 @@ export class ChartViewModel {
         const timeEvent = this.timeseries.atTime(this.selectedDate);
 
         this.categories.forEach(cat => {
-            retVal[cat.name] = timeEvent.get(cat.name);
+            const val = timeEvent.get(cat.name);
+            retVal[cat.name] = getAmountDisplay(val*10000);
         })
 
         return retVal;
@@ -137,7 +149,7 @@ export class ChartViewModel {
             newData.minKey = minKey;
             newData.maxKey = maxKey;
 
-            // console.log(newData);
+            console.log(newData);
 
             this.data = newData;
 

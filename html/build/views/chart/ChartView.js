@@ -39,6 +39,8 @@ export let ChartView = observer(_class = class ChartView extends React.Component
             color: customColorsList[i]
         })));
 
+        console.log(stylerForArea);
+
         const stlyerForSelector = styler([{ key: "_total", color: "#777" }]);
 
         const rangeToShow = this.props.vm.selectedRange || this.props.vm.timeseries.range();
@@ -78,9 +80,9 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                         axis: "y",
                                         style: stylerForArea,
                                         series: this.props.vm.timeseries,
-                                        columns: { up: ['1', '2', '3'] }
+                                        columns: { up: this.props.vm.selectedCategories.slice().sort() }
                                         //fillOpacity={0.4}
-                                        , interpolation: "curveStepBefore" })
+                                        , interpolation: "curveStepAfter" })
                                 )
                             )
                         )
@@ -174,14 +176,19 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                             "tbody",
                             null,
                             this.props.vm.categories.map(category => {
-                                // console.log(category,this.props.vm.selectedDateValues)
+                                const color = stylerForArea.columnStyles[category.name].color;
+                                const checked = this.props.vm.selectedCategories.find(x => x === category.name);
                                 return React.createElement(
                                     "tr",
                                     { key: category.name },
                                     React.createElement(
                                         "td",
-                                        null,
-                                        React.createElement(Checkbox, { inline: true })
+                                        { style: { backgroundColor: color } },
+                                        React.createElement(Checkbox, {
+                                            inline: true,
+                                            checked: checked,
+                                            onChange: () => this.props.vm.toggleCategory(category.name)
+                                        })
                                     ),
                                     React.createElement(
                                         "td",
@@ -190,7 +197,7 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                     ),
                                     React.createElement(
                                         "td",
-                                        null,
+                                        { style: { textAlign: "right" } },
                                         this.props.vm.selectedDateValues[category.name]
                                     )
                                 );

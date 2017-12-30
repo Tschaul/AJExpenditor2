@@ -39,6 +39,8 @@ export class ChartView extends React.Component {
             color: customColorsList[i]
         })));
 
+        console.log(stylerForArea)
+
         const stlyerForSelector = styler([{ key: "_total", color: "#777" }])
 
         const rangeToShow = this.props.vm.selectedRange || this.props.vm.timeseries.range();
@@ -65,9 +67,9 @@ export class ChartView extends React.Component {
                                             axis="y"
                                             style={stylerForArea}
                                             series={this.props.vm.timeseries}
-                                            columns={{ up: ['1', '2', '3'] }}
+                                            columns={{ up: this.props.vm.selectedCategories.slice().sort() }}
                                             //fillOpacity={0.4}
-                                            interpolation="curveStepBefore" />
+                                            interpolation="curveStepAfter" />
                                     </Charts>
                                 </ChartRow>
                             </ChartContainer>
@@ -122,12 +124,19 @@ export class ChartView extends React.Component {
                             </thead>
                             <tbody>
                                 {this.props.vm.categories.map(category => {
-                                    // console.log(category,this.props.vm.selectedDateValues)
+                                    const color = stylerForArea.columnStyles[category.name].color;
+                                    const checked = this.props.vm.selectedCategories.find(x=>x===category.name);
                                     return (
                                         <tr key={category.name}>
-                                            <td><Checkbox inline /></td>
+                                            <td style={{backgroundColor: color}}>
+                                                <Checkbox 
+                                                    inline 
+                                                    checked={checked}
+                                                    onChange={() => this.props.vm.toggleCategory(category.name)}
+                                                />
+                                            </td>
                                             <td>{category.fullName}</td>
-                                            <td>{this.props.vm.selectedDateValues[category.name]}</td>
+                                            <td style={{textAlign: "right"}}>{this.props.vm.selectedDateValues[category.name]}</td>
                                         </tr>
                                     )
                                 })}
