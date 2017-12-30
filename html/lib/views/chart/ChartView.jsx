@@ -18,10 +18,15 @@ export class ChartView extends React.Component {
     constructor(props) {
         super(props);
         this.handleTimeRangeChange = this.handleTimeRangeChange.bind(this);
+        this.handleDateChanged = this.handleDateChanged.bind(this);
     }
 
     handleTimeRangeChange(newRange) {
         this.props.vm.selectedRange = newRange;
+    }
+
+    handleDateChanged(newDate) {
+        this.props.vm.selectedDate = newDate;
     }
 
     render() {
@@ -43,7 +48,11 @@ export class ChartView extends React.Component {
                 <Row>
                     <Col lg={9} sm={12}>
                         <Resizable>
-                            <ChartContainer timeRange={rangeToShow}>
+                            <ChartContainer 
+                                timeRange={rangeToShow}
+                                trackerPosition={this.props.vm.selectedDate}
+                                onTrackerChanged={this.handleDateChanged}
+                            >
                                 <ChartRow height="350">
                                     <YAxis
                                         id="y"
@@ -107,30 +116,21 @@ export class ChartView extends React.Component {
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
+                                    <th>Name</th>
+                                    <th>Wert</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><Checkbox inline /></td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                </tr>
-                                <tr>
-                                    <td><Checkbox inline /></td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                </tr>
-                                <tr>
-                                    <td><Checkbox inline /></td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                </tr>
+                                {this.props.vm.categories.map(category => {
+                                    // console.log(category,this.props.vm.selectedDateValues)
+                                    return (
+                                        <tr key={category.name}>
+                                            <td><Checkbox inline /></td>
+                                            <td>{category.fullName}</td>
+                                            <td>{this.props.vm.selectedDateValues[category.name]}</td>
+                                        </tr>
+                                    )
+                                })}
                             </tbody>
                         </Table>
                     </Col>

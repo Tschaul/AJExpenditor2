@@ -9,7 +9,9 @@ export let ChartViewModel = class ChartViewModel {
         extendObservable(this, {
             data: null,
             selectedRange: null,
-            timeseries: computed(() => this.computeTimeseries())
+            selectedDate: null,
+            timeseries: computed(() => this.computeTimeseries()),
+            selectedDateValues: computed(() => this.extractSelectedDateValues())
         });
         this.parent = parent;
         this.queryExpendituresTotal();
@@ -21,6 +23,23 @@ export let ChartViewModel = class ChartViewModel {
 
     get categories() {
         return this.parent.categories;
+    }
+
+    extractSelectedDateValues() {
+
+        let retVal = {};
+
+        if (!this.timeseries || !this.selectedDate) {
+            return retVal;
+        }
+
+        const timeEvent = this.timeseries.atTime(this.selectedDate);
+
+        this.categories.forEach(cat => {
+            retVal[cat.name] = timeEvent.get(cat.name);
+        });
+
+        return retVal;
     }
 
     computeTimeseries() {
@@ -77,7 +96,7 @@ export let ChartViewModel = class ChartViewModel {
             }
         }
 
-        console.log(baseData);
+        // console.log(new TimeSeries(baseData));
 
         return new TimeSeries(baseData);
     }
@@ -115,7 +134,7 @@ export let ChartViewModel = class ChartViewModel {
             newData.minKey = minKey;
             newData.maxKey = maxKey;
 
-            console.log(newData);
+            // console.log(newData);
 
             this.data = newData;
         });

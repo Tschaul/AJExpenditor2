@@ -14,10 +14,15 @@ export let ChartView = observer(_class = class ChartView extends React.Component
     constructor(props) {
         super(props);
         this.handleTimeRangeChange = this.handleTimeRangeChange.bind(this);
+        this.handleDateChanged = this.handleDateChanged.bind(this);
     }
 
     handleTimeRangeChange(newRange) {
         this.props.vm.selectedRange = newRange;
+    }
+
+    handleDateChanged(newDate) {
+        this.props.vm.selectedDate = newDate;
     }
 
     render() {
@@ -52,7 +57,11 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                         null,
                         React.createElement(
                             ChartContainer,
-                            { timeRange: rangeToShow },
+                            {
+                                timeRange: rangeToShow,
+                                trackerPosition: this.props.vm.selectedDate,
+                                onTrackerChanged: this.handleDateChanged
+                            },
                             React.createElement(
                                 ChartRow,
                                 { height: "350" },
@@ -152,95 +161,40 @@ export let ChartView = observer(_class = class ChartView extends React.Component
                                 React.createElement(
                                     "th",
                                     null,
-                                    "Table heading"
+                                    "Name"
                                 ),
                                 React.createElement(
                                     "th",
                                     null,
-                                    "Table heading"
-                                ),
-                                React.createElement(
-                                    "th",
-                                    null,
-                                    "Table heading"
+                                    "Wert"
                                 )
                             )
                         ),
                         React.createElement(
                             "tbody",
                             null,
-                            React.createElement(
-                                "tr",
-                                null,
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    React.createElement(Checkbox, { inline: true })
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                )
-                            ),
-                            React.createElement(
-                                "tr",
-                                null,
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    React.createElement(Checkbox, { inline: true })
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                )
-                            ),
-                            React.createElement(
-                                "tr",
-                                null,
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    React.createElement(Checkbox, { inline: true })
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                ),
-                                React.createElement(
-                                    "td",
-                                    null,
-                                    "Table cell"
-                                )
-                            )
+                            this.props.vm.categories.map(category => {
+                                // console.log(category,this.props.vm.selectedDateValues)
+                                return React.createElement(
+                                    "tr",
+                                    { key: category.name },
+                                    React.createElement(
+                                        "td",
+                                        null,
+                                        React.createElement(Checkbox, { inline: true })
+                                    ),
+                                    React.createElement(
+                                        "td",
+                                        null,
+                                        category.fullName
+                                    ),
+                                    React.createElement(
+                                        "td",
+                                        null,
+                                        this.props.vm.selectedDateValues[category.name]
+                                    )
+                                );
+                            })
                         )
                     )
                 )
