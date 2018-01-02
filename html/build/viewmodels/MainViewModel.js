@@ -4,6 +4,7 @@ import { getPeople, getCategories } from "../db/database";
 
 import { TableViewModel } from './table/TableViewModel';
 import { ChartViewModel } from "./chart/ChartViewModel";
+import { ReportViewModel } from "../../build/viewmodels/report/ReportViewModel";
 
 export let MainViewModel = class MainViewModel {
 
@@ -18,6 +19,7 @@ export let MainViewModel = class MainViewModel {
         this.queryCategories();
         this.tableViewModel = new TableViewModel(this);
         this.chartViewModel = new ChartViewModel(this);
+        this.reportViewModel = new ReportViewModel(this);
     }
 
     queryPeople() {
