@@ -42,7 +42,7 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
             React.createElement(
                 "td",
                 { className: "text-right" },
-                this.props.event.date
+                this.props.event.occurenceDate
             ),
             React.createElement(
                 "td",

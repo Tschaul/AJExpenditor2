@@ -1,20 +1,22 @@
-/**
- * Map function - use `emit(key, value)1 to generate rows in the output result.
- * @link http://docs.couchdb.org/en/latest/couchapp/ddocs.html#reduce-and-rereduce-functions
- *
- * @param {object} doc - Document Object.
- */
 function(doc) {
 
-    if(doc.type==="event"){
+    if (doc.type === "event") {
 
-        var dateSplit = doc.date.split("-").map(function(s){return parseInt(s, 10)});
+        var Event = require('views/lib/event');
 
-        doc.expenditures.forEach(function(exp) {
+        var occurences = Event.getAllOccurences(doc);
 
-            var key = [exp.person,doc.category].concat(dateSplit);
+        doc.expenditures.forEach(function (exp) {
 
-            emit(key, Math.round(doc.amount*(exp.portion/100)));
+            occurences.forEach(function (date) {
+
+                var dateSplit = date.split("-").map(function (s) { return parseInt(s, 10) });
+
+                var key = [exp.person, doc.category].concat(dateSplit);
+
+                emit(key, Math.round(doc.amount * (exp.portion / 100)));
+
+            })
             
         });
 

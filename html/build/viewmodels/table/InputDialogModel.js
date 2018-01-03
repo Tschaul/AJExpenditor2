@@ -28,6 +28,8 @@ export let InputDialogModel = class InputDialogModel {
             }),
             description: "",
             date: moment(),
+            repeats: false,
+            reapeatsUntil: moment(),
             category: null,
             expenditures: [],
             ious: [],
@@ -61,6 +63,8 @@ export let InputDialogModel = class InputDialogModel {
         this.amountRaw = "";
         this.description = "";
         this.date = moment();
+        this.repeats = false;
+        this.reapeatsUntil = moment();
         this.category = null;
         this.expenditures = [];
         this.ious = [];
@@ -71,6 +75,7 @@ export let InputDialogModel = class InputDialogModel {
     }
 
     showEditModal(event) {
+        console.log(event);
         this.mode = "edit";
         this.amountRaw = event.amountScribble;
         this.description = event.description;
@@ -79,6 +84,8 @@ export let InputDialogModel = class InputDialogModel {
         this.expenditures.replace(event.expenditures);
         this.category = this.parent.getCategory(event.category);
         this.date = moment(event.date);
+        this.repeats = !!event.repeats;
+        this.repeatsUntil = moment(event.repeatsUntil);
         this._id = event._id;
         this._rev = event._rev;
         this.isShown = true;
@@ -98,6 +105,8 @@ export let InputDialogModel = class InputDialogModel {
             "amount": this.amount,
             "description": this.description,
             "date": this.date.format("YYYY-MM-DD"),
+            "repeats": this.repeats ? "monthly" : undefined,
+            "repeatsUntil": this.repeats ? this.repeatsUntil.format("YYYY-MM-DD") : undefined,
             "category": this.category.name,
             "amountScribble": this.amountRaw,
             "ious": toJS(this.ious),
@@ -119,6 +128,8 @@ export let InputDialogModel = class InputDialogModel {
             "amount": this.amount,
             "description": this.description,
             "date": this.date.format("YYYY-MM-DD"),
+            "repeats": this.repeats ? "monthly" : undefined,
+            "repeatsUntil": this.repeats ? this.repeatsUntil.format("YYYY-MM-DD") : undefined,
             "category": this.category.name,
             "amountScribble": this.amountRaw,
             "ious": toJS(this.ious),
@@ -128,7 +139,7 @@ export let InputDialogModel = class InputDialogModel {
         console.log(doc);
         return put(doc).then(result => {
             this._rev = result.rev;
-            this.log.unshift(`${this.amountDisplay} ${this.description} ${this.date.format("YYYY-MM-DD")} upgedatet`);
+            this.log.unshift(`${this.amountDisplay} ${this.description} ${this.date.format("YYYY-MM-DD")} geupdatet`);
         });
     }
 

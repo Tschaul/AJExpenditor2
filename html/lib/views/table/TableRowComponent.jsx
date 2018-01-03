@@ -25,7 +25,7 @@ export class TableRow extends React.Component {
                 </td>
                 <td className="text-right">{this.props.event.amountDisplay}</td>
                 <td>{this.props.event.description}</td>
-                <td className="text-right">{this.props.event.date}</td>
+                <td className="text-right">{this.props.event.occurenceDate}</td>
                 <td>{this.props.event.categoryFullName}</td>
                 {this.props.people.map(person=>{
                     const expenditure = this.props.event.expenditures.find(x=>x.person===person.name);

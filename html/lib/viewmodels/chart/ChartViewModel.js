@@ -1,7 +1,7 @@
-import {obervable,computed,extendObservable} from "mobx";
+import { obervable, computed, extendObservable } from "mobx";
 import { TimeSeries, TimeRange } from "pondjs";
 
-import {getExpendituresTotal} from "../../db/database"
+import { getExpendituresTotal } from "../../db/database"
 import { getAmountDisplay } from "../../../build/viewmodels/util";
 
 export class ChartViewModel {
@@ -13,8 +13,8 @@ export class ChartViewModel {
             selectedDate: null,
             selectedCategories: [],
             selectedPeople: [],
-            timeseries: computed(()=>this.computeTimeseries()),
-            selectedDateValues: computed(()=>this.extractSelectedDateValues()),
+            timeseries: computed(() => this.computeTimeseries()),
+            selectedDateValues: computed(() => this.extractSelectedDateValues()),
         })
         this.parent = parent;
         this.queryExpendituresTotal();
@@ -23,14 +23,14 @@ export class ChartViewModel {
     get people() {
         return this.parent.people;
     }
-    
+
     get categories() {
         return this.parent.categories;
     }
 
     toggleCategory(name) {
-        
-        if (this.selectedCategories.find(x => x === name)){
+
+        if (this.selectedCategories.find(x => x === name)) {
             this.selectedCategories.remove(name);
         } else {
             this.selectedCategories.push(name);
@@ -38,8 +38,8 @@ export class ChartViewModel {
     }
 
     togglePerson(name) {
-        
-        if (this.selectedPeople.find(x => x === name)){
+
+        if (this.selectedPeople.find(x => x === name)) {
             this.selectedPeople.remove(name);
         } else {
             this.selectedPeople.push(name);
@@ -50,7 +50,7 @@ export class ChartViewModel {
 
         let retVal = {};
 
-        if(!this.timeseries || !this.selectedDate) {
+        if (!this.timeseries || !this.selectedDate) {
             return retVal;
         }
 
@@ -58,21 +58,21 @@ export class ChartViewModel {
 
         this.categories.forEach(cat => {
             const val = timeEvent.get(cat.name);
-            retVal[cat.name] = getAmountDisplay(val*10000);
+            retVal[cat.name] = getAmountDisplay(val * 10000);
         })
 
         return retVal;
     }
 
     computeTimeseries() {
-        
-        if(!this.data) {
+
+        if (!this.data) {
             return null;
         }
 
         let baseData = {
             name: 'expendituresTotal',
-            columns: ['time'].concat(this.categories.map(x=>x.name)).concat(['_total']),
+            columns: ['time'].concat(this.categories.map(x => x.name)).concat(['_total']),
             points: []
         };
 
@@ -84,7 +84,11 @@ export class ChartViewModel {
         let currentYear = startYear;
         let currentMonth = startMonth;
 
-        while(currentYear <= endYear && currentMonth <= endMonth){
+        // console.log(startYear, startMonth, endYear, endMonth)
+
+        while ((currentYear + "-" + currentMonth) <= (endYear + "-" + endMonth)) {
+
+            console.log(currentYear, currentMonth)
 
             const currentKey = currentYear + '-' + (currentMonth < 10 ? ('0' + currentMonth) : currentMonth);
 
@@ -92,18 +96,18 @@ export class ChartViewModel {
 
             let totalSum = 0;
 
-            this.categories.forEach((category,index) => {
+            this.categories.forEach((category, index) => {
 
                 let sum = 0;
 
                 this.people
-                    .filter(person => this.selectedPeople.find(x=>x===person.name))
-                    .forEach(person =>{
-                    // console.log(person,category,currentKey,this.data[person.name][category.name]);
-                    const value = (this.data[person.name][category.name][currentKey]||0)/10000;
-                    sum += value;
-                    totalSum += value;
-                });
+                    .filter(person => this.selectedPeople.find(x => x === person.name))
+                    .forEach(person => {
+                        // console.log(person,category,currentKey,this.data[person.name][category.name]);
+                        const value = (this.data[person.name][category.name][currentKey] || 0) / 10000;
+                        sum += value;
+                        totalSum += value;
+                    });
 
                 row.push(sum);
 
@@ -113,23 +117,23 @@ export class ChartViewModel {
 
             baseData.points.push(row);
 
-            if (currentMonth===12){
-                currentMonth=1;
+            if (currentMonth === 12) {
+                currentMonth = 1;
                 currentYear++;
             } else {
                 currentMonth++;
             }
         }
 
-        // console.log(new TimeSeries(baseData));
+        // console.log(baseData);
 
         return new TimeSeries(baseData);
 
     }
 
     queryExpendituresTotal() {
-        getExpendituresTotal(4).then(totals=>{
-            
+        getExpendituresTotal(4).then(totals => {
+
             let newData = {};
 
             this.people.forEach(person => {
@@ -143,15 +147,15 @@ export class ChartViewModel {
             let minKey = '9999-99';
 
             totals.forEach(total => {
-                
+
                 const key = total.year + '-' + (total.month < 10 ? ('0' + total.month) : total.month);
 
-                if(key < minKey){
-                    minKey=key;
+                if (key < minKey) {
+                    minKey = key;
                 }
 
-                if(key > maxKey){
-                    maxKey=key;
+                if (key > maxKey) {
+                    maxKey = key;
                 }
 
                 newData[total.person][total.category][key] = total.value;

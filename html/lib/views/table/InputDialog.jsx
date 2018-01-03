@@ -14,6 +14,8 @@ export class InputDialog extends React.Component {
         this.handleAmountChange=this.handleAmountChange.bind(this);
         this.handleDescriptionChange=this.handleDescriptionChange.bind(this);
         this.handleDateChange=this.handleDateChange.bind(this);
+        this.handleRepeatsUntilChange=this.handleRepeatsUntilChange.bind(this);
+        this.handleRepeatsToggle=this.handleRepeatsToggle.bind(this);
         this.handleCategoryChange=this.handleCategoryChange.bind(this);
         this.handleDraftSelect=this.handleDraftSelect.bind(this);
         this.handleSend=this.handleSend.bind(this);
@@ -38,6 +40,14 @@ export class InputDialog extends React.Component {
 
     handleDateChange(newval) {
         this.props.model.date = newval;
+    }
+
+    handleRepeatsUntilChange(newval) {
+        this.props.model.repeatsUntil = newval;
+    }
+
+    handleRepeatsToggle() {
+        this.props.model.repeats = !this.props.model.repeats;
     }
 
     handleCategoryChange(event) {
@@ -98,6 +108,27 @@ export class InputDialog extends React.Component {
                             </Col>
                             <Col sm={9}>
                                 <Datetime timeFormat={false} closeOnSelect dateFormat="YYYY-MM-DD" value={this.props.model.date} onChange={this.handleDateChange}/>
+                            </Col>
+                        </FormGroup>
+                        <FormGroup>
+                            <Col componentClass={ControlLabel} sm={3}>
+                                
+                            </Col>
+                            <Col sm={1}>
+                                <Checkbox onChange={this.handleRepeatsToggle} checked={this.props.model.repeats}/>
+                            </Col>
+                            <Col componentClass={ControlLabel} sm={3} style={{textAlign: "left"}}>
+                                Monatlich bis
+                            </Col>
+                            <Col sm={5}>
+                                <Datetime 
+                                    timeFormat={false} 
+                                    closeOnSelect 
+                                    dateFormat="YYYY-MM-DD" 
+                                    value={this.props.model.repeatsUntil} 
+                                    onChange={this.handleRepeatsUntilChange}
+                                    inputProps={{disabled: !this.props.model.repeats}}
+                                />
                             </Col>
                         </FormGroup>
                         <FormGroup>

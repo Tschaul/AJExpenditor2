@@ -42,12 +42,22 @@ export function getDrafts() {
 }
 
 export function getEvents(skip, limit) {
+    const now = new Date();
+    const startkey = [now.getFullYear(), now.getMonth() + 1, now.getDate()];
     return db.query('ajexpenditor/events', {
         include_docs: true,
         descending: true,
         limit: limit,
-        skip: skip
-    }).then(data => data.rows.map(row => row.doc));
+        skip: skip,
+        startkey: startkey
+    }).then(data => data.rows.map(row => {
+
+        const monthStr = row.key[1] < 10 ? "0" + row.key[1] : row.key[1];
+
+        const dayStr = row.key[2] < 10 ? "0" + row.key[2] : row.key[2];
+
+        return Object.assign(row.doc, { occurenceDate: row.key[0] + "-" + monthStr + "-" + dayStr });
+    }));
 }
 
 export function getExpendituresTotal(groupLevel) {

@@ -1,15 +1,23 @@
 function(doc) {
-    if(doc.type==="event"){
-        for (var x = 0; x < doc.ious.length; x++) {
 
-            var dateSplit = doc.date.split("-").map(function(s){return parseInt(s, 10)});
+    if (doc.type === "event") {
 
-            var iou = doc.ious[x];
+        var Event = require('views/lib/event');
 
-            var amount = Math.round(doc.amount*(iou.portion/100));
-            var key = [iou.borrower,iou.creditor].concat(dateSplit);
-            emit(key,amount);
+        var occurences = Event.getAllOccurences(doc);
 
-        }
+        doc.ious.forEach(function (iou) {
+
+            occurences.forEach(function (date) {
+
+                var dateSplit = date.split("-").map(function (s) { return parseInt(s, 10) });
+
+
+                var amount = Math.round(doc.amount * (iou.portion / 100));
+                var key = [iou.borrower, iou.creditor].concat(dateSplit);
+                emit(key, amount);
+            })
+
+        })
     }
 }

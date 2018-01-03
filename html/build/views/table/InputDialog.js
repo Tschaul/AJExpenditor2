@@ -15,6 +15,8 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
         this.handleAmountChange = this.handleAmountChange.bind(this);
         this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
         this.handleDateChange = this.handleDateChange.bind(this);
+        this.handleRepeatsUntilChange = this.handleRepeatsUntilChange.bind(this);
+        this.handleRepeatsToggle = this.handleRepeatsToggle.bind(this);
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleDraftSelect = this.handleDraftSelect.bind(this);
         this.handleSend = this.handleSend.bind(this);
@@ -39,6 +41,14 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
 
     handleDateChange(newval) {
         this.props.model.date = newval;
+    }
+
+    handleRepeatsUntilChange(newval) {
+        this.props.model.repeatsUntil = newval;
+    }
+
+    handleRepeatsToggle() {
+        this.props.model.repeats = !this.props.model.repeats;
     }
 
     handleCategoryChange(event) {
@@ -133,6 +143,33 @@ export let InputDialog = observer(_class = class InputDialog extends React.Compo
                             Col,
                             { sm: 9 },
                             React.createElement(Datetime, { timeFormat: false, closeOnSelect: true, dateFormat: "YYYY-MM-DD", value: this.props.model.date, onChange: this.handleDateChange })
+                        )
+                    ),
+                    React.createElement(
+                        FormGroup,
+                        null,
+                        React.createElement(Col, { componentClass: ControlLabel, sm: 3 }),
+                        React.createElement(
+                            Col,
+                            { sm: 1 },
+                            React.createElement(Checkbox, { onChange: this.handleRepeatsToggle, checked: this.props.model.repeats })
+                        ),
+                        React.createElement(
+                            Col,
+                            { componentClass: ControlLabel, sm: 3, style: { textAlign: "left" } },
+                            "Monatlich bis"
+                        ),
+                        React.createElement(
+                            Col,
+                            { sm: 5 },
+                            React.createElement(Datetime, {
+                                timeFormat: false,
+                                closeOnSelect: true,
+                                dateFormat: "YYYY-MM-DD",
+                                value: this.props.model.repeatsUntil,
+                                onChange: this.handleRepeatsUntilChange,
+                                inputProps: { disabled: !this.props.model.repeats }
+                            })
                         )
                     ),
                     React.createElement(

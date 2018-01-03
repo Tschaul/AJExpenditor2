@@ -5,10 +5,10 @@ const windowPort = window.location.port === "5000"
     : window.location.port
 
 const portStr = windowPort
-    ? ":"+windowPort
+    ? ":" + windowPort
     : "";
 
-const url = window.location.protocol+"//"+window.location.hostname+portStr+"/ajexpenditor"
+const url = window.location.protocol + "//" + window.location.hostname + portStr + "/ajexpenditor"
 
 var db = new PouchDB(url)
 
@@ -20,7 +20,7 @@ db.changes({
     include_docs: true
 }).on('change', function (change) {
     //console.log("CHANGE",change);
-    if(change.doc.type==="event" || change.deleted){
+    if (change.doc.type === "event" || change.deleted) {
         eventChangeHandlers.forEach(handler => handler());
     }
 }).on('error', function (err) {
@@ -28,38 +28,55 @@ db.changes({
 });
 
 export function getPeople() {
-    return db.query('ajexpenditor/people',{
-        include_docs : true
-    }).then(data=>data.rows.map(row=>row.doc))
+    return db.query('ajexpenditor/people', {
+        include_docs: true
+    }).then(data => data.rows.map(row => row.doc))
 }
 
 export function getCategories() {
-    return db.query('ajexpenditor/categories',{
-        include_docs : true
-    }).then(data=>data.rows.map(row=>row.doc))
+    return db.query('ajexpenditor/categories', {
+        include_docs: true
+    }).then(data => data.rows.map(row => row.doc))
 }
 
 export function getDrafts() {
-    return db.query('ajexpenditor/drafts',{
-        include_docs : true
-    }).then(data=>data.rows.map(row=>row.doc))
+    return db.query('ajexpenditor/drafts', {
+        include_docs: true
+    }).then(data => data.rows.map(row => row.doc))
 }
 
-export function getEvents(skip,limit) {
-    return db.query('ajexpenditor/events',{
-        include_docs : true,
+export function getEvents(skip, limit) {
+    const now = new Date();
+    const startkey = [now.getFullYear(),now.getMonth()+1,now.getDate()];
+    return db.query('ajexpenditor/events', {
+        include_docs: true,
         descending: true,
         limit: limit,
-        skip: skip
-    }).then(data=> data.rows.map(row=>row.doc))
+        skip: skip,
+        startkey: startkey
+    }).then(data => data.rows.map(row => {
+
+        const monthStr = row.key[1] < 10 
+            ? "0"+row.key[1]
+            : row.key[1];
+
+        const dayStr = row.key[2] < 10 
+            ? "0"+row.key[2]
+            : row.key[2];
+
+        return Object.assign(
+            row.doc,
+            { occurenceDate: row.key[0] + "-" + monthStr + "-" + dayStr }
+        );
+    }))
 }
 
 export function getExpendituresTotal(groupLevel) {
     groupLevel = groupLevel || 1;
-    return db.query('ajexpenditor/expenditures_total',{
+    return db.query('ajexpenditor/expenditures_total', {
         reduce: true,
         group_level: groupLevel
-    }).then(data => data.rows.map(row=>{
+    }).then(data => data.rows.map(row => {
         return {
             person: row.key[0],
             category: row.key[1],
@@ -72,10 +89,10 @@ export function getExpendituresTotal(groupLevel) {
 }
 
 export function getIousTotal() {
-    return db.query('ajexpenditor/ious_total',{
+    return db.query('ajexpenditor/ious_total', {
         reduce: true,
         group_level: 2
-    }).then(data => data.rows.map(row=>{
+    }).then(data => data.rows.map(row => {
         return {
             borrower: row.key[0],
             creditor: row.key[1],
@@ -84,18 +101,18 @@ export function getIousTotal() {
     }))
 }
 
-export function post(doc){
+export function post(doc) {
     return db.post(doc);
 }
 
-export function put(doc){
+export function put(doc) {
     return db.put(doc);
 }
 
-export function remove(id,rev){
-    return db.remove(id,rev);
+export function remove(id, rev) {
+    return db.remove(id, rev);
 }
 
-export function onEventsChange(handler){
+export function onEventsChange(handler) {
     eventChangeHandlers.push(handler);
 }

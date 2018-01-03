@@ -84,7 +84,11 @@ export let ChartViewModel = class ChartViewModel {
         let currentYear = startYear;
         let currentMonth = startMonth;
 
-        while (currentYear <= endYear && currentMonth <= endMonth) {
+        // console.log(startYear, startMonth, endYear, endMonth)
+
+        while (currentYear + "-" + currentMonth <= endYear + "-" + endMonth) {
+
+            console.log(currentYear, currentMonth);
 
             const currentKey = currentYear + '-' + (currentMonth < 10 ? '0' + currentMonth : currentMonth);
 
@@ -118,7 +122,7 @@ export let ChartViewModel = class ChartViewModel {
             }
         }
 
-        // console.log(new TimeSeries(baseData));
+        // console.log(baseData);
 
         return new TimeSeries(baseData);
     }

@@ -135,7 +135,7 @@ export let TableView = observer(_class = class TableView extends React.Component
                 React.createElement(
                     "tbody",
                     null,
-                    this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people, showEditModal: this.handleShowEditModal }))
+                    this.props.vm.events.map(event => React.createElement(TableRow, { key: event._id + '_' + event.occurenceDate, event: event, iouPairs: this.props.vm.iouPairs, people: this.props.vm.people, showEditModal: this.handleShowEditModal }))
                 )
             )
         );

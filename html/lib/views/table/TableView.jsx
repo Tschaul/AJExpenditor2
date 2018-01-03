@@ -95,7 +95,7 @@ export class TableView extends React.Component{
                     </thead>
                     <tbody>
                         {this.props.vm.events.map(event=>(
-                            <TableRow key={event._id} event={event} iouPairs={this.props.vm.iouPairs} people={this.props.vm.people} showEditModal={this.handleShowEditModal}/>
+                            <TableRow key={event._id+'_'+event.occurenceDate} event={event} iouPairs={this.props.vm.iouPairs} people={this.props.vm.people} showEditModal={this.handleShowEditModal}/>
                         ))}
                     
                     </tbody>
