@@ -61,17 +61,10 @@ export class TableView extends React.Component{
                         <th className="text-center">Datum<br/>&nbsp;</th>
                         <th className="text-center">Kategorie<br/>&nbsp;</th>
                         {this.props.vm.people.map(person=>{
-                            const total = this.props.vm.getExpendituresTotal(person.name);
                             return(
                                 <th key={person.name} className="text-center">
                                     {person.fullName}
-                                    {total && (
-                                        <div>
-                                            ∑
-                                            {" "}
-                                            {total}
-                                        </div>
-                                    )}
+                                    <br/>&nbsp;
                                 </th>
                             )
                         })}

@@ -37,7 +37,7 @@ export let TableRow = observer(_class = class TableRow extends React.Component {
             React.createElement(
                 "td",
                 null,
-                this.props.event.description
+                (this.props.event.repeats ? '⟲ ' : '') + this.props.event.description
             ),
             React.createElement(
                 "td",

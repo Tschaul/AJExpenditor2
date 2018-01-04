@@ -24,7 +24,7 @@ export class TableRow extends React.Component {
                     </Button>
                 </td>
                 <td className="text-right">{this.props.event.amountDisplay}</td>
-                <td>{this.props.event.description}</td>
+                <td>{(this.props.event.repeats ? '⟲ ' : '') + this.props.event.description}</td>
                 <td className="text-right">{this.props.event.occurenceDate}</td>
                 <td>{this.props.event.categoryFullName}</td>
                 {this.props.people.map(person=>{

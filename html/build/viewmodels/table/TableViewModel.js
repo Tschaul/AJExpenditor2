@@ -1,6 +1,6 @@
-import { obervable, computed, extendObservable } from "mobx";
+import { obervable, computed, extendObservable, autorunAsync } from "mobx";
 
-import { getEvents, onEventsChange, getExpendituresTotal, getIousTotal } from "../../db/database";
+import { getEventsUntil, onEventsChange, getExpendituresTotal, getIouSaldoForNow } from "../../db/database";
 import { getAmountDisplay } from "../util";
 
 import { InputDialogModel } from "./InputDialogModel";
@@ -23,18 +23,15 @@ export let TableViewModel = class TableViewModel {
                 });
                 return pairs;
             }),
-            expendituresTotals: [],
             iousTotals: []
         });
         this.parent = parent;
         this.inputDialog = new InputDialogModel(this);
         this.queryEvents();
-        this.queryExpendituresTotal();
-        this.queryIousTotal();
+        autorunAsync(() => this.queryIousTotal());
 
         onEventsChange(() => {
             this.requeryEvents();
-            this.queryExpendituresTotal();
             this.queryIousTotal();
         });
     }
@@ -48,7 +45,7 @@ export let TableViewModel = class TableViewModel {
     }
 
     queryEvents() {
-        getEvents(0, 20).then(events => {
+        getEventsUntil(0, 20, new Date()).then(events => {
             this.events.replace(events.map(e => new Event(e, this)));
             this.queryMoreEvents();
         });
@@ -59,7 +56,7 @@ export let TableViewModel = class TableViewModel {
 
             this.queryingMoreEvents = true;
             //console.log('querying more events');
-            getEvents(this.events.length, 20).then(events => {
+            getEventsUntil(this.events.length, 20, new Date()).then(events => {
 
                 this.events = this.events.concat(events.map(e => new Event(e, this)));
                 this.queryingMoreEvents = false;
@@ -68,30 +65,29 @@ export let TableViewModel = class TableViewModel {
     }
 
     requeryEvents() {
-        getEvents(0, this.events.length).then(events => {
+        getEventsUntil(0, this.events.length, new Date()).then(events => {
             this.events.replace(events.map(e => new Event(e, this)));
         });
     }
 
-    queryExpendituresTotal() {
-        getExpendituresTotal().then(totals => {
-            this.expendituresTotals.replace(totals);
-        });
-    }
+    async queryIousTotal() {
 
-    queryIousTotal() {
-        getIousTotal().then(totals => {
-            this.iousTotals.replace(totals);
-        });
+        this.iousTotals.clear();
+
+        for (const pair of this.iouPairs) {
+            const [borrower, creditor] = pair;
+            await getIouSaldoForNow(borrower, creditor).then(value => {
+                this.iousTotals.push({
+                    borrower: borrower.name,
+                    creditor: creditor.name,
+                    value
+                });
+            });
+        }
     }
 
     getCategory(name) {
         return this.categories.find(x => x.name == name);
-    }
-
-    getExpendituresTotal(name) {
-        const total = this.expendituresTotals.find(x => x.person === name);
-        return total ? getAmountDisplay(total.value) : undefined;
     }
 
     getIousTotal(borrower, creditor) {

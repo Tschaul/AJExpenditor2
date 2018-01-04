@@ -97,18 +97,12 @@ export let TableView = observer(_class = class TableView extends React.Component
                             "\xA0"
                         ),
                         this.props.vm.people.map(person => {
-                            const total = this.props.vm.getExpendituresTotal(person.name);
                             return React.createElement(
                                 "th",
                                 { key: person.name, className: "text-center" },
                                 person.fullName,
-                                total && React.createElement(
-                                    "div",
-                                    null,
-                                    "\u2211",
-                                    " ",
-                                    total
-                                )
+                                React.createElement("br", null),
+                                "\xA0"
                             );
                         }),
                         this.props.vm.iouPairs.map(pair => {
