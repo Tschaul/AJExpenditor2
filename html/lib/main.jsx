@@ -49,6 +49,14 @@ class App extends React.Component {
                         <NavItem eventKey={'chart'}>Chart</NavItem>
                         <NavItem eventKey={'report'}>Report</NavItem>
                     </Nav>
+
+                    <Navbar.Collapse>
+                        {this.props.vm.iousTotals.map(iou => {
+                            return (
+                                <Navbar.Text pullRight key={iou.borrower + "_" + iou.creditor}>{iou.borrowerFullName} schuldet {iou.creditorFullName} {iou.amountDisplay}</Navbar.Text>
+                            )
+                        })}
+                    </Navbar.Collapse>
                 </Navbar>
                 {this.renderContent()}
             </div>

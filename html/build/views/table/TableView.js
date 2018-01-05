@@ -1,7 +1,7 @@
 var _class;
 
 import * as React from "react";
-import { Table, Button } from "react-bootstrap";
+import { Table, Button, Checkbox, FormGroup, ControlLabel } from "react-bootstrap";
 import { observer } from "mobx-react";
 
 import { TableRow } from "./TableRowComponent";
@@ -13,6 +13,7 @@ export let TableView = observer(_class = class TableView extends React.Component
         super(props);
         this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
         this.handleShowEditModal = this.handleShowEditModal.bind(this);
+        this.handleShowFutureEventsToggle = this.handleShowFutureEventsToggle.bind(this);
     }
 
     componentWillMount() {
@@ -44,12 +45,30 @@ export let TableView = observer(_class = class TableView extends React.Component
         this.props.vm.inputDialog.showEditModal(event);
     }
 
+    handleShowFutureEventsToggle() {
+        this.props.vm.showFutureEvents = !this.props.vm.showFutureEvents;
+    }
+
     render() {
 
         return React.createElement(
             "div",
             null,
             React.createElement(InputDialog, { model: this.props.vm.inputDialog }),
+            React.createElement(
+                FormGroup,
+                null,
+                "\xA0 \xA0",
+                React.createElement(
+                    Checkbox,
+                    {
+                        inline: true,
+                        checked: this.props.vm.showFutureEvents,
+                        onChange: this.handleShowFutureEventsToggle
+                    },
+                    "Zuk\xFCnftige Ereignisse anzeigen"
+                )
+            ),
             React.createElement(
                 Table,
                 { responsive: true, striped: true, bordered: true },
@@ -71,57 +90,39 @@ export let TableView = observer(_class = class TableView extends React.Component
                         React.createElement(
                             "th",
                             { className: "text-center" },
-                            "Betrag",
-                            React.createElement("br", null),
-                            "\xA0"
+                            "Betrag"
                         ),
                         React.createElement(
                             "th",
                             { className: "text-center" },
-                            "Beschreibung",
-                            React.createElement("br", null),
-                            "\xA0"
+                            "Beschreibung"
                         ),
                         React.createElement(
                             "th",
                             { className: "text-center" },
-                            "Datum",
-                            React.createElement("br", null),
-                            "\xA0"
+                            "Datum"
                         ),
                         React.createElement(
                             "th",
                             { className: "text-center" },
-                            "Kategorie",
-                            React.createElement("br", null),
-                            "\xA0"
+                            "Kategorie"
                         ),
                         this.props.vm.people.map(person => {
                             return React.createElement(
                                 "th",
                                 { key: person.name, className: "text-center" },
-                                person.fullName,
-                                React.createElement("br", null),
-                                "\xA0"
+                                person.fullName
                             );
                         }),
                         this.props.vm.iouPairs.map(pair => {
                             //console.log(pair);
                             const [borrower, creditor] = pair;
-                            const total = this.props.vm.getIousTotal(borrower.name, creditor.name);
                             return React.createElement(
                                 "th",
                                 { key: creditor.name, className: "text-center" },
                                 borrower.fullName,
                                 " schuldet ",
-                                creditor.fullName,
-                                total && React.createElement(
-                                    "div",
-                                    null,
-                                    "\u2211",
-                                    " ",
-                                    total
-                                )
+                                creditor.fullName
                             );
                         })
                     )

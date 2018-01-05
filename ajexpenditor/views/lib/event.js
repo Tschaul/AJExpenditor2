@@ -9,7 +9,9 @@ exports.getAllOccurences = function (event) {
 
         while (currentDate <= endDate) {
 
-            currentDate.setMonth(currentDate.getMonth() + 1);
+            var nextMonth = currentDate.getMonth() + 1
+
+            currentDate.setMonth(nextMonth);
 
             var key = currentDate.getFullYear() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getDate();
 

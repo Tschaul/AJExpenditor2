@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Table, Button} from "react-bootstrap"
+import {Table, Button, Checkbox, FormGroup, ControlLabel} from "react-bootstrap"
 import {observer} from "mobx-react"
 
 import {TableRow} from "./TableRowComponent"
@@ -12,6 +12,7 @@ export class TableView extends React.Component{
         super(props);
         this.handleAddExpensesClick = this.handleAddExpensesClick.bind(this);
         this.handleShowEditModal = this.handleShowEditModal.bind(this);
+        this.handleShowFutureEventsToggle = this.handleShowFutureEventsToggle.bind(this);
     }
 
     componentWillMount() {
@@ -43,11 +44,26 @@ export class TableView extends React.Component{
         this.props.vm.inputDialog.showEditModal(event);
     }
 
+    handleShowFutureEventsToggle() {
+        this.props.vm.showFutureEvents = !this.props.vm.showFutureEvents;
+    }
+
     render(){
 
         return(
             <div>
                 <InputDialog model={this.props.vm.inputDialog}/>
+                <FormGroup>
+                    &nbsp;
+                    &nbsp;
+                    <Checkbox 
+                        inline
+                        checked={this.props.vm.showFutureEvents}
+                        onChange={this.handleShowFutureEventsToggle}
+                    >
+                        Zukünftige Ereignisse anzeigen
+                    </Checkbox>
+                </FormGroup>
                 <Table responsive striped bordered>
                     <thead>
                     <tr>
@@ -56,32 +72,23 @@ export class TableView extends React.Component{
                                 ✍
                             </Button>
                         </th>
-                        <th className="text-center">Betrag<br/>&nbsp;</th>
-                        <th className="text-center">Beschreibung<br/>&nbsp;</th>
-                        <th className="text-center">Datum<br/>&nbsp;</th>
-                        <th className="text-center">Kategorie<br/>&nbsp;</th>
+                        <th className="text-center">Betrag</th>
+                        <th className="text-center">Beschreibung</th>
+                        <th className="text-center">Datum</th>
+                        <th className="text-center">Kategorie</th>
                         {this.props.vm.people.map(person=>{
                             return(
                                 <th key={person.name} className="text-center">
                                     {person.fullName}
-                                    <br/>&nbsp;
                                 </th>
                             )
                         })}
                         {this.props.vm.iouPairs.map(pair=>{
                             //console.log(pair);
                             const [borrower,creditor] = pair;
-                            const total = this.props.vm.getIousTotal(borrower.name,creditor.name);
                             return(
                                 <th key={creditor.name} className="text-center">
                                     {borrower.fullName} schuldet {creditor.fullName}
-                                    {total && (
-                                        <div>
-                                            ∑
-                                            {" "}
-                                            {total}
-                                        </div>
-                                    )}
                                 </th>)
                         })}
                     </tr>

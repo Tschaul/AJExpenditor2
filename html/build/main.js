@@ -78,6 +78,21 @@ let App = observer(_class = class App extends React.Component {
                         { eventKey: 'report' },
                         "Report"
                     )
+                ),
+                React.createElement(
+                    Navbar.Collapse,
+                    null,
+                    this.props.vm.iousTotals.map(iou => {
+                        return React.createElement(
+                            Navbar.Text,
+                            { pullRight: true, key: iou.borrower + "_" + iou.creditor },
+                            iou.borrowerFullName,
+                            " schuldet ",
+                            iou.creditorFullName,
+                            " ",
+                            iou.amountDisplay
+                        );
+                    })
                 )
             ),
             this.renderContent()

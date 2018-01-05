@@ -45,8 +45,12 @@ export function getDrafts() {
     }).then(data => data.rows.map(row => row.doc))
 }
 
-export function getEventsUntil(skip, limit, now) {
-    const startkey = [now.getFullYear(),now.getMonth()+1,now.getDate()];
+export function getEvents(skip, limit, untilDate) {
+
+    const startkey = untilDate
+        ? [untilDate.getFullYear(),untilDate.getMonth()+1,untilDate.getDate()]
+        : undefined;
+
     return db.query('ajexpenditor/events', {
         include_docs: true,
         descending: true,
@@ -87,16 +91,17 @@ export function getExpendituresTotal(groupLevel) {
     }))
 }
 
-export function getIouSaldoForNow(borrower, creditor) {
-
-    const startkey = [borrower, creditor, 1970, 1, 1]
-    const now = new Date();
-    const endkey = [borrower, creditor, now.getFullYear(),now.getMonth()+1,now.getDate()];
-
+export function getIousTotal() {
     return db.query('ajexpenditor/ious_total', {
         reduce: true,
-        group_level: 0
-    }).then(data => data.rows[0].value);
+        group_level: 2
+    }).then(data => data.rows.map(row => {
+        return {
+            borrower: row.key[0],
+            creditor: row.key[1],
+            value: row.value
+        }
+    }))
 }
 
 export function post(doc) {
