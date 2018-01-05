@@ -1,4 +1,4 @@
-import { obervable, computed, extendObservable, autorunAsync } from "mobx";
+import { obervable, computed, extendObservable, observe } from "mobx";
 
 import { getEvents, onEventsChange, getExpendituresTotal } from "../../db/database";
 import { getAmountDisplay } from "../util";
@@ -31,7 +31,7 @@ export let TableViewModel = class TableViewModel {
         this.queryEvents();
 
         onEventsChange(() => this.requeryEvents());
-        autorunAsync(() => this.requeryEvents());
+        observe(this, "showFutureEvents", () => this.requeryEvents());
     }
 
     get people() {
