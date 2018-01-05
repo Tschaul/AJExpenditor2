@@ -209,7 +209,7 @@ $__System.register("2", ["3", "4", "5", "6", "7", "8", "9"], function (_export) 
     };
 });
 $__System.register("a", ["2", "4", "5", "6", "7", "8", "9"], function (_export) {
-    var InputDialogModel, getEvents, onEventsChange, getExpendituresTotal, getAmountDisplay, obervable, computed, extendObservable, autorunAsync, _createClass, _classCallCheck, _Object$assign, TableViewModel, Event;
+    var InputDialogModel, getEvents, onEventsChange, getExpendituresTotal, getAmountDisplay, obervable, computed, extendObservable, observe, _createClass, _classCallCheck, _Object$assign, TableViewModel, Event;
 
     return {
         setters: [function (_7) {
@@ -224,7 +224,7 @@ $__System.register("a", ["2", "4", "5", "6", "7", "8", "9"], function (_export) 
             obervable = _4.obervable;
             computed = _4.computed;
             extendObservable = _4.extendObservable;
-            autorunAsync = _4.autorunAsync;
+            observe = _4.observe;
         }, function (_) {
             _createClass = _["default"];
         }, function (_2) {
@@ -267,7 +267,7 @@ $__System.register("a", ["2", "4", "5", "6", "7", "8", "9"], function (_export) 
                     onEventsChange(function () {
                         return _this.requeryEvents();
                     });
-                    autorunAsync(function () {
+                    observe(this, "showFutureEvents", function () {
                         return _this.requeryEvents();
                     });
                 }

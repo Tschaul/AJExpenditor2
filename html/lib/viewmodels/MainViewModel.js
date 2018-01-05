@@ -6,6 +6,7 @@ import { getAmountDisplay } from "./util"
 import { TableViewModel } from './table/TableViewModel';
 import { ChartViewModel } from "./chart/ChartViewModel";
 import { ReportViewModel } from "../../build/viewmodels/report/ReportViewModel";
+import { onEventsChange } from "../../build/db/database";
 
 export class MainViewModel {
 
@@ -23,6 +24,8 @@ export class MainViewModel {
         this.tableViewModel = new TableViewModel(this);
         this.chartViewModel = new ChartViewModel(this);
         this.reportViewModel = new ReportViewModel(this);
+
+        onEventsChange(() => this.queryIousTotal());
     }
 
     queryPeople() {
