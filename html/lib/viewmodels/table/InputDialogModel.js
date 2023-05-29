@@ -17,7 +17,7 @@ export class InputDialogModel {
             amountRaw: "",
             amount: computed(() => {
                 try {
-                    const res = eval(this.amountRaw);
+                    const res = eval(this.amountRaw.replace(",","."));
                     return typeof (res) === "number"
                         ? Math.round(res * 10000)
                         : NaN

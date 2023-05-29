@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Table, FormControl, FormGroup, ControlLabel, Checkbox, Form } from "react-bootstrap"
+import { Table, FormControl, FormGroup, Button, Checkbox, Form } from "react-bootstrap"
 import { observer } from "mobx-react"
 
 @observer
@@ -28,6 +28,7 @@ export class ReportView extends React.Component {
                         </FormControl>
                         <FormGroup>
                         </FormGroup>
+                        <span style={{width: "1em", display: "inline-block"}}></span>
                         {this.props.vm.people.map(person => {
                             const checked = this.props.vm.selectedPeople.find(x => x === person.name);
                             return (
@@ -41,15 +42,17 @@ export class ReportView extends React.Component {
                                 </Checkbox>
                             );
                         })}
+                        <span style={{width: "1em", display: "inline-block"}}></span>
+                        <Button onClick={() => this.props.vm.makeCsv()}>CSV Export</Button>
                     </FormGroup>
                 </Form>
                 <Table responsive striped bordered>
                     <thead>
                         <tr>
                             <th className="text-center">Kategorie</th>
-                            <th className="text-center">Gesamt</th>
-                            <th className="text-center">Pro Monat</th>
-                            <th className="text-center">Änderung</th>
+                            <th className="text-center">Gesamt [€]</th>
+                            <th className="text-center">Pro Monat [€]</th>
+                            <th className="text-center">Änderung [%]</th>
                         </tr>
                     </thead>
                     <tbody>

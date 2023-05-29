@@ -30,18 +30,18 @@ export class TableRow extends React.Component {
                 {this.props.people.map(person=>{
                     const expenditure = this.props.event.expenditures.find(x=>x.person===person.name);
                     if(expenditure){
-                        return (<td key={person.name} className="text-right">{expenditure.portion+" %"}</td>)
+                        return (<td key={person.name} className="text-right">{expenditure.portion+""}</td>)
                     }else{
-                        return (<td key={person.name} className="text-right">0 %</td>)
+                        return (<td key={person.name} className="text-right">0</td>)
                     }
                 })}
                 {this.props.iouPairs.map(pair=>{
                     const [borrower,creditor] = pair;
                     const iou = this.props.event.ious.find(x=>x.borrower===borrower.name && x.creditor===creditor.name);
                     if(iou){
-                        return (<td key={creditor.name} className="text-right">{iou.portion+" %"}</td>)
+                        return (<td key={creditor.name} className="text-right">{iou.portion+""}</td>)
                     }else{
-                        return (<td key={creditor.name} className="text-right">0 %</td>)
+                        return (<td key={creditor.name} className="text-right">0</td>)
                     }
                 })}
             </tr> 

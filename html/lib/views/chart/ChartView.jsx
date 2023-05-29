@@ -123,7 +123,7 @@ export class ChartView extends React.Component {
                                 <tr>
                                     <th>#</th>
                                     <th>Name</th>
-                                    <th>Wert</th>
+                                    <th>Wert [€]</th>
                                 </tr>
                             </thead>
                             <tbody>

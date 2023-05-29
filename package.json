@@ -8,8 +8,8 @@
     "build": "node node_modules/babel-cli/bin/babel.js --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
     "buildw": "node node_modules/babel-cli/bin/babel.js --watch --plugins=transform-react-jsx,transform-decorators-legacy html/lib --out-dir html/build",
     "bundle": "npx jspm bundle-sfx build/main.js ajexpenditor/_attachments/index.js",
-    "pushl": "npm run bundle && cd ajexpenditor && couchapp-1.0.2-win32.exe push ajexpenditor && cd ..",
-    "pushs": "npm run bundle && couchapp-1.0.2-win32.exe push ajexpenditor https://andiundjulian:$COUCHDB_PASSWORD@116.203.57.24/ajexpenditor",
+    "pushl": "npm run bundle && cd ajexpenditor && couchapp push ajexpenditor && cd ..",
+    "pushs": "npm run bundle && couchapp push ajexpenditor https://andiundjulian:$COUCHDB_PASSWORD@sofa.tschaul.com/ajexpenditor",
     "serve": "node node_modules/serve/bin/serve.js html"
   },
   "repository": {

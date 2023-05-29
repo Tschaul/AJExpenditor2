@@ -1,4 +1,4 @@
-import { obervable, computed, extendObservable } from 'mobx';
+import { computed, extendObservable } from 'mobx';
 import { getAmountDisplay } from "../../../build/viewmodels/util";
 
 export class TableRowViewModel {
@@ -15,7 +15,7 @@ export class TableRowViewModel {
                 const current = this.currentYearValue;
                 const change = current - last;
                 const changePercentage = Math.round(100 * change / current);
-                return (changePercentage > 0 ? '+' + changePercentage : changePercentage) + ' %';
+                return (changePercentage > 0 ? '+' + changePercentage : changePercentage) + '';
             }),
             trendBad: computed(() => this.lastYearValue < this.currentYearValue)
         });

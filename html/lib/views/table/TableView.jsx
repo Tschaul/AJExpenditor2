@@ -72,14 +72,14 @@ export class TableView extends React.Component{
                                 ✍
                             </Button>
                         </th>
-                        <th className="text-center">Betrag</th>
+                        <th className="text-center">Betrag [€]</th>
                         <th className="text-center">Beschreibung</th>
                         <th className="text-center">Datum</th>
                         <th className="text-center">Kategorie</th>
                         {this.props.vm.people.map(person=>{
                             return(
                                 <th key={person.name} className="text-center">
-                                    {person.fullName}
+                                    {person.fullName} [%]
                                 </th>
                             )
                         })}
@@ -88,7 +88,7 @@ export class TableView extends React.Component{
                             const [borrower,creditor] = pair;
                             return(
                                 <th key={creditor.name} className="text-center">
-                                    {borrower.fullName} schuldet {creditor.fullName}
+                                    {borrower.fullName} schuldet {creditor.fullName} [%]
                                 </th>)
                         })}
                     </tr>
