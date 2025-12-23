@@ -1,0 +1,5 @@
+Euro,cent,day,month,year,category,description,exp_andi ,exp_julian ,iou_andi_julian 
+1,11,23,12,2025,Lebensmittel,Test,50,50,50
+1,12,22,12,2025,Verbrauchsmittel ,Test,50,50,50
+1,13,21,12,2025,Hausrat ,Test,50,50,50
+1,14,20,12,2025,Medien,Test,50,50,50
